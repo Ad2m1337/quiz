@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Angielski</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .answer-btn {
+            transition: background-color 0.3s, transform 0.2s;
+            overflow-wrap: break-word;
+        }
+        .answer-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .correct {
+            background-color: #28a745 !important;
+            color: white;
+            border-color: #28a745;
+        }
+        .incorrect {
+            background-color: #dc3545 !important;
+            color: white;
+            border-color: #dc3545;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 flex items-center justify-center min-h-screen p-4">
+
+    <div id="quiz-container" class="relative w-full max-w-2xl bg-white dark:bg-slate-800 rounded-2xl shadow-2xl p-6 md:p-8">
+        
+        <!-- Przycisk powrotu w rogu (widoczny tylko podczas quizu) -->
+        <a href="../index.html" id="corner-home-btn" class="hidden absolute top-4 left-4 text-slate-500 hover:text-indigo-500 transition-colors">
+            <i class="fas fa-arrow-left mr-2"></i>Strona główna
+        </a>
+        
+        <!-- Ekran startowy -->
+        <div id="start-screen">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-4">Quiz z Angielskiego</h1>
+            <p class="text-center text-slate-600 dark:text-slate-400 mb-8">Sprawdź swoją wiedzę! Quiz składa się z 40 losowych pytań. Kliknij przycisk poniżej, aby rozpocząć.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button id="start-btn" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform duration-200 transform hover:scale-105">
+                    Start
+                </button>
+                 <a href="../index.html" class="w-full sm:w-auto text-center bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+                    Powrót
+                </a>
+            </div>
+        </div>
+
+        <!-- Ekran Quizu -->
+        <div id="quiz-screen" class="hidden">
+            <div class="mb-6">
+                <p id="progress-text" class="text-sm text-slate-500 dark:text-slate-400 text-right">Pytanie 1 z 40</p>
+                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 mt-1">
+                    <div id="progress-bar" class="bg-indigo-500 h-2.5 rounded-full" style="width: 2.5%"></div>
+                </div>
+            </div>
+            <div id="question-container" class="mb-6">
+                <h2 id="question-text" class="text-xl md:text-2xl font-semibold text-center"></h2>
+            </div>
+            <div id="answers-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Przyciski odpowiedzi będą generowane tutaj -->
+            </div>
+            <div class="flex justify-end mt-8">
+                <button id="next-btn" class="bg-slate-500 hover:bg-slate-600 text-white font-bold py-2 px-6 rounded-lg hidden">
+                    Następne
+                </button>
+            </div>
+        </div>
+
+        <!-- Ekran wyników -->
+        <div id="results-screen" class="hidden text-center">
+            <h2 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Koniec Quizu!</h2>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-2">Twój wynik to:</p>
+            <p id="score-percentage" class="text-6xl font-bold mb-4"></p>
+            <p id="score-details" class="text-md text-slate-500 dark:text-slate-400 mb-2"></p>
+            <p id="result-status" class="text-2xl font-bold mb-8"></p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button id="restart-btn" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform duration-200 transform hover:scale-105">
+                    Spróbuj ponownie
+                </button>
+                <a href="../index.html" class="w-full sm:w-auto text-center bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+                    Strona główna
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module">
+        
+        import quizData from '../data/pytaniaprawo.json' with { type: 'json' };
+        console.log(quizData.pytania.length)
+
+
+        // --- ELEMENTY DOM ---
+        const cornerHomeBtn = document.getElementById('corner-home-btn');
+        const startScreen = document.getElementById('start-screen');
+        const quizScreen = document.getElementById('quiz-screen');
+        const resultsScreen = document.getElementById('results-screen');
+        const startBtn = document.getElementById('start-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const restartBtn = document.getElementById('restart-btn');
+        const questionText = document.getElementById('question-text');
+        const answersContainer = document.getElementById('answers-container');
+        const progressText = document.getElementById('progress-text');
+        const progressBar = document.getElementById('progress-bar');
+        const scorePercentage = document.getElementById('score-percentage');
+        const scoreDetails = document.getElementById('score-details');
+        const resultStatus = document.getElementById('result-status');
+
+        // --- ZMIENNE STANU QUIZU ---
+        const TOTAL_QUESTIONS = 30;
+        const MINIMUM_SCORE = 20;
+        let questionsForQuiz = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        // --- FUNKCJE ---
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function startQuiz() {
+            let allQuestions = [...quizData.pytania];
+            shuffleArray(allQuestions);
+            
+            questionsForQuiz = allQuestions.slice(0, TOTAL_QUESTIONS);
+            currentQuestionIndex = 0;
+            score = 0;
+
+            startScreen.classList.add('hidden');
+            resultsScreen.classList.add('hidden');
+            quizScreen.classList.remove('hidden');
+            cornerHomeBtn.classList.remove('hidden'); // Pokaż przycisk powrotu w rogu
+            
+            showQuestion();
+        }
+
+        function showQuestion() {
+            resetState();
+            const currentQuestion = questionsForQuiz[currentQuestionIndex];
+            questionText.innerText = currentQuestion.pytanie;
+
+            const answers = [
+                { text: currentQuestion.odp_1, correctKey: 'odp_1' },
+                { text: currentQuestion.odp_2, correctKey: 'odp_2' },
+                { text: currentQuestion.odp_3, correctKey: 'odp_3' },
+                { text: currentQuestion.odp_4, correctKey: 'odp_4' }
+            ];
+            shuffleArray(answers);
+
+            answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.innerText = answer.text;
+                button.classList.add('answer-btn', 'w-full', 'bg-white', 'dark:bg-slate-700', 'border', 'border-slate-300', 'dark:border-slate-600', 'p-4', 'rounded-lg', 'text-left', 'hover:bg-slate-50', 'dark:hover:bg-slate-600');
+                
+                if (answer.correctKey === currentQuestion.correct_odp) {
+                    button.dataset.correct = true;
+                }
+                button.addEventListener('click', selectAnswer);
+                answersContainer.appendChild(button);
+            });
+            
+            updateProgress();
+        }
+
+        function resetState() {
+            nextBtn.classList.add('hidden');
+            while (answersContainer.firstChild) {
+                answersContainer.removeChild(answersContainer.firstChild);
+            }
+        }
+
+        function updateProgress() {
+            const questionNumber = currentQuestionIndex + 1;
+            progressText.innerText = `Pytanie ${questionNumber} z ${TOTAL_QUESTIONS}`;
+            const progressPercent = (questionNumber / TOTAL_QUESTIONS) * 100;
+            progressBar.style.width = `${progressPercent}%`;
+        }
+
+        function selectAnswer(e) {
+            const selectedBtn = e.target;
+            const isCorrect = selectedBtn.dataset.correct === 'true';
+
+            if (isCorrect) {
+                score++;
+                selectedBtn.classList.add('correct');
+            } else {
+                selectedBtn.classList.add('incorrect');
+            }
+            
+            Array.from(answersContainer.children).forEach(button => {
+                if (button.dataset.correct === 'true') {
+                    button.classList.add('correct');
+                }
+                button.disabled = true;
+            });
+
+            if (currentQuestionIndex < TOTAL_QUESTIONS - 1) {
+                nextBtn.classList.remove('hidden');
+            } else {
+                nextBtn.innerText = 'Zobacz wyniki';
+                nextBtn.classList.remove('hidden');
+            }
+        }
+        
+        function showResults() {
+            quizScreen.classList.add('hidden');
+            cornerHomeBtn.classList.add('hidden'); // Ukryj przycisk powrotu w rogu
+            resultsScreen.classList.remove('hidden');
+
+            const percentage = Math.round((score / TOTAL_QUESTIONS) * 100);
+            scorePercentage.innerText = `${percentage}%`;
+            
+            let colorClass = '';
+            if (percentage >= 75) {
+                colorClass = 'text-green-500';
+            } else if (percentage >= 50) {
+                colorClass = 'text-yellow-500';
+            } else {
+                colorClass = 'text-red-500';
+            }
+            scorePercentage.classList.add(colorClass);
+            scoreDetails.innerText = `Odpowiedziałeś poprawnie na ${score} z ${TOTAL_QUESTIONS} pytań.`;
+
+            resultStatus.classList.remove('text-green-500', 'text-red-500');
+            if (score >= MINIMUM_SCORE) {
+                resultStatus.innerText = 'Wynik: Pozytywny';
+                resultStatus.classList.add('text-green-500');
+            } else {
+                resultStatus.innerText = 'Wynik: Negatywny';
+                resultStatus.classList.add('text-red-500');
+            }
+        }
+
+        startBtn.addEventListener('click', startQuiz);
+        
+        nextBtn.addEventListener('click', () => {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < TOTAL_QUESTIONS) {
+                showQuestion();
+            } else {
+                showResults();
+            }
+        });
+        
+        restartBtn.addEventListener('click', () => {
+            scorePercentage.classList.remove('text-green-500', 'text-yellow-500', 'text-red-500');
+            nextBtn.innerText = 'Następne';
+            startQuiz();
+        });
+    </script>
+</body>
+</html>

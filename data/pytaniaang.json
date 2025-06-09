@@ -1,0 +1,332 @@
+{
+    "pytania": [
+{
+        "pytanie": "Jakie są kluczowe cechy protokołu TLS w kontekście bezpieczeństwa komunikacji?",
+        "odp_1": "TLS provides only data encryption and no authentication.",
+        "odp_2": "TLS ensures data integrity and authentication, but not encryption.",
+        "odp_3": "TLS provides encryption, mutual authentication, and data integrity for secure communication.",
+        "odp_4": "TLS is used for securing email only, not web traffic.",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakie są różnice między atakiem typu DDoS a atakiem typu DoS?",
+        "odp_1": "DDoS attacks are easier to trace back to the source than DoS attacks.",
+        "odp_2": "DoS attacks are aimed at application-level vulnerabilities, while DDoS attacks target network hardware.",
+        "odp_3": "DoS attacks involve multiple sources of traffic, while DDoS attacks use a single source.",
+        "odp_4": "DDoS attacks use multiple sources to flood a target with traffic, while DoS attacks come from a single source.",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakie są główne różnice między atakiem typu Man-in-the-Middle a atakiem typu Man-in-the-Dark?",
+        "odp_1": "Man-in-the-Middle is used to decrypt encrypted communications, while Man-in-the-Dark simply monitors traffic.",
+        "odp_2": "Man-in-the-Middle intercepts and alters data, while Man-in-the-Dark involves actively modifying data.",
+        "odp_3": "Man-in-the-Middle requires physical access to the network, while Man-in-the-Dark is carried out over the internet.",
+        "odp_4": "Man-in-the-Middle attacks involve intercepting communications between two parties, while Man-in-the-Dark involves silent monitoring of communications without active interference.",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakie są różnice między metodami uwierzytelniania dwuskładnikowego a wieloskładnikowego?",
+        "odp_1": "Two-factor authentication (2FA) is less secure than multi-factor authentication (MFA) but faster.",
+        "odp_2": "Two-factor authentication (2FA) requires two forms of verification, while multi-factor authentication (MFA) involves more than two.",
+        "odp_3": "Two-factor authentication (2FA) uses two types of information, while multi-factor authentication (MFA) uses one type.",
+        "odp_4": "Two-factor authentication (2FA) includes only physical tokens, while multi-factor authentication (MFA) includes only digital methods.",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Czym różni się exploit od vulnerabilty w kontekście cyberbezpieczeństwa?",
+        "odp_1": "An exploit is a security update, while a vulnerability is a deprecated security feature.",
+        "odp_2": "An exploit is a known weakness, while a vulnerability is an unpatched software.",
+        "odp_3": "An exploit is a tool used to attack a system, while a vulnerability is a weakness in a system that can be exploited.",
+        "odp_4": "An exploit is a method to bypass security controls, while a vulnerability is a feature that improves security.",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Czym jest technika \"phishing\" i jakie są jej główne warianty?",
+        "odp_1": "Phishing involves physical theft of devices, with variants such as email and phone phishing.",
+        "odp_2": "Phishing is an attack that involves impersonating a trusted entity to extract information, with variants including email phishing, spear phishing, and smishing.",
+        "odp_3": "Phishing is a method of direct hacking, with no variants.",
+        "odp_4": "Phishing is a malware distribution method, with variants including email and social media phishing.",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza termin \"social engineering\" i jak można się przed nim bronić?",
+        "odp_1": "Social engineering is manipulating individuals to disclose confidential information, with defense strategies like security training and verification processes.",
+        "odp_2": "Social engineering involves hacking networks using automated tools, and defense includes network segmentation.",
+        "odp_3": "Social engineering is an attack on hardware components, defended by physical security measures.",
+        "odp_4": "Social engineering is a form of malware, and defense includes antivirus software.",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co to jest “Zero-Day Exploit” i dlaczego jest szczególnie niebezpieczny?",
+        "odp_1": "A Zero-Day Exploit is a tool to repair vulnerabilities before they are known, which is not dangerous.",
+        "odp_2": "A Zero-Day Exploit is a vulnerability that has been patched but is still being exploited.",
+        "odp_3": "A Zero-Day Exploit is a previously known vulnerability that has been publicly disclosed.",
+        "odp_4": "A Zero-Day Exploit is a method to exploit a vulnerability that is unknown to the software vendor, making it particularly dangerous.",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Który opis prawidłowo opisuje atak ransomware?",
+        "odp_1": "Ransomware is a type of malware that spreads through websites, redirecting users to phishing pages to collect sensitive data.",
+        "odp_2": "Ransomware is a form of malware that automatically deletes files on a computer unless a ransom is paid to the attacker.",
+        "odp_3": "Ransomware is a type of malware that uses social engineering tactics to trick individuals into revealing their personal information, such as passwords and credit card numbers.",
+        "odp_4": "Ransomware is a type of malware that encrypts a victim's files and demands a ransom payment for the decryption key.",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "W jaki sposób działają ataki typu SQL Injection i jakie są środki zaradcze?",
+        "odp_1": "SQL Injection attacks involve bypassing authentication mechanisms, with prevention methods including firewall rules.",
+        "odp_2": "SQL Injection is a method of phishing attacks, with prevention including user awareness training.",
+        "odp_3": "SQL Injection attacks involve exploiting database vulnerabilities through malicious queries, with prevention methods including using parameterized queries and input validation.",
+        "odp_4": "SQL Injection attacks exploit operating system vulnerabilities, with prevention methods including antivirus software.",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "W jaki sposób różni się kryptografia asymetryczna od kryptografii symetrycznej?",
+        "odp_1": "Asymmetric cryptography uses the same key for both encryption and decryption, while symmetric cryptography uses different keys.",
+        "odp_2": "Asymmetric cryptography is used for encryption only, while symmetric cryptography is used for data integrity.",
+        "odp_3": "Asymmetric cryptography uses a pair of keys (public and private), while symmetric cryptography uses a single key for both encryption and decryption.",
+        "odp_4": "Asymmetric cryptography is faster than symmetric cryptography but less secure.",
+        "correct_odp": "odp_3"
+        },
+            {
+      "pytanie": "Jaki jest główny cel protokołu DNSSEC?",
+      "odp_1": "To encrypt DNS queries to ensure privacy between a client and resolver.",
+      "odp_2": "To provide cryptographic authentication of DNS data to prevent DNS spoofing.",
+      "odp_3": "To accelerate DNS query resolution by using a decentralized cache system.",
+      "odp_4": "To filter malicious domain names at the resolver level to block threats.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Na czym polega zasada najmniejszych uprawnień (Least Privilege)?",
+      "odp_1": "Granting all users administrator rights to simplify system and user management.",
+      "odp_2": "Granting a user account only the privileges essential to perform its intended function.",
+      "odp_3": "A policy that restricts physical access to secure areas like a server room.",
+      "odp_4": "The practice of using only the oldest and most proven technologies to ensure stability.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czym jest atak 'Credential Stuffing'?",
+      "odp_1": "A social engineering technique used to acquire passwords from users over the phone.",
+      "odp_2": "An attack where stolen credentials are used to gain access via large-scale automated login requests.",
+      "odp_3": "The act of physically stealing paper documents that contain user login credentials.",
+      "odp_4": "A security method of strongly encrypting password databases to prevent their theft.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co opisuje termin 'Threat Actor'?",
+      "odp_1": "A specific piece of malware, such as a virus or a trojan horse.",
+      "odp_2": "A security vulnerability that has been identified in a piece of software.",
+      "odp_3": "An entity or group responsible for an event that impacts safety or security.",
+      "odp_4": "A sophisticated software suite used for advanced threat analysis and modeling.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Jakie jest zadanie systemu SIEM (Security Information and Event Management)?",
+      "odp_1": "To manage user identities and control their access privileges across the organization.",
+      "odp_2": "To provide real-time analysis of security alerts from hardware and applications.",
+      "odp_3": "To automatically deploy critical security patches to software vulnerabilities.",
+      "odp_4": "To encrypt data at rest on hard drives and other storage media to ensure its security.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czym jest 'DNS Spoofing' (lub 'DNS Cache Poisoning')?",
+      "odp_1": "An attack that floods a target DNS server with a massive number of requests.",
+      "odp_2": "An attack where corrupt DNS data is introduced into a resolver's cache to return a wrong IP.",
+      "odp_3": "The process of registering a domain name that is very similar to a well-known brand.",
+      "odp_4": "A defensive technique to secure DNS queries using strong cryptographic encryption.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co to jest 'Fuzzing' (Fuzz testing)?",
+      "odp_1": "A method of formal, mathematical verification of software source code correctness.",
+      "odp_2": "An automated testing technique that provides invalid or random data as inputs to a program.",
+      "odp_3": "The process of manually reviewing source code line-by-line to find security flaws.",
+      "odp_4": "The process of optimizing a program's code to achieve better performance and speed.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czym jest 'Data Loss Prevention' (DLP)?",
+      "odp_1": "A comprehensive strategy for creating regular and secure backups of important data.",
+      "odp_2": "A strategy to ensure users do not send sensitive information outside the corporate network.",
+      "odp_3": "A standard method for encrypting all data stored on a hard drive or other media.",
+      "odp_4": "A system for detecting and alerting on network intrusions and malicious activities.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co to jest 'Polymorphic Malware'?",
+      "odp_1": "Malware that is specifically designed to target multiple operating systems at once.",
+      "odp_2": "Malware that can change its identifiable features to evade signature-based detection.",
+      "odp_3": "Malware that has been written entirely in the Python programming language.",
+      "odp_4": "Malware that only steals data that has a polymorphic, or varied, structure.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaka jest różnica między hakerami 'White Hat' a 'Black Hat'?",
+      "odp_1": "The color refers to the brand of computer they prefer to use for their activities.",
+      "odp_2": "White hats work for corporations, while black hats work exclusively for governments.",
+      "odp_3": "White hats are ethical hackers who test systems with permission; black hats act maliciously.",
+      "odp_4": "Black hats focus on hardware attacks, while white hats focus on software vulnerabilities.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Co to jest 'Typosquatting'?",
+      "odp_1": "A type of advanced social engineering attack conducted via anonymous email.",
+      "odp_2": "A form of cybersquatting relying on mistakes users make when typing a website address.",
+      "odp_3": "The act of physically squatting in a data center to steal or tamper with data.",
+      "odp_4": "A training technique for improving typing speed to execute hacks more quickly.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czym jest 'Keylogger'?",
+      "odp_1": "A secure application designed for securely storing and managing user passwords.",
+      "odp_2": "A type of surveillance software that records every keystroke made on a specific computer.",
+      "odp_3": "A piece of hardware used by administrators for generating strong cryptographic keys.",
+      "odp_4": "A built-in security feature of modern keyboards to prevent unauthorized input.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaki jest główny cel ataku typu Business Email Compromise (BEC)?",
+      "odp_1": "To encrypt a company's email server and demand a ransom for its decryption.",
+      "odp_2": "To trick an employee into making unauthorized fund transfers or revealing sensitive data.",
+      "odp_3": "To flood a company's mail server with spam to cause a denial-of-service condition.",
+      "odp_4": "To install keylogging software via email attachments to capture all user credentials.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Do czego głównie służy oprogramowanie PGP (Pretty Good Privacy)?",
+      "odp_1": "To monitor network traffic and detect intrusions in real-time on a mail server.",
+      "odp_2": "To provide a secure firewall for protecting corporate email systems from spam.",
+      "odp_3": "To encrypt and decrypt data, including emails, and to create digital signatures.",
+      "odp_4": "To manage and archive large volumes of corporate emails for legal compliance.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Jaka jest kluczowa rola organizacji IANA (Internet Assigned Numbers Authority)?",
+      "odp_1": "To develop and sell security software for protecting internet infrastructure.",
+      "odp_2": "To directly assign IP addresses to end-users and small businesses globally.",
+      "odp_3": "To prosecute international cybercriminals who misuse internet resources.",
+      "odp_4": "To globally coordinate key internet elements like IP allocation and top-level DNS.",
+      "correct_odp": "odp_4"
+    },
+    {
+      "pytanie": "W jaki sposób protokół ARP (Address Resolution Protocol) mapuje adresy w sieci lokalnej?",
+      "odp_1": "It maps a domain name (e.g., google.com) to a corresponding IP address.",
+      "odp_2": "It maps a logical IP address to a physical MAC address within a local network.",
+      "odp_3": "It maps a public IP address to a private IP address at the network gateway.",
+      "odp_4": "It maps a user's identity to a specific port number for a network connection.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czym jest SID (Security Identifier) w systemach operacyjnych Windows?",
+      "odp_1": "A unique identifier used to identify a security principal like a user or a group.",
+      "odp_2": "A session key generated by the system each time a user successfully logs in.",
+      "odp_3": "A log file entry that records a significant security-related event on the system.",
+      "odp_4": "A hardware token required for performing administrative tasks on the server.",
+      "correct_odp": "odp_1"
+    },
+    {
+      "pytanie": "Jaka jest główna różnica między protokołami TCP i UDP?",
+      "odp_1": "TCP is used for local networks only, while UDP is designed for the wide internet.",
+      "odp_2": "TCP is faster but less reliable, while UDP is slower but guarantees data delivery.",
+      "odp_3": "TCP provides reliable, connection-oriented delivery, while UDP is connectionless and faster.",
+      "odp_4": "TCP encrypts all data by default, whereas UDP transmits all data in plaintext.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Jaka jest główna wada i ryzyko związane z konfiguracją RAID 0 (Striping)?",
+      "odp_1": "It has very slow read and write performance compared to a single hard drive.",
+      "odp_2": "It offers no data redundancy, meaning a single drive failure results in total data loss.",
+      "odp_3": "It reduces the total available storage capacity by 50% for mirroring purposes.",
+      "odp_4": "It requires a minimum of four physical disk drives to be properly configured.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jak działa oszustwo typu skimming?",
+      "odp_1": "It involves sending deceptive emails to trick users into revealing their PIN codes.",
+      "odp_2": "It uses malware to intercept online banking transactions and redirect funds.",
+      "odp_3": "It illegally copies data from a payment card's magnetic stripe using a physical device.",
+      "odp_4": "It tricks a user into installing a fake payment application on their smartphone.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Czym steganografia różni się od kryptografii?",
+      "odp_1": "Steganography encrypts a message, while cryptography hides it in another file.",
+      "odp_2": "Steganography's goal is to hide the very existence of a message, not just its content.",
+      "odp_3": "Steganography is a modern technique, while cryptography is an obsolete method.",
+      "odp_4": "Steganography is used for text messages only, while cryptography is for files.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaka jest funkcja drzewa Merklego (Merkle Tree) w technologii blockchain?",
+      "odp_1": "To encrypt the contents of each transaction before it is added to a block.",
+      "odp_2": "To allow for efficient and secure verification of content in a large block of data.",
+      "odp_3": "To determine which miner gets to create the next block in the blockchain.",
+      "odp_4": "To store user identities and their corresponding public keys in a tree structure.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co to jest 'Hard Fork' w kontekście blockchaina?",
+      "odp_1": "A routine software update that is fully compatible with previous versions.",
+      "odp_2": "A network-wide event that permanently deletes the transaction history.",
+      "odp_3": "A change to the protocol that is not backward-compatible, potentially splitting the chain.",
+      "odp_4": "A physical damage to the hardware of a majority of nodes in the network.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Jaki jest główny cel stosowania standardu LUKS (Linux Unified Key Setup)?",
+      "odp_1": "To manage user passwords and authentication policies on Linux systems.",
+      "odp_2": "To provide a standard for encrypting entire partitions or disks in Linux.",
+      "odp_3": "To securely configure the Linux kernel parameters during system startup.",
+      "odp_4": "To create secure, encrypted network connections between Linux servers.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaki tryb pracy karty sieciowej Wi-Fi jest niezbędny do przechwytywania całego ruchu w zasięgu?",
+      "odp_1": "Managed Mode, which connects the card to a standard access point.",
+      "odp_2": "Ad-hoc Mode, which allows direct connection between two devices.",
+      "odp_3": "Monitor Mode, which captures all packets in the air without connecting to an AP.",
+      "odp_4": "AP Mode, which turns the network card into a functional access point.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Czym jest model biznesowy 'Ransomware as a Service' (RaaS)?",
+      "odp_1": "A legal service offered by security companies to test defenses against ransomware.",
+      "odp_2": "A subscription model where ransomware developers lease their malware to others.",
+      "odp_3": "A government program designed to help victims recover from ransomware attacks.",
+      "odp_4": "A type of insurance policy that covers financial losses caused by ransomware.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaką funkcję pełni protokół ICMP (Internet Control Message Protocol)?",
+      "odp_1": "It is used for the reliable transmission of large data files between hosts.",
+      "odp_2": "It is used by network devices to send error messages and operational information.",
+      "odp_3": "It is used to securely encrypt communication sessions between two endpoints.",
+      "odp_4": "It is used to automatically assign IP addresses to devices joining a network.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Do czego służy polecenie 'sudo' w systemach typu Unix/Linux?",
+      "odp_1": "To immediately shut down the system without saving any current work.",
+      "odp_2": "To allow a permitted user to execute a command as another user, typically the superuser.",
+      "odp_3": "To search the entire filesystem for a file with a specific name or extension.",
+      "odp_4": "To display a detailed summary of the system's current hardware configuration.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Dlaczego protokół WEP jest obecnie uważany za niezabezpieczony?",
+      "odp_1": "It only allows for very short passwords, which are easy to guess.",
+      "odp_2": "It contains fundamental cryptographic weaknesses that are easily exploited.",
+      "odp_3": "It is only compatible with very old hardware that is no longer in production.",
+      "odp_4": "It significantly slows down the network speed, making it impractical for modern use.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Na czym polega OSINT (Open-Source Intelligence)?",
+      "odp_1": "The use of proprietary, secret software to analyze network security.",
+      "odp_2": "The practice of hacking into systems to gather intelligence data.",
+      "odp_3": "The collection and analysis of information from publicly available sources.",
+      "odp_4": "A military technique for intercepting encrypted enemy communications.",
+      "correct_odp": "odp_3"
+    }
+    ]
+}

@@ -1,0 +1,364 @@
+{
+  "pytania": [
+    {
+      "pytanie": "Który z poniższych czynów stanowi przestępstwo z art. 267 § 2 Kodeksu Karnego?",
+      "odp_1": "Przełamanie hasła do czyjegoś konta e-mail i odczytanie wiadomości.",
+      "odp_2": "Zalogowanie się bez uprawnień do serwera firmy w celu sprawdzenia jego konfiguracji.",
+      "odp_3": "Zainstalowanie oprogramowania typu keylogger na komputerze ofiary.",
+      "odp_4": "Ujawnienie danych wykradzionych z firmowej bazy danych.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czym, zgodnie z definicją w Konwencji Budapesztańskiej (art. 1), są 'dane komputerowe'?",
+      "odp_1": "Wyłącznie pliki tekstowe i obrazy przechowywane na dysku twardym.",
+      "odp_2": "Każde przedstawienie faktów, informacji lub pojęć w formie właściwej do przetwarzania w systemie komputerowym, włączając w to programy.",
+      "odp_3": "Tylko informacje przesyłane przez sieć telekomunikacyjną.",
+      "odp_4": "Dane osobowe użytkowników przechowywane przez dostawców usług.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Administrator systemu, w celu osiągnięcia korzyści majątkowej, modyfikuje skrypt płacowy, aby co miesiąc przelewał na jego konto dodatkowe 100 zł. Jakie przestępstwo z Kodeksu Karnego popełnia?",
+      "odp_1": "Art. 268 KK - Niszczenie danych informatycznych.",
+      "odp_2": "Art. 267 KK - Nieuprawnione uzyskanie informacji.",
+      "odp_3": "Art. 287 KK - Oszustwo komputerowe.",
+      "odp_4": "Art. 269a KK - Wytwarzanie narzędzi hakerskich.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Atak typu DDoS, który powoduje poważne zakłócenie funkcjonowania systemu bankowego, jest penalizowany przez który artykuł Konwencji Budapesztańskiej?",
+      "odp_1": "Art. 2 - Nielegalny dostęp.",
+      "odp_2": "Art. 4 - Naruszenie integralności danych.",
+      "odp_3": "Art. 5 - Naruszenie integralności systemu.",
+      "odp_4": "Art. 8 - Oszustwo komputerowe.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Zgodnie z art. 190a § 2 KK (podszywanie się), co jest konieczne, aby czyn został uznany za przestępstwo?",
+      "odp_1": "Wystarczy jednorazowe wykorzystanie czyjegoś wizerunku w internecie.",
+      "odp_2": "Działanie musi być uporczywe i trwać przez dłuższy czas.",
+      "odp_3": "Sprawca musi działać w celu wyrządzenia ofierze szkody majątkowej lub osobistej.",
+      "odp_4": "Sprawca musi uzyskać korzyść majątkową dla siebie.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Co, zgodnie z art. 6 Konwencji Budapesztańskiej, jest uznawane za 'nadużycie urządzeń'?",
+      "odp_1": "Wyłącznie sprzedaż oprogramowania zaprojektowanego do popełniania cyberprzestępstw.",
+      "odp_2": "Używanie programu antywirusowego do skanowania systemu.",
+      "odp_3": "Produkcja, sprzedaż lub posiadanie programu lub hasła z zamiarem użycia go do popełnienia cyberprzestępstw.",
+      "odp_4": "Jedynie posiadanie dużej liczby skradzionych haseł bez zamiaru ich użycia.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "W jakim celu, zgodnie z Rozdziałem III Konwencji Budapesztańskiej, została ustanowiona sieć punktów kontaktowych 24/7?",
+      "odp_1": "Do świadczenia pomocy technicznej ofiarom cyberataków.",
+      "odp_2": "Do zapewnienia natychmiastowej pomocy organom ścigania w dochodzeniach transgranicznych.",
+      "odp_3": "Do monitorowania globalnego ruchu internetowego w poszukiwaniu zagrożeń.",
+      "odp_4": "Do wymiany informacji o nowych typach złośliwego oprogramowania.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Który środek procesowy, opisany w Konwencji Budapesztańskiej, pozwala organom ścigania na nakazanie dostawcy usług tymczasowego zachowania danych o logowaniach użytkownika?",
+      "odp_1": "Art. 19 - Przeszukanie i zajęcie.",
+      "odp_2": "Art. 21 - Przechwytywanie danych o treści.",
+      "odp_3": "Art. 16 - Szybkie zabezpieczenie przechowywanych danych komputerowych.",
+      "odp_4": "Art. 18 - Nakaz przedstawienia.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Zgodnie z Art. 12 Konwencji Budapesztańskiej, czy odpowiedzialność karna osoby prawnej (np. firmy) wyklucza odpowiedzialność osoby fizycznej (np. pracownika)?",
+      "odp_1": "Tak, jeżeli firma przyjmuje odpowiedzialność, pracownik nie jest ścigany.",
+      "odp_2": "Nie, odpowiedzialność osoby prawnej nie wyłącza postępowania karnego przeciwko osobom fizycznym.",
+      "odp_3": "Odpowiedzialność ponosi tylko osoba prawna, jeżeli pracownik działał na jej polecenie.",
+      "odp_4": "To zależy od decyzji sądu, który może wybrać, kogo pociągnąć do odpowiedzialności.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co jest kluczowym elementem przestępstwa z art. 269a Kodeksu Karnego, dotyczącym tzw. narzędzi hakerskich?",
+      "odp_1": "Wytwarzanie jakiegokolwiek programu zdolnego do testowania zabezpieczeń.",
+      "odp_2": "Posiadanie programu typu 'exploit' na własnym komputerze.",
+      "odp_3": "Udostępnienie programu lub hasła innej osobie bez względu na jej intencje.",
+      "odp_4": "Wytwarzanie, pozyskiwanie lub udostępnianie programów lub haseł w celu popełnienia konkretnych przestępstw.",
+      "correct_odp": "odp_4"
+    },
+    {
+      "pytanie": "Jakie działanie jest penalizowane przez art. 268a § 1 KK, oprócz niszczenia lub uszkadzania danych?",
+      "odp_1": "Wyłącznie zmiana treści danych informatycznych.",
+      "odp_2": "Utrudnianie dostępu do danych lub zakłócanie ich automatycznego przetwarzania.",
+      "odp_3": "Nieuprawnione kopiowanie danych informatycznych.",
+      "odp_4": "Tworzenie kopii zapasowych systemu bez autoryzacji.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaka jest główna różnica między zakresem penalizacji art. 269a KK a art. 269b KK?",
+      "odp_1": "Art. 269a KK dotyczy oprogramowania, a art. 269b KK dotyczy sprzętu.",
+      "odp_2": "Art. 269a penalizuje narzędzia (programy), a art. 269b penalizuje dane dostępowe (hasła).",
+      "odp_3": "Oba artykuły dotyczą tego samego, ale art. 269b jest typem kwalifikowanym art. 269a.",
+      "odp_4": "Art. 269a wymaga udowodnienia szkody, a art. 269b nie.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czy samo posiadanie w systemie komputerowym treści pornograficznych z udziałem małoletniego jest karalne na mocy Kodeksu Karnego?",
+      "odp_1": "Nie, karalne jest tylko rozpowszechnianie takich treści.",
+      "odp_2": "Tak, na mocy art. 202 § 4a KK.",
+      "odp_3": "Tak, ale tylko jeśli treści te zostały uzyskane w sposób nielegalny.",
+      "odp_4": "Nie, chyba że posiadacz jest również producentem tych treści.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaki rodzaj transmisji danych jest chroniony przez art. 3 Konwencji Budapesztańskiej (nielegalne przechwytywanie)?",
+      "odp_1": "Wszystkie transmisje danych, zarówno publiczne, jak i niepubliczne.",
+      "odp_2": "Wyłącznie transmisje w ramach wewnętrznej sieci firmowej.",
+      "odp_3": "Niepubliczne transmisje danych komputerowych.",
+      "odp_4": "Tylko zaszyfrowane transmisje danych.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Jakie działanie jest penalizowane przez art. 267 § 3 Kodeksu Karnego?",
+      "odp_1": "Samo posiadanie oprogramowania szpiegującego.",
+      "odp_2": "Nieuprawnione kopiowanie danych z czyjegoś komputera.",
+      "odp_3": "Zakładanie lub posługiwanie się urządzeniem podsłuchowym lub oprogramowaniem w celu uzyskania informacji.",
+      "odp_4": "Otwarcie cudzego listu elektronicznego bez zgody.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Jaki jest główny cel działania sprawcy przestępstwa oszustwa komputerowego z art. 287 KK?",
+      "odp_1": "Spowodowanie awarii systemu komputerowego.",
+      "odp_2": "Uzyskanie dostępu do poufnych informacji.",
+      "odp_3": "Osiągnięcie korzyści majątkowej lub wyrządzenie innej osobie szkody.",
+      "odp_4": "Zademonstrowanie swoich umiejętności hakerskich.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Co umożliwia art. 20 Konwencji Budapesztańskiej właściwym organom w odniesieniu do danych o ruchu?",
+      "odp_1": "Zabezpieczenie historycznych logów serwera.",
+      "odp_2": "Gromadzenie lub rejestrowanie danych o ruchu w czasie rzeczywistym.",
+      "odp_3": "Uzyskanie dostępu do treści przesyłanych wiadomości e-mail.",
+      "odp_4": "Nakazanie dostawcy usług zmiany konfiguracji sieci.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Art. 269 KK (sabotaż komputerowy) dotyczy danych o szczególnym znaczeniu dla...",
+      "odp_1": "Dowolnej firmy prywatnej.",
+      "odp_2": "Funkcjonowania portali społecznościowych.",
+      "odp_3": "Obronności kraju, bezpieczeństwa w komunikacji lub funkcjonowania administracji rządowej.",
+      "odp_4": "Wszystkich obywateli posiadających komputer.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Co penalizuje art. 7 Konwencji Budapesztańskiej (fałszerstwo komputerowe)?",
+      "odp_1": "Kopiowanie oprogramowania bez licencji.",
+      "odp_2": "Wprowadzanie, zmienianie lub usuwanie danych, skutkujące nieautentycznymi danymi, z zamiarem, by były uznane za autentyczne.",
+      "odp_3": "Podszywanie się pod inną osobę w mediach społecznościowych.",
+      "odp_4": "Tworzenie fałszywych stron internetowych (phishing).",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaki środek karny grozi za przestępstwo z art. 268 § 2 KK (zniszczenie zapisu na informatycznym nośniku danych)?",
+      "odp_1": "Wyłącznie grzywna.",
+      "odp_2": "Kara pozbawienia wolności do lat 3.",
+      "odp_3": "Ograniczenie wolności.",
+      "odp_4": "Areszt.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co, zgodnie z art. 11 Konwencji Budapesztańskiej, jest karalne obok dokonania przestępstwa?",
+      "odp_1": "Tylko planowanie przestępstwa.",
+      "odp_2": "Publiczne chwalenie cyberprzestępców.",
+      "odp_3": "Podżeganie, pomocnictwo i usiłowanie.",
+      "odp_4": "Niezgłoszenie podejrzenia popełnienia przestępstwa.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Art. 190a § 1 KK (stalking) wymaga, aby nękanie było...",
+      "odp_1": "Jednorazowe, ale intensywne.",
+      "odp_2": "Uporczywe.",
+      "odp_3": "Dokonane wyłącznie za pomocą internetu.",
+      "odp_4": "Zgłoszone przez co najmniej dwie osoby.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Zgodnie z art. 22 Konwencji Budapesztańskiej, państwo ma jurysdykcję nad przestępstwem popełnionym...",
+      "odp_1": "Tylko i wyłącznie na jego terytorium.",
+      "odp_2": "Tylko przez jego obywateli, niezależnie od miejsca.",
+      "odp_3": "Na jego terytorium, na pokładzie jego statku/samolotu lub przez jego obywatela pod pewnymi warunkami.",
+      "odp_4": "Tylko jeśli ofiarą jest jego obywatel.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Co odróżnia przestępstwo z art. 268a § 2 KK od § 1 tego samego artykułu?",
+      "odp_1": "Rodzaj użytych narzędzi.",
+      "odp_2": "Cel działania sprawcy.",
+      "odp_3": "Wyrządzenie znacznej szkody majątkowej.",
+      "odp_4": "Liczba sprawców.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Czym są 'dane o ruchu' (traffic data) według art. 1 lit. d) Konwencji Budapesztańskiej?",
+      "odp_1": "Treścią rozmów prowadzonych przez internet.",
+      "odp_2": "Danymi wskazującymi źródło, cel, drogę, czas i rozmiar połączenia telekomunikacyjnego.",
+      "odp_3": "Oprogramowaniem służącym do monitorowania sieci.",
+      "odp_4": "Danymi geolokalizacyjnymi użytkownika telefonu komórkowego.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Za co odpowiada sprawca zgodnie z art. 267 § 4 KK?",
+      "odp_1": "Za przygotowanie do uzyskania informacji.",
+      "odp_2": "Za posiadanie narzędzi hakerskich.",
+      "odp_3": "Za ujawnienie innej osobie informacji uzyskanej w sposób nieuprawniony.",
+      "odp_4": "Za nieudolne usiłowanie przełamania zabezpieczeń.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Art. 21 Konwencji Budapesztańskiej reguluje najbardziej inwazyjny środek procesowy. Jaki?",
+      "odp_1": "Gromadzenie danych o ruchu w czasie rzeczywistym.",
+      "odp_2": "Przechwytywanie danych o treści w czasie rzeczywistym.",
+      "odp_3": "Przeszukanie systemu komputerowego.",
+      "odp_4": "Nakaz przedstawienia danych.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Jaki czyn, oprócz propagowania faszyzmu, jest penalizowany przez art. 256 KK w internecie?",
+      "odp_1": "Krytyka rządu.",
+      "odp_2": "Publiczne nawoływanie do nienawiści na tle np. narodowościowym lub rasowym.",
+      "odp_3": "Rozpowszechnianie nieprawdziwych informacji.",
+      "odp_4": "Organizacja nielegalnych zgromadzeń online.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Który artykuł Kodeksu Wykroczeń może znaleźć zastosowanie w przypadku złośliwego wysyłania komuś dużej liczby niechcianych wiadomości (tzw. 'spam bombing'), jeśli nie wyczerpuje to znamion stalkingu?",
+      "odp_1": "Art. 51 KW - Zakłócanie spokoju.",
+      "odp_2": "Art. 141 KW - Umieszczanie nieprzyzwoitych ogłoszeń.",
+      "odp_3": "Art. 107 KW - Złośliwe niepokojenie.",
+      "odp_4": "Art. 124 KW - Niszczenie cudzej rzeczy.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Zgodnie z art. 19 Konwencji Budapesztańskiej, jeśli podczas przeszukania jednego systemu komputerowego organy znajdą dowody w innym systemie, do którego jest dostęp z pierwszego, to...",
+      "odp_1": "Muszą uzyskać nowy nakaz przeszukania drugiego systemu.",
+      "odp_2": "Mogą rozszerzyć przeszukanie na ten drugi system.",
+      "odp_3": "Mogą jedynie zabezpieczyć dane z drugiego systemu, ale nie mogą ich przeszukać.",
+      "odp_4": "Muszą natychmiast przerwać przeszukanie i zgłosić to prokuratorowi.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co jest celem penalizacji usiłowania (art. 11 Konwencji Budapesztańskiej) w przypadku najpoważniejszych cyberprzestępstw?",
+      "odp_1": "Ukaranie sprawcy, nawet jeśli jego działanie nie odniosło skutku.",
+      "odp_2": "Zrekompensowanie szkody ofierze.",
+      "odp_3": "Wyłącznie odstraszenie potencjalnych sprawców.",
+      "odp_4": "Zidentyfikowanie luk w zabezpieczeniach systemu.",
+      "correct_odp": "odp_1"
+    },
+    {
+      "pytanie": "Jakie dane, oprócz haseł i kodów, są chronione przez art. 269b KK?",
+      "odp_1": "Tylko numery kart kredytowych.",
+      "odp_2": "Wyłącznie klucze kryptograficzne.",
+      "odp_3": "Inne dane umożliwiające nieuprawniony dostęp do informacji w systemie.",
+      "odp_4": "Adresy e-mail i loginy do portali społecznościowych.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Co oznacza 'szkoda majątkowa' w kontekście oszustwa komputerowego (art. 287 KK)?",
+      "odp_1": "Utratę danych niematerialnych, jak np. reputacja firmy.",
+      "odp_2": "Uszczerbek w majątku, który można wyrazić w pieniądzu (damnum emergens lub lucrum cessans).",
+      "odp_3": "Tylko i wyłącznie fizyczne zniszczenie sprzętu komputerowego.",
+      "odp_4": "Stres i straty moralne poniesione przez ofiarę.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Art. 10 Konwencji Budapesztańskiej zobowiązuje do penalizacji naruszeń praw autorskich, jeśli są popełniane umyślnie, za pomocą systemu komputerowego oraz...",
+      "odp_1": "Powodują szkodę powyżej określonej kwoty.",
+      "odp_2": "Są dokonywane na skalę komercyjną.",
+      "odp_3": "Trwają dłużej niż 30 dni.",
+      "odp_4": "Dotyczą oprogramowania stworzonego przed 2000 rokiem.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czy działanie opisane w art. 268 KK (niszczenie informacji) musi dotyczyć zapisu na informatycznym nośniku danych, aby było karalne?",
+      "odp_1": "Tak, przepis dotyczy wyłącznie danych cyfrowych.",
+      "odp_2": "Nie, § 1 dotyczy 'zapisu istotnej informacji' w ogólności, a § 2 zaostrza karę, jeśli dotyczy to nośnika informatycznego.",
+      "odp_3": "Tak, ale tylko jeśli nośnik jest podłączony do internetu.",
+      "odp_4": "Nie, przepis ten został uchylony i zastąpiony przez art. 268a KK.",
+      "correct_odp": "odp_2"
+    },
+        {
+      "pytanie": "Według definicji z art. 1 Konwencji Budapesztańskiej, kto jest 'dostawcą usług'?",
+      "odp_1": "Tylko publiczna jednostka dostarczająca możliwość komunikowania się przez system komputerowy.",
+      "odp_2": "Każda publiczna lub prywatna jednostka dostarczająca usługi łączności lub przetwarzająca/przechowująca dane na jej rzecz.",
+      "odp_3": "Wyłącznie firmy hostingowe przechowujące strony internetowe.",
+      "odp_4": "Każdy, kto tworzy oprogramowanie komputerowe.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czy do popełnienia przestępstwa z art. 268a § 1 KK (zakłócanie pracy systemu) konieczne jest działanie w celu osiągnięcia korzyści majątkowej?",
+      "odp_1": "Tak, jest to warunek konieczny.",
+      "odp_2": "Nie, przepis ten nie wymaga celu osiągnięcia korzyści majątkowej; penalizuje sam czyn zakłócania.",
+      "odp_3": "Tak, ale tylko jeśli wyrządzono znaczną szkodę majątkową.",
+      "odp_4": "Nie, ale wymaga celu wyrządzenia szkody innej osobie.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Art. 287 KK (oszustwo komputerowe) penalizuje działanie w celu osiągnięcia korzyści majątkowej lub...",
+      "odp_1": "Uzyskania dostępu do informacji niejawnych.",
+      "odp_2": "Zademonstrowania swoich umiejętności.",
+      "odp_3": "Wyrządzenia innej osobie szkody.",
+      "odp_4": "Spowodowania niestabilności systemu.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Co art. 26 Konwencji Budapesztańskiej mówi o przekazywaniu informacji?",
+      "odp_1": "Zakazuje przekazywania informacji bez formalnego wniosku o pomoc prawną.",
+      "odp_2": "Pozwala Stronie na spontaniczne przekazywanie informacji innej Stronie, jeśli uważa je za pomocne w śledztwie.",
+      "odp_3": "Wymaga zgody osoby, której dane dotyczą, przed ich przekazaniem.",
+      "odp_4": "Ogranicza przekazywanie informacji tylko do danych o ruchu sieciowym.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czy usiłowanie popełnienia przestępstwa z art. 269b KK (nielegalne pozyskanie hasła) jest karalne?",
+      "odp_1": "Tak, usiłowanie każdego cyberprzestępstwa jest zawsze karalne.",
+      "odp_2": "Nie, Kodeks Karny nie przewiduje karalności usiłowania tego konkretnego przestępstwa.",
+      "odp_3": "Tak, ale tylko jeśli usiłowanie spowodowało szkodę.",
+      "odp_4": "To zależy od decyzji prokuratora.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co oznacza 'szczególne znaczenie' danych w kontekście art. 269 KK (sabotaż komputerowy)?",
+      "odp_1": "Dane, które są cenne finansowo dla ich właściciela.",
+      "odp_2": "Dane kluczowe dla obronności, bezpieczeństwa w komunikacji lub funkcjonowania państwa/samorządu.",
+      "odp_3": "Wszystkie dane osobowe objęte RODO.",
+      "odp_4": "Dane, których utrata spowodowałaby panikę publiczną.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Czy art. 10 Konwencji Budapesztańskiej dotyczy wyłącznie naruszeń praw autorskich do programów komputerowych?",
+      "odp_1": "Tak, konwencja skupia się tylko na oprogramowaniu.",
+      "odp_2": "Nie, dotyczy on naruszeń praw autorskich i praw pokrewnych w szerokim zakresie, zgodnie z innymi traktatami międzynarodowymi.",
+      "odp_3": "Tak, ale obejmuje również gry komputerowe.",
+      "odp_4": "Nie, dotyczy on wyłącznie piractwa filmów i muzyki.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Zasada proporcjonalności, wspomniana w art. 15 Konwencji Budapesztańskiej, oznacza, że...",
+      "odp_1": "Kara musi być proporcjonalna do zarobków sprawcy.",
+      "odp_2": "Uprawnienia i procedury procesowe muszą być stosowane w sposób adekwatny do wagi przestępstwa i z poszanowaniem praw człowieka.",
+      "odp_3": "Liczba dowodów musi być proporcjonalna do liczby podejrzanych.",
+      "odp_4": "Organy ścigania muszą używać proporcjonalnie tyle samo zasobów na każde śledztwo.",
+      "correct_odp": "odp_2"
+    },
+    {
+      "pytanie": "Co może stanowić 'istotne naruszenie prywatności' w ramach stalkingu (art. 190a § 1 KK)?",
+      "odp_1": "Jednorazowe wysłanie zaproszenia do znajomych w mediach społecznościowych.",
+      "odp_2": "Publiczne skrytykowanie czyjejś opinii w internecie.",
+      "odp_3": "Uporczywe śledzenie aktywności online ofiary, publikowanie jej prywatnych zdjęć i informacji wbrew jej woli.",
+      "odp_4": "Wysłanie jednej niechcianej wiadomości e-mail o charakterze marketingowym.",
+      "correct_odp": "odp_3"
+    },
+    {
+      "pytanie": "Jaki jest status prawny art. 4 Konwencji Budapesztańskiej (naruszenie integralności danych) w polskim Kodeksie Karnym?",
+      "odp_1": "Nie został on wdrożony do polskiego prawa.",
+      "odp_2": "Jego odpowiednikiem jest głównie art. 268 KK i art. 268a KK.",
+      "odp_3": "Jest stosowany bezpośrednio przez polskie sądy bez potrzeby implementacji.",
+      "odp_4": "Jego odpowiednikiem jest wyłącznie art. 287 KK (oszustwo komputerowe).",
+      "correct_odp": "odp_2"
+    }
+  ]
+}

@@ -1,0 +1,3277 @@
+{
+    "pytania":[
+       {
+        "pytanie": "Które z poniższych systemów baz danych korzysta z systemu Quare Language?",
+        "odp_1": "Wszystkie poprawne",
+        "odp_2": "MySQL",
+        "odp_3": "MS Access",
+        "odp_4": "PostgreSQL",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Adresowanie IPv6 zawiera:",
+        "odp_1": "128 b",
+        "odp_2": "16 B",
+        "odp_3": "32 b",
+        "odp_4": "64 b",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": ". Która z organizacji międzynarodowych zajmuje się nadawaniem adresów IP",
+        "odp_1": "ICAN",
+        "odp_2": "IANA",
+        "odp_3": "Ripe",
+        "odp_4": "Whois",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Wskaż zdanie prawdziwe dot. kryptowalut",
+        "odp_1": "są transakcjami na jednym serwerze",
+        "odp_2": "są transakcjami gotówkowymi",
+        "odp_3": "są transakcjami publicznymi których treść rozproszona jest na wielu serwerach",
+        "odp_4": "",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": ". Google brało udział w tworzeniu systemu:",
+        "odp_1": "iOs",
+        "odp_2": "Linux",
+        "odp_3": "Android",
+        "odp_4": "Windows",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Czym jest LTS",
+        "odp_1": "wersja oprogramowania z długoterminowym wsparciem",
+        "odp_2": "protokół LTE",
+        "odp_3": "rodzaj pamięci operacyjnej",
+        "odp_4": "format pliku graficznego",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Która z masek podsieci wskazuje, że może ona obsługiwać dokładnie 254 hosty  - dodaj cztery odpowiedzi tylko jedna prawdłowa",
+        "odp_1": "255.255.255.128",
+        "odp_2": "255.255.254.0",
+        "odp_3": "255.255.255.192",
+        "odp_4": "255.255.255.0",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakim poleceniem preinstalowanym wczytuje się system Linux",
+        "odp_1": "/init",
+        "odp_2": "/load",
+        "odp_3": "/boot",
+        "odp_4": "/start",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką wartość wyświetli polecenie print(imiona[2]), jeśli w wierszu poleceń wpisano: imiona = ['Adam', 'Jan', 'Damian']?",
+        "odp_1": "Adam",
+        "odp_2": "Null",
+        "odp_3": "Jan",
+        "odp_4": "Damian",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Rozwiń akronim IRC",
+        "odp_1": "Instant Response Communicate",
+        "odp_2": "Internet Relay Chat",
+        "odp_3": "Internet Response Communicate",
+        "odp_4": "Instant Relay Chat",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "W jakim systemie uruchomisz program o rozszrzeniu .apk",
+        "odp_1": "Linux",
+        "odp_2": "Android",
+        "odp_3": "Windows",
+        "odp_4": "iOS",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaka warstwa w modelu TCP/IP jest najbliższa użytkownikowi?",
+        "odp_1": "internetu",
+        "odp_2": "transportowa",
+        "odp_3": "aplikacji",
+        "odp_4": "dostępu do sieci",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaka warstwa modelu ISO/OSI bierze udział/ ma znaczenie (?) przy podłaczeniu kabla (?) ?",
+        "odp_1": "sieci",
+        "odp_2": "łącza danych",
+        "odp_3": "fizyczna",
+        "odp_4": "transportowa",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakie dane mogą być przechowywane w sieci na podstawie ESI (Enterprise Systems Integration)?",
+        "odp_1": "bazy danych",
+        "odp_2": "arkusze kalkulacyjne",
+        "odp_3": "e-mail",
+        "odp_4": "wszystkie wymienione",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Które z wymienionych adresów IP jest nieprawidłowy",
+        "odp_1": "231.233.0.0",
+        "odp_2": "af12:1232:21d1::12b3",
+        "odp_3": "255.256.16.230",
+        "odp_4": "af12:1232:21d1::12b3:af12:1232:21d1::12b3",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakiego programu użyjesz do uzyskania informacji o wiadomości e-mail (np. nagłówków, serwera nadawcy)?",
+        "odp_1": "Paint",
+        "odp_2": "Calculator",
+        "odp_3": "Notepad",
+        "odp_4": "Wireshark",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakiego języka programowania użyjesz do automatyzowania arkusza MS Excel?",
+        "odp_1": "C++",
+        "odp_2": "VBA",
+        "odp_3": "Java",
+        "odp_4": "Python",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Z jakich protokołów skorzystasz przy wysyłaniu i odbieraniu wiadomości e-mail?",
+        "odp_1": "SMTP",
+        "odp_2": "SNMP",
+        "odp_3": "FTP",
+        "odp_4": "IMAP",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Do czego służy protokół DHCP",
+        "odp_1": "Do szyfrowania połączeń sieciowych",
+        "odp_2": "Do dynamicznego przydzielania adresów IP",
+        "odp_3": "Do statycznego przydzielania adresów IP",
+        "odp_4": "Do monitorowania ruchu w sieci",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Adresowanie w postaci czterech oktetowych liczb dziesiętnych, 32-bitowe, to:",
+        "odp_1": "MAC",
+        "odp_2": "IPv4",
+        "odp_3": "IPv6",
+        "odp_4": "IPX",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaki region obsługuje RIPE?",
+        "odp_1": "Afryka",
+        "odp_2": "Ameryka Południowa",
+        "odp_3": "Europa, Bliski Wschód, Azja Centralna",
+        "odp_4": "Ameryka Łacińska",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót RIDE w kontekście IT",
+        "odp_1": "Registered Interface for Data Encryption",
+        "odp_2": "Rapid Integrated Development Environment",
+        "odp_3": "Randomized Input Data Emulator",
+        "odp_4": "Remote Internet Data Exchange",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak nazywa się zintegrowana pamięć, która umożliwia maksymalne wykorzystanie możliwości komputera?",
+        "odp_1": "ROM",
+        "odp_2": "SCSI",
+        "odp_3": "RAM",
+        "odp_4": "Cache",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza polecenie &nbsp; w języku HTML?",
+        "odp_1": "Twardą spację",
+        "odp_2": "Spację",
+        "odp_3": "Znak tabulacji",
+        "odp_4": "Nową linię",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Przy uruchomieniu wiersza poleceń w systemie Windows domyślnie otwiera się on jako:",
+        "odp_1": "User",
+        "odp_2": "root",
+        "odp_3": "gosc",
+        "odp_4": "administrator",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Który z poniższych adresów IP należy do zakresu zarezerwowanego dla prywatnych sieci?",
+        "odp_1": "192.167.1.1",
+        "odp_2": "10.45.78.3",
+        "odp_3": "172.32.0.5",
+        "odp_4": "8.8.8.8",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Które z poniższych stwierdzeń najlepiej opisuje protokół TCP?",
+        "odp_1": "TCP służy wyłącznie do przesyłania plików graficznych.",
+        "odp_2": "TCP zapewnia tylko podstawową transmisję danych bez kontroli błędów.",
+        "odp_3": "TCP to połączeniowy protokół, który zapewnia niezawodne przesyłanie danych i kontrolę błędów.",
+        "odp_4": ". Jest to protokół bezpołączeniowy, używany do szybkiego przesyłania danych bez potwierdzenia.",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Które z poniższych stwierdzeń najlepiej opisuje protokół UDP?",
+        "odp_1": "UDP to bezpołączeniowy protokół, który realizuje podstawowe funkcje wykrywania błędów transmisji.",
+        "odp_2": "UDP nie wykrywa żadnych błędów i służy tylko do przesyłania plików.",
+        "odp_3": "UDP to połączeniowy protokół gwarantujący niezawodność transmisji.",
+        "odp_4": "UDP zawsze potwierdza odbiór każdego pakietu danych.",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakiej długości zostanie wygenerowana suma kontrolna po wykonaniu polecenia md5sum example.iso:",
+        "odp_1": "2048 bitowa",
+        "odp_2": "8 bitowa",
+        "odp_3": "128 bitowa",
+        "odp_4": "1024 bitowa",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Dla jakich regionów przydzielaniem adresów IP zajmuje się organizacja RIPE:",
+        "odp_1": "Europa, Bliski Wschód i część Azji Środkowej",
+        "odp_2": "Azja i Australia",
+        "odp_3": "Afryka",
+        "odp_4": "Ameryka Płn",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Która warstwa w modeli OSI jest najbardziej narażona/nie narażona na atak DDOS :",
+        "odp_1": "prezentacji",
+        "odp_2": "transportowej",
+        "odp_3": "aplikacji",
+        "odp_4": "sieci",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "W którym katalogu znajdują się pliki odpowiedzialne za proces uruchamiania systemu WINDOWS:",
+        "odp_1": "WINDOWS",
+        "odp_2": "System32",
+        "odp_3": "SystemApps",
+        "odp_4": "ProgramData",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Na którym porcie działa standardowo TELNET",
+        "odp_1": "25",
+        "odp_2": "443",
+        "odp_3": "23",
+        "odp_4": "123",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co w ataku DDOS określane jest mianem zombie:",
+        "odp_1": "komputery botmastera służące do przeprowadzenia ataku.",
+        "odp_2": "zestaw programów typu malware umożliwiających przeprowadzenie ataku DDOS.",
+        "odp_3": "grupa hostów będących włączonych do botnetu symulująca nadmiarowy ruch sieciowy służący do przeciążenia sieci.",
+        "odp_4": "grupa zainfekowanych komputerów będących grupą ofiar docelowych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót UID?",
+        "odp_1": "numeryczny identyfikator użytkownika w systemie operacyjnym Unix (User ID)",
+        "odp_2": "uproszczony interfejs dostępu",
+        "odp_3": "unikalny identyfikator domeny",
+        "odp_4": "uniwersalna identyfikacja urządzenia",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaki procesor najczęściej występuje w telefonach z systemem Android:",
+        "odp_1": "64bit",
+        "odp_2": "32bit",
+        "odp_3": "ARM",
+        "odp_4": "x86",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakim poleceniem należy utworzyć kopię zapasową bazy danych w MySQL:",
+        "odp_1": "backup database",
+        "odp_2": "export database",
+        "odp_3": "save database",
+        "odp_4": "mysqldump",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "W którym trybie karta sieciowa będzie przechwytywać wszystkie ramki przesyłane w bszarze jej zasięgu?",
+        "odp_1": "tryb pasywny",
+        "odp_2": "tryb master",
+        "odp_3": "tryb aktywny",
+        "odp_4": "tryb nasłuchiwania",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakiego zapytania Google Dorks należy użyć do wyszukania informacji o JanieKowalskim w domenie example.com",
+        "odp_1": "filetype:log Jan Kowalski",
+        "odp_2": "site:example.com 'Jan Kowalski'",
+        "odp_3": "site:example.com inurl:JanKowalski",
+        "odp_4": "site:example.com Jan -Kowalski",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie rozszerzenie będzie miał plik powerpoint z włączonymi makrami:",
+        "odp_1": ".pptx",
+        "odp_2": ".ppnm",
+        "odp_3": ".pptm",
+        "odp_4": ".ppt",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaki adres IP zapisany jest na 32 bitach :",
+        "odp_1": "IPv6",
+        "odp_2": "IPv8",
+        "odp_3": "IPv2",
+        "odp_4": "IPv4",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaką maskę będzie miała sieć w której dostępne są 254 adresy hostów:",
+        "odp_1": "255.255.254.0",
+        "odp_2": "255.255.0.0",
+        "odp_3": "255.255.1.0",
+        "odp_4": "255.255.255.0",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co to jest exploit:",
+        "odp_1": "narzędzie do szyfrowania danych w systemie operacyjnym",
+        "odp_2": "legalne oprogramowanie zabezpieczające system przed atakami",
+        "odp_3": "usługa sieciowa służąca do autoryzacji użytkowników",
+        "odp_4": "program mający na celu wykorzystanie istniejących podatności w oprogramowaniu",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakim poleceniem w systemach Linux można sprawdzić właściciela domeny:",
+        "odp_1": "whois",
+        "odp_2": "which",
+        "odp_3": "whoami",
+        "odp_4": "id",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót CSAM?",
+        "odp_1": "Centrum Szybkiego Analizowania Malware",
+        "odp_2": "Centralny System Automatycznego Monitoringu",
+        "odp_3": "Child Sexual Abuse Material",
+        "odp_4": "Cyber Security and Management",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "W jaki sposób można odnaleźć informacje zawarte na adresie domeny która została usunięta?",
+        "odp_1": "Shodan",
+        "odp_2": "Wayback Machine",
+        "odp_3": "site:'adres_DNS' find",
+        "odp_4": "ZoomEye",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaka jest nazwa która zastąpiła popularny protokół do komunikacji tekstowej Jabber:",
+        "odp_1": "IMAP",
+        "odp_2": "SMTP",
+        "odp_3": "XMPP",
+        "odp_4": "TCP",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Który z wymienionych programów służy do przeprowadzania analizy statycznej pakietów sieciowych:",
+        "odp_1": "ettercap",
+        "odp_2": "nmap",
+        "odp_3": "tcpdump",
+        "odp_4": "wireshark",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jak nazywa się program do debugowania urządzeń z systemem Android",
+        "odp_1": "Device Manager Pro",
+        "odp_2": "Android Debug Bridge",
+        "odp_3": "DebugApp Android",
+        "odp_4": "Android Studio",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Na czym polega Skimming:",
+        "odp_1": "na skopiowaniu zawartości paska magnetycznego",
+        "odp_2": "to technika polegająca na podsłuchiwaniu komunikacji między urządzeniami Bluetooth.",
+        "odp_3": "to rodzaj ataku phishingowego, w którym przestępcy podszywają się pod legalne witryny internetowe, aby wyłudzić dane osobowe.",
+        "odp_4": "polega na infiltracji w sieci Wi-Fi w celu uzyskania poufnych danych użytkowników.",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Zorganizowane jednostki realizujące wyrafinowane ataki w cyberprzestrzeni to:",
+        "odp_1": "CNG",
+        "odp_2": "HackersRUs",
+        "odp_3": "IBG",
+        "odp_4": "APT > Advanced Persisten Threat",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakim programem możemy stworzyć obraz iso nośnika optycznego:",
+        "odp_1": "dump",
+        "odp_2": "fdisk",
+        "odp_3": "wodim",
+        "odp_4": "dd",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Która warstwa jest 'najbliżej' użytkownika:",
+        "odp_1": "fizyczna",
+        "odp_2": "transportowa",
+        "odp_3": "aplikacji",
+        "odp_4": "internetowa",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co nie należy do OSINT",
+        "odp_1": "Przeglądanie profili na portalach społecznościowych.",
+        "odp_2": "Szukanie informacji w gazetach lokalnych.",
+        "odp_3": "Badanie prywatnych baz danych",
+        "odp_4": "Badanie rządowych baz danych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakim poleceniem w systemach Linux można wyświetlić zawartość z podkatalogami:",
+        "odp_1": "cd",
+        "odp_2": "ls -la",
+        "odp_3": "df",
+        "odp_4": "tree",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Kiedy rozpoczyna się UNIX TIME dla systemu plików ext4:",
+        "odp_1": "1 stycznia 1995 roku",
+        "odp_2": "1 stycznia 1970 roku",
+        "odp_3": "1 stycznia 1985 roku",
+        "odp_4": "1 stycznia 2000 roku",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakiej komendy w systemie Linux użyjesz, aby stworzyć kopię pliku binarnego?",
+        "odp_1": "rm",
+        "odp_2": "rv",
+        "odp_3": "cp",
+        "odp_4": "cd",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Czym jest atak ARP cache (ARP cache attack)?",
+        "odp_1": "Technika wykorzystywana przez atakujących do przechwycenia ruchu sieciowego.",
+        "odp_2": "Forma ataku polegająca na wprowadzaniu fałszywych danych do tablicy ARP w celu przekierowania ruchu sieciowego.",
+        "odp_3": "Atak na bezpieczeństwo sieci wykorzystujący nieprawidłowe wpisy w tablicy ARP.",
+        "odp_4": "Rodzaj ataku typu 'Man in the Middle' wykorzystujący manipulację tablicą ARP.",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak się nazywa zakrywanie pliku tekstowego za zdjęciem:",
+        "odp_1": "steganogramia",
+        "odp_2": "maskowanie",
+        "odp_3": "steganografia",
+        "odp_4": "steganografia hermetyczna",
+        "correct_odp": "odp_3"
+        },
+        {
+        "pytanie": "Które z poniższych stwierdzeń najlepiej opisuje znaczenie liczby w nazwie procesora Intel, np. Intel Core i5-13600?",
+        "odp_1": "Wskazuje liczbę rdzeni procesora.",
+        "odp_2": "Reprezentuje szybkość zegara w GHz.",
+        "odp_3": "Informuje o rodzaju architektury procesora.",
+        "odp_4": "Oznacza generację procesora.",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Czym jest Merkle Tree w kontekście technologii blockchain?",
+        "odp_1": "Rodzajem tokena w sieci Ethereum",
+        "odp_2": "Narzędziem do zarządzania portfelami kryptowalut",
+        "odp_3": "Algorytmem szyfrowania danych w blockchainie",
+        "odp_4": "Strukturą danych służącą do weryfikacji integralności i autentyczności danych",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakiego koloru lasera używa się do nagrywania płyt Blu-ray Disc Recordable (BD-R)?",
+        "odp_1": "Czerwony",
+        "odp_2": "Niebieski",
+        "odp_3": "Podczerwony",
+        "odp_4": "Zielony",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza skrót ICCID?",
+        "odp_1": "Integrated Chip Card Identifier",
+        "odp_2": "International Cellular Identification",
+        "odp_3": "International Circuit Card ID",
+        "odp_4": "Integrated Communication Card",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Które z poniższych narzędzi jest wykorzystywane do działań OSINT? Kali Metasploit Wireshark",
+        "odp_1": "SpiderFoot",
+        "odp_2": "Kali NetHunter",
+        "odp_3": "Wireshark",
+        "odp_4": "Metasploit",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co umożliwia VeraCrypt?",
+        "odp_1": "Zabezpieczanie sieci Wi-Fi",
+        "odp_2": "Tworzenie kopii zapasowych",
+        "odp_3": "Szyfrowanie dysków i partycji",
+        "odp_4": "Analizę logów",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Od czego liczymy czas uniwersalny (UTC)?",
+        "odp_1": "Prime Meridian Time",
+        "odp_2": "Greenwich Mean Time",
+        "odp_3": "Central European Time",
+        "odp_4": "Eastern Standard Time",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Która aplikacja w Kali Linux zbiera informacje o emailach?",
+        "odp_1": "Recon",
+        "odp_2": "Spider",
+        "odp_3": "Sniper",
+        "odp_4": "Harvester",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznaczają pierwsze trzy cyfry IMSI?",
+        "odp_1": "LAC",
+        "odp_2": "MCC",
+        "odp_3": "TAC",
+        "odp_4": "MNC",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co to jest sandbox?",
+        "odp_1": "Narzędzie do kompresji danych",
+        "odp_2": "Izolowane środowisko testowe",
+        "odp_3": "Aplikacja do debugowania",
+        "odp_4": "Program antywirusowy",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak nazywane są połączenia WAN umożliwiające łączenie wielu sieci?",
+        "odp_1": "DNS (Domain Name System)",
+        "odp_2": "BGP (Border Gateway Protocol)",
+        "odp_3": "VLAN (Virtual Local Area Network)",
+        "odp_4": "MPLS (Multi-Protocol Label Switching)",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza termin stenografia?",
+        "odp_1": "Szyfrowanie wiadomości tekstowych",
+        "odp_2": "Ukrywanie danych w obrazie lub pliku",
+        "odp_3": "Analizowanie danych w czasie rzeczywistym",
+        "odp_4": "Kopiowanie plików na nośnik",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co zwróci wpisanie imie[2] w Pythonie, jeśli zmienna nie istnieje?",
+        "odp_1": "Empty string",
+        "odp_2": "0",
+        "odp_3": "Null",
+        "odp_4": "Error",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaką wartość liczbową w systemie Linux mają uprawnienia: odczyt i zapis dla właściciela, zapis i wykonanie dla grupy, tylko odczyt dla innych?",
+        "odp_1": "654",
+        "odp_2": "777",
+        "odp_3": "600",
+        "odp_4": "644",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co to jest analiza dynamiczna malware?",
+        "odp_1": "Skopiowanie pliku złośliwego oprogramowania na inny system",
+        "odp_2": "Usunięcie pliku złośliwego oprogramowania z systemu",
+        "odp_3": "Obserwacja działania malware w izolowanym środowisku",
+        "odp_4": "Analiza struktury kodu źródłowego złośliwego oprogramowania",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót DNM w kontekście działalności w dark webie?",
+        "odp_1": "Darknet Marketplace",
+        "odp_2": "Digital Network Module",
+        "odp_3": "Data Network Management",
+        "odp_4": "Distributed Node Model",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót SLI?",
+        "odp_1": "Systematic Link Integration",
+        "odp_2": "Simple Link Interface",
+        "odp_3": "Synchronised Local Integration",
+        "odp_4": "Scalable Link Interface",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Czym jest LUKS?",
+        "odp_1": "Algorytmem kompresji danych",
+        "odp_2": "Programem do zarządzania plikami",
+        "odp_3": "Edytorem tekstu",
+        "odp_4": "Narzędziem do szyfrowania dysków w Linuxie",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jak nazywają się kontrakty zawierane za pośrednictwem Ethereum?",
+        "odp_1": "Fast Contract",
+        "odp_2": "Crypto Contract",
+        "odp_3": "Smart Contract",
+        "odp_4": "Wallet Contract",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jak wygląda podział adresu IPv6 w bitach?",
+        "odp_1": "6 bitów na sieć i 32 bity na hosta",
+        "odp_2": "64 bity na sieć i 64 bity na hosta",
+        "odp_3": "128 bitów na sieć",
+        "odp_4": "16 bitów na sieć i 112 bitów na hosta",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Który z wymienionych programów nie służy do szyfrowania?",
+        "odp_1": "AVS",
+        "odp_2": "VeraCrypt",
+        "odp_3": "BitLocker",
+        "odp_4": "FileVault",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót I2P w kontekście sieci anonimowych?",
+        "odp_1": "International Internet Protocol",
+        "odp_2": "Independent Information Path",
+        "odp_3": "Invisible Internet Project",
+        "odp_4": "Integrated Internet Platform",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza pojęcie UID?",
+        "odp_1": "User Instance Data",
+        "odp_2": "User Identification",
+        "odp_3": "Unique Identifier",
+        "odp_4": "Universal Identifier",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaka jest pełna nazwa skrótu DNS?",
+        "odp_1": "Data Name Service",
+        "odp_2": "Digital Network Security",
+        "odp_3": "Domain Name System",
+        "odp_4": "Domain Network System",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakim portem można podłączyć dysk do laptopa?",
+        "odp_1": "HDMI",
+        "odp_2": "SATA",
+        "odp_3": "VGA",
+        "odp_4": "RJ-45",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Która liczba w nazwie procesora Intel, np. Intel Core i5-13600, wskazuje generację procesora?",
+        "odp_1": "Liczba \"5\" w i5",
+        "odp_2": "Liczba \"1\" w i5",
+        "odp_3": "Liczba \"600\" w 13600",
+        "odp_4": "Liczba \"13\" w 13600",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakie narzędzie służy do tworzenia wirtualnych systemów plików szyfrujących w niestandardowych systemach operacyjnych?",
+        "odp_1": "FileVault",
+        "odp_2": "AVS",
+        "odp_3": "BitLocker",
+        "odp_4": "VeraCrypt",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakie narzędzie w macOS służy do szyfrowania pamięci startowej?",
+        "odp_1": "DiskCryptor",
+        "odp_2": "VeraCrypt",
+        "odp_3": "FileVault",
+        "odp_4": "BitLocker",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót ISI w kontekście technologii sieciowych?",
+        "odp_1": "Intelligent System Integration, odpowiadający za automatyzację procesów.",
+        "odp_2": "Internet Service Indicator, monitorujący jakość połączenia sieciowego.",
+        "odp_3": "Inter Server Interface, definiujący sposób komunikacji między serwerami.",
+        "odp_4": "Internet Service Infrastructure, zarządzająca połączeniami globalnymi.",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Do czego służy polecenie useradd w Linuxie?",
+        "odp_1": "Dodaje nowego użytkownika do systemu",
+        "odp_2": "Zmienia hasło użytkownika",
+        "odp_3": "Modyfikuje uprawnienia użytkownika",
+        "odp_4": "Usuwa użytkownika z systemu",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Który poziom RAID nie zapewnia odporności na uszkodzenia fizyczne dysku?",
+        "odp_1": "RAID 5",
+        "odp_2": "RAID 0",
+        "odp_3": "RAID 6",
+        "odp_4": "RAID 1",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Czym jest geotagging w SOCMINT?",
+        "odp_1": "Szyfrowaniem danych geolokalizacyjnych",
+        "odp_2": "Oznaczaniem lokalizacji w zdjęciach lub postach",
+        "odp_3": "Analizą trendów lokalnych",
+        "odp_4": "Usuwaniem danych geolokalizacyjnych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak nazywa się narzędzie w Excelu do zaawansowanych czynności programistycznych?",
+        "odp_1": "VBA",
+        "odp_2": "Macro Tool",
+        "odp_3": "Solver",
+        "odp_4": "Pivot Table",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Ile bitów ma terabajt, wyrażając wartość w potęgach?",
+        "odp_1": "10 do potęgi 12",
+        "odp_2": "2 do potęgi 10",
+        "odp_3": "2 do potęgi 32",
+        "odp_4": "10 do potęgi 9",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Do czego służy narzędzie Cryptsetup?",
+        "odp_1": "Tworzenia kopii zapasowych",
+        "odp_2": "Usuwania danych",
+        "odp_3": "Zabezpieczania plików hasłem",
+        "odp_4": "Konfigurowania zaszyfrowanych dysków",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót EUID w systemie Linux i do czego jest używany?",
+        "odp_1": "External Unix Identifier – przypisuje zewnętrzny identyfikator użytkownika w systemie",
+        "odp_2": "Exclusive User Identity – oznacza wyłączną tożsamość użytkownika w systemie",
+        "odp_3": "Enhanced User Identifier – identyfikuje rozszerzone uprawnienia użytkownika",
+        "odp_4": "Effective User ID – identyfikuje uprawnienia efektywnego użytkownika dla procesów",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót LTS w kontekście systemów operacyjnych Linux?",
+        "odp_1": "Long Time Security",
+        "odp_2": "Limited Term Support",
+        "odp_3": "Last Technical Solution",
+        "odp_4": "Long Term Support",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co to jest \"Hard Fork\" w technologii blockchain?",
+        "odp_1": "Proces zmiany zasad sieci blockchain, który skutkuje jej podziałem na dwie niezależne wersje",
+        "odp_2": "Aktualizacja blockchaina w celu zwiększenia przepustowości transakcji",
+        "odp_3": "Tymczasowe zawieszenie funkcjonowania blockchaina w celu jego aktualizacji",
+        "odp_4": "Proces zmniejszenia wielkości bloków w celu optymalizacji sieci",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót ICMP w kontekście protokołów sieciowych?",
+        "odp_1": "Internal Communication Management Protocol",
+        "odp_2": "Integrated Circuit Messaging Protocol",
+        "odp_3": "Internet Connection Monitoring Protocol",
+        "odp_4": "Internet Control Message Protocol",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jak nazywa się operacja logiczna, która jest iloczynem logicznym z negacją?",
+        "odp_1": "XOR",
+        "odp_2": "NAND",
+        "odp_3": "AND",
+        "odp_4": "NOR",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Do czego służy sieć I2P?",
+        "odp_1": "Do anonimowej komunikacji i przesyłania danych przez szyfrowane połączenia",
+        "odp_2": "Do monitorowania ruchu w sieci lokalnej",
+        "odp_3": "Do szybkiego wyszukiwania stron internetowych w zwykłym internecie",
+        "odp_4": "Do zarządzania serwerami DNS w standardowych sieciach",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaki jest przekaźnik pomiędzy pamięcią fizyczną a logiczną?",
+        "odp_1": "CPU",
+        "odp_2": "SSD",
+        "odp_3": "Cache",
+        "odp_4": "RAM",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Gdzie można znaleźć kopię strony przechowywaną bezpośrednio przez Google?",
+        "odp_1": "Historię wyszukiwań",
+        "odp_2": "Rejestr błędów",
+        "odp_3": "Archive",
+        "odp_4": "Cache",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakiego rodzaju pamięć stosuje się w dyskach SSD?",
+        "odp_1": "SRAM",
+        "odp_2": "Flash",
+        "odp_3": "Cache",
+        "odp_4": "DRAM",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co zarządza pamięcią RAM w systemie operacyjnym macOS?",
+        "odp_1": "Spotlight",
+        "odp_2": "Dock",
+        "odp_3": "Kernel Task",
+        "odp_4": "Finder",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co zrobi polecenie \"cd ..\" w systemie operacyjnym Linux?",
+        "odp_1": "Wyświetli pełną ścieżkę do bieżącego katalogu.",
+        "odp_2": "Przeniesie użytkownika do katalogu głównego.",
+        "odp_3": "Nie zmieni aktualnego katalogu.",
+        "odp_4": "Przeniesie użytkownika do katalogu nadrzędnego.",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót RaaS w kontekście cyberbezpieczeństwa?",
+        "odp_1": "Remote Access and Security",
+        "odp_2": "Ransomware as a Service",
+        "odp_3": "Risk Analysis Software",
+        "odp_4": "Reesource Allocation System",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza termin RAW w kontekście fotografii cyfrowej?",
+        "odp_1": "Skompresowany plik graficzny",
+        "odp_2": "Zdjęcie w formacie JPEG",
+        "odp_3": "Zmodyfikowany format obrazu",
+        "odp_4": "Niezmienione zdjęcie",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakie dyski stosuje się w serwerowniach?",
+        "odp_1": "SSD Enterprise",
+        "odp_2": "SD Card",
+        "odp_3": "SB Flash",
+        "odp_4": "SDD Standard",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót TLD w pełnym rozwinięciu?",
+        "odp_1": "Transfer Level Data",
+        "odp_2": "Top-Level Domain",
+        "odp_3": "Total Link Directory",
+        "odp_4": "Trusted Login Device",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Które narzędzie umożliwia natywną pracę zdalną w systemie Windows?",
+        "odp_1": "Remote Desktop",
+        "odp_2": "TeamViewer",
+        "odp_3": "SSH",
+        "odp_4": "Telnet",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaki algorytm szyfrowania (hashujący) jest używany w Ethereum?",
+        "odp_1": "Keccak (SHA-3)",
+        "odp_2": "Blowfish",
+        "odp_3": "MD5",
+        "odp_4": "SHA-256",
+        "correct_odp": "odp_1"
+        },
+        {
+        "pytanie": "Co to jest harvester w kontekście cyberbezpieczeństwa?",
+        "odp_1": "Przechwytuje pliki tymczasowe",
+        "odp_2": "Zbiera dane kontaktowe, np. adresy e-mail",
+        "odp_3": "Skanuje porty sieciowe",
+        "odp_4": "Szyfruje transmisję danych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "RAID 10 jest często stosowany w systemach, które wymagają jednocześnie wysokiej wydajności i bezpieczeństwa danych. Jaką technikę wykorzystuje RAID 10?",
+        "odp_1": "Lustrzane kopiowanie danych w celu redundancji bez poprawy wydajności",
+        "odp_2": "Redundancję za pomocą parzystości w celu ochrony danych",
+        "odp_3": "Połączenie stripingu (podziału danych) i mirroringu (lustrzanej kopii) dla redundancji i wydajności",
+        "odp_4": "Podział danych na bloki w celu zwiększenia szybkości zapisu i odczytu bez ochrony danych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest spyware?",
+        "odp_1": "Program antywirusowy",
+        "odp_2": "System wykrywania intruzów",
+        "odp_3": "Program szpiegujący użytkownika i przesyłający dane atakującemu",
+        "odp_4": "Szyfrowanie danych w czasie rzeczywistym",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Która warstwa modelu OSI jest najbliższa użytkownikowi?",
+        "odp_1": "Transportowa",
+        "odp_2": "Sieciowa",
+        "odp_3": "Aplikacji",
+        "odp_4": "Fizyczna",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaką komendą sprawdzisz adres IP w systemie Windows?",
+        "odp_1": "ipconfig",
+        "odp_2": "netconfig",
+        "odp_3": "nslookup",
+        "odp_4": "ifconfig",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Adresowanie w postaci czterech oktetowych liczb dziesiętnych, 32-bitowe, to:",
+        "odp_1": "IPv6",
+        "odp_2": "IPX",
+        "odp_3": "IPv4",
+        "odp_4": "ICMP",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jak działa trojan?",
+        "odp_1": "Usuwa działanie antywirusów",
+        "odp_2": "Ukrywa się w aplikacji i daje dostęp atakującemu",
+        "odp_3": "Koduje pliki i żąda okupu",
+        "odp_4": "Wykonuje ataki sieciowe na serwery",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką funkcję pełni SID w sieciach Windows?",
+        "odp_1": "Tworzy kopie zapasowe plików systemowych",
+        "odp_2": "Monitoruje ruch sieciowy",
+        "odp_3": "Identyfikuje pliki tymczasowe użytkownika",
+        "odp_4": "Identyfikuje konta użytkowników, grup i obiektów komputerowych",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaką funkcję pełni plik fstab w Linuxie?",
+        "odp_1": "Przechowuje logi systemowe",
+        "odp_2": "Zawiera dane użytkowników",
+        "odp_3": "Zawiera konfigurację systemów plików montowanych podczas startu systemu",
+        "odp_4": "Tworzy nowe partycje",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaka komenda w systemie Linux wyświetla aktualny katalog?",
+        "odp_1": "ls",
+        "odp_2": "pwd",
+        "odp_3": "mkdir",
+        "odp_4": "cd",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza skrót TOR?",
+        "odp_1": "Trusted Operating Router",
+        "odp_2": "Transparent Onion Routing",
+        "odp_3": "The Onion Router",
+        "odp_4": "Trusted Online Resource",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jak działa atak typu DDoS?",
+        "odp_1": "Podszywa się pod zaufane urządzenie",
+        "odp_2": "Wprowadza złośliwe oprogramowanie do serwera",
+        "odp_3": "Szyfruje dane użytkownika",
+        "odp_4": "Zalewa serwer ogromną ilością żądań, co powoduje jego przeciążenie",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Czym jest Query Language (język zapytań) w kontekście baz danych?",
+        "odp_1": "Mechanizm umożliwiający definiowanie struktury danych w bazach",
+        "odp_2": "Narzędzie do manipulowania danymi w tabelach i rekordach",
+        "odp_3": "Wszystkie odpowiedzi są prawidłowe",
+        "odp_4": "Język służący do pobierania danych z baz danych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Ile pamięci RAM może obsłużyć system 64-bitowy?",
+        "odp_1": "1 PB",
+        "odp_2": "4 TB",
+        "odp_3": "16 exabajtów",
+        "odp_4": "64 exabajty",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Który z poniższych jest językiem programowania?",
+        "odp_1": "XML",
+        "odp_2": "CSS",
+        "odp_3": "HTML",
+        "odp_4": "Python",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza końcówka złącza BNC?",
+        "odp_1": "Złącze dla przewodów skrętki",
+        "odp_2": "Złącze dla kabli koncentrycznych",
+        "odp_3": "Złącze dla kabli światłowodowych",
+        "odp_4": "Złącze dla przewodów HDMI",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co to jest hash?",
+        "odp_1": "Funkcja tworząca unikalny ciąg znaków na podstawie danych wejściowych",
+        "odp_2": "Narzędzie do kompresji danych",
+        "odp_3": "System tworzenia backupów",
+        "odp_4": "Algorytm szyfrujący dane binarne",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót SSL w kontekście bezpieczeństwa sieci?",
+        "odp_1": "Safe Server Login",
+        "odp_2": "Security Software Layer",
+        "odp_3": "Secure Sockets Layer",
+        "odp_4": "Secured System Link",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Do czego służy Web Scraping?",
+        "odp_1": "Do szyfrowania danych w chmurze",
+        "odp_2": "Do monitorowania aktywności użytkowników w Internecie",
+        "odp_3": "Do automatycznego pozyskiwania danych i treści z witryn internetowych za pomocą botów",
+        "odp_4": "Do przechwytywania ruchu w sieciach darknetu",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaką funkcję pełnią węzły wyjściowe (exit nodes) w sieci TOR?",
+        "odp_1": "Punkty przechowywania zaszyfrowanych danych użytkownika",
+        "odp_2": "Węzły odpowiedzialne za szyfrowanie danych wejściowych",
+        "odp_3": "Serwery przechowujące logi użytkownika",
+        "odp_4": "Ostatni punkt, z którego dane są przekazywane do Internetu publicznego, zdejmując ostatnią warstwę szyfrowania",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Adresowanie IPv6 zawiera przestrzeń adresową wynoszącą:",
+        "odp_1": "16 kB",
+        "odp_2": "124 kb",
+        "odp_3": "32 kb",
+        "odp_4": "64 kb",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakie polecenie w systemie Windows wyświetla aktualnie podłączone urządzenia sieciowe?",
+        "odp_1": "netstat -an",
+        "odp_2": "ipconfig /all",
+        "odp_3": "arp -a",
+        "odp_4": "tracert",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką funkcję pełni katalog /etc w systemie Linux?",
+        "odp_1": "Jest folderem tymczasowym",
+        "odp_2": "Przechowuje pliki użytkowników",
+        "odp_3": "Służy do przechowywania logów systemowych",
+        "odp_4": "Przechowuje pliki konfiguracyjne systemu",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Podany jest adres IP 192.168.1.0/24. Ile hostów można jeszcze podłączyć w tej podsieci?",
+        "odp_1": "254",
+        "odp_2": "256",
+        "odp_3": "128",
+        "odp_4": "512",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót SID w kontekście systemów Windows?",
+        "odp_1": "Shared ID",
+        "odp_2": "Secure Information Data",
+        "odp_3": "Security Identifier",
+        "odp_4": "System Identifier",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "W jaki sposób TOR zapewnia anonimowość użytkownika?",
+        "odp_1": "Używając dynamicznych adresów IP przypisanych przez NAT",
+        "odp_2": "Maskując ruch internetowy za pomocą trasowania przez wiele węzłów i szyfrowania wielowarstwowego",
+        "odp_3": "Przechowując wszystkie dane użytkownika w zaszyfrowanej chmurze",
+        "odp_4": "Poprzez wykorzystanie technologii blockchain do szyfrowania danych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaki jest maksymalny rozmiar pakietu IPv4?",
+        "odp_1": "32 768 bajtów",
+        "odp_2": "1500 bajtów",
+        "odp_3": "1024 bajty",
+        "odp_4": "65 535 bajtów",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Który region obsługuje baza danych RIPE?",
+        "odp_1": "Afryka",
+        "odp_2": "Azja i Pacyfik",
+        "odp_3": "Ameryka Północna",
+        "odp_4": "Europa, Bliski Wschód i Azja Centralna",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza fraza filetype: w wyszukiwarce Google?",
+        "odp_1": "Ogranicza wyniki wyszukiwania do plików o wskazanym typie (np. PDF, DOC)",
+        "odp_2": "Szuka określonych fraz w tytule dokumentu",
+        "odp_3": "Wyszukuje pliki zawierające określoną frazę",
+        "odp_4": "Wyszukuje linki do zasobów multimedialnych",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Do czego służy katalog Prefetch w systemie Windows?",
+        "odp_1": "Zawiera pliki konfiguracji systemowych usług",
+        "odp_2": "Przechowuje dane dotyczące uruchamiania aplikacji w celu optymalizacji ich działania",
+        "odp_3": "Służy do przechowywania plików tymczasowych przeglądarek internetowych",
+        "odp_4": "Przechowuje kopie zapasowe plików użytkownika",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie adresy tłumaczy NAT?",
+        "odp_1": "Stare na nowe",
+        "odp_2": "IPv4 na IPv6",
+        "odp_3": "Prywatne na publiczne",
+        "odp_4": "Publiczne na prywatne",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Czego dotyczy artykuł 29 Konwencji Budapesztańskiej?",
+        "odp_1": "Praw ofiar przestępstw",
+        "odp_2": "Wymiany informacji między krajami",
+        "odp_3": "Zasady przeszukiwania danych na serwerach",
+        "odp_4": "Przechwytywania danych w czasie rzeczywistym",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Która wyszukiwarka w sieci TOR kładzie największy nacisk na prywatność użytkownika?",
+        "odp_1": "Startpage",
+        "odp_2": "Baidu",
+        "odp_3": "Brave Search",
+        "odp_4": "DuckDuckGo",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co to jest brute-force attack?",
+        "odp_1": "Metoda łamania haseł poprzez systematyczne testowanie wszystkich możliwych kombinacji",
+        "odp_2": "Atak, w którym wykorzystuje się zaawansowane algorytmy do analizy luk w szyfrowaniu danych",
+        "odp_3": "Technika wykorzystywania zaufanych urządzeń do przejęcia danych uwierzytelniających",
+        "odp_4": "Proces odzyskiwania zaszyfrowanych plików za pomocą kluczy kryptograficznych",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakie jest główne zastosowanie warm site?",
+        "odp_1": "Tworzenie kopii zapasowych",
+        "odp_2": "Monitorowanie sieci",
+        "odp_3": "Odzyskiwanie infrastruktury IT w przypadku awarii głównego centrum danych",
+        "odp_4": "Przechowywanie danych w czasie rzeczywistym",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Który z poniższych mechanizmów zapewnia anonimowość w sieci?",
+        "odp_1": "Sieć Tor",
+        "odp_2": "Serwer VPN",
+        "odp_3": "Serwer proxy",
+        "odp_4": "Wszystkie powyższe",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co to jest VLAN?",
+        "odp_1": "Rodzaj sprzętu sieciowego",
+        "odp_2": "Zasób sieciowy",
+        "odp_3": "Wirtualna sieć lokalna",
+        "odp_4": "Protokół szyfrowania danych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jak nazywa się topologia sieci, w której wszystkie urządzenia są podłączone do centralnego węzła?",
+        "odp_1": "Pierścień",
+        "odp_2": "Siatka",
+        "odp_3": "Gwiazda",
+        "odp_4": "Magistrala",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza polecenie nslookup w systemie Windows?",
+        "odp_1": "Służy do sprawdzania informacji DNS",
+        "odp_2": "Analizuje trasę pakietów w sieci",
+        "odp_3": "Sprawdza dostępność zdalnego hosta",
+        "odp_4": "Wyświetla adresy IP połączeń sieciowych",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaka warstwa modelu ISO/OSI bierze udział przy fizycznym podłączeniu kabla sieciowego?",
+        "odp_1": "sieci",
+        "odp_2": "łącza danych",
+        "odp_3": "fizyczna",
+        "odp_4": "transportowa",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza znacznik <head> w HTML?",
+        "odp_1": "Zawiera metadane strony, np. tytuł i odwołania do stylów",
+        "odp_2": "Wyświetla tytuł strony na ekranie",
+        "odp_3": "Wyświetla treść strony w przeglądarce",
+        "odp_4": "Zawiera dane o strukturze plików na serwerze",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką funkcję pełni katalog /var w Linuxie?",
+        "odp_1": "Tworzy dynamiczne pliki konfiguracyjne",
+        "odp_2": "Przechowuje pliki logów i tymczasowe",
+        "odp_3": "Przechowuje dane użytkowników",
+        "odp_4": "Zawiera kopie zapasowe systemu",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co wyświetli polecenie ps w systemie operacyjnym?",
+        "odp_1": "informacje o użytkowniku",
+        "odp_2": "listę procesów",
+        "odp_3": "listę plików w katalogu",
+        "odp_4": "nazwę bieżącego katalogu",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co wykonuje pętla w programowaniu?",
+        "odp_1": "Tworzy kopie zapasowe kodu",
+        "odp_2": "Przechowuje dane w pamięci tymczasowej",
+        "odp_3": "Wyświetla wszystkie pliki w katalogu",
+        "odp_4": "Powtarza blok instrukcji przez określoną liczbę razy lub do spełnienia warunku",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaką funkcję pełni folder /Applications w macOS?",
+        "odp_1": "Zawiera pliki użytkownika",
+        "odp_2": "Przechowuje zainstalowane aplikacje",
+        "odp_3": "Zawiera pliki systemowe",
+        "odp_4": "Służy do przechowywania kopii zapasowych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza skrót NAT?",
+        "odp_1": "Network Allocation Table",
+        "odp_2": "Network Address Translation",
+        "odp_3": "None of the above",
+        "odp_4": "Network Authorization Tunnel",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza pojęcie \"fee\" w kontekście kryptowalut?",
+        "odp_1": "Prowizja za przeprowadzenie transakcji w blockchainie",
+        "odp_2": "Koszt przeliczania kryptowaluty na walutę FIAT",
+        "odp_3": "Stały koszt zakupu kryptowalut",
+        "odp_4": "Opłata za korzystanie z portfela",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaki jest publiczny adres DNS od Google?",
+        "odp_1": "8.8.8.8",
+        "odp_2": "1.1.1.1",
+        "odp_3": "10.0.0.1",
+        "odp_4": "192.168.1.1",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Który system plików jest domyślny dla systemów Windows?",
+        "odp_1": "FAT32",
+        "odp_2": "NTFS",
+        "odp_3": "EXT4",
+        "odp_4": "HFS+",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Który system plików jest używany na nośnikach USB w celu zapewnienia kompatybilności z wieloma systemami operacyjnymi?",
+        "odp_1": "NTFS",
+        "odp_2": "APFS",
+        "odp_3": "FAT32",
+        "odp_4": "EXT4",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót DHCP?",
+        "odp_1": "Dynamic Host Configuration Protocol",
+        "odp_2": "Direct Host Control Protocol",
+        "odp_3": "Data Handling Communication Protocol",
+        "odp_4": "Dynamic Hyper Communication Protocol",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaki system plików jest domyślny dla systemu macOS?",
+        "odp_1": "NTFS",
+        "odp_2": "APFS",
+        "odp_3": "FAT32",
+        "odp_4": "HFS+",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką funkcję pełni algorytm MD5?",
+        "odp_1": "Kompresja plików",
+        "odp_2": "Tworzenie kopii zapasowych",
+        "odp_3": "Generowanie hashów dla sprawdzania integralności danych",
+        "odp_4": "Szyfrowanie wiadomości",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaką funkcję pełni polecenie chmod w Linuxie?",
+        "odp_1": "Usuwa dane logów",
+        "odp_2": "Montuje systemy plików",
+        "odp_3": "Wyświetla zawartość katalogów",
+        "odp_4": "Zmienia uprawnienia plików i katalogów",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakie dane przechowuje protokół HTTPS?",
+        "odp_1": "Metadane plików",
+        "odp_2": "Tylko dane logowania",
+        "odp_3": "Zaszyfrowane dane przesyłane między klientem a serwerem",
+        "odp_4": "Klucze szyfrowania",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót IANA?",
+        "odp_1": "Internet Assigned Name Authority",
+        "odp_2": "Internet Assigned Numbers Authority",
+        "odp_3": "International Address Naming Association",
+        "odp_4": "Independent Address Network Agency",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie działanie może zapobiec atakom BEC?",
+        "odp_1": "Wyłączenie firewalli",
+        "odp_2": "Szkolenie pracowników w rozpoznawaniu podejrzanych e-maili",
+        "odp_3": "Korzystanie wyłącznie z protokołu FTP",
+        "odp_4": "Zwiększenie przepustowości sieci",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza pojęcie sandboxing?",
+        "odp_1": "Optymalizacja danych",
+        "odp_2": "Szyfrowanie plików",
+        "odp_3": "Izolowanie aplikacji w celu ograniczenia potencjalnych szkód",
+        "odp_4": "Automatyczne tworzenie backupów",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Który zakres adresów należy do klasy C w IPv4?",
+        "odp_1": "240.0.0.0 – 255.255.255.255",
+        "odp_2": "0.0.0.0 – 127.255.255.255",
+        "odp_3": "192.0.0.0 – 223.255.255.255",
+        "odp_4": "128.0.0.0 – 191.255.255.255",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza pojęcie phishing?",
+        "odp_1": "Próba oszustwa w celu wyłudzenia poufnych danych",
+        "odp_2": "Złośliwe oprogramowanie",
+        "odp_3": "Skanowanie portów sieciowych",
+        "odp_4": "Atak na serwery DNS",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza końcówka BNC w złączach sieciowych?",
+        "odp_1": "Złącze dla kabli światłowodowych",
+        "odp_2": "Złącze dla przewodów HDMI",
+        "odp_3": "Złącze dla kabli koncentrycznych",
+        "odp_4": "Złącze dla przewodów skrętki",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakie rozszerzenie ma plik wykonywalny w systemach Linux?",
+        "odp_1": ".exe",
+        "odp_2": ".bat",
+        "odp_3": "Brak wymaganego rozszerzenia",
+        "odp_4": ".sh",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakie dane zawiera hash pliku?",
+        "odp_1": "Unikalny ciąg znaków reprezentujący zawartość pliku",
+        "odp_2": "Zaszyfrowane hasło użytkownika",
+        "odp_3": "Metadane dotyczące pliku",
+        "odp_4": "Szyfrowanie pliku",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Które źródło informacji NIE jest uważane za OSINT (Open Source Intelligence)?",
+        "odp_1": "Prywatne bazy danych firm",
+        "odp_2": "Informacje z wyszukiwarek internetowych",
+        "odp_3": "Publicznie dostępne dane z mediów społecznościowych",
+        "odp_4": "Rządowe raporty publicznie dostępne",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Które polecenie wyświetli katalogi i pliki w sposób rekurencyjny?",
+        "odp_1": "ls -R",
+        "odp_2": "ls",
+        "odp_3": "pwd",
+        "odp_4": "cat",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót CSAM?",
+        "odp_1": "Child System Authentication Mechanism",
+        "odp_2": "Child Secure Access Management",
+        "odp_3": "Cyber Security And Management",
+        "odp_4": "Child Sexual Abuse Material",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Który zakres adresów należy do klasy prywatnej w IPv4?",
+        "odp_1": "172.16.0.0 – 172.31.255.255",
+        "odp_2": "Wszystkie odpowiedzi są prawidłowe",
+        "odp_3": "192.168.0.0 – 192.168.255.255",
+        "odp_4": "10.0.0.0 – 10.255.255.255",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie jest główne zastosowanie User Behavior Analytics (UBA)?",
+        "odp_1": "Automatyczne szyfrowanie danych użytkowników",
+        "odp_2": "Monitorowanie sieci w czasie rzeczywistym",
+        "odp_3": "Wykrywanie zagrożeń i nadużyć poprzez analizę zachowań użytkowników i systemów informatycznych",
+        "odp_4": "Tworzenie kopii zapasowych systemu",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest snapshot w wirtualizacji?",
+        "odp_1": "Obraz całego systemu operacyjnego w maszynie wirtualnej",
+        "odp_2": "Automatyczne odzyskiwanie danych po awarii",
+        "odp_3": "Zrzut aktualnego stanu maszyny wirtualnej do odtworzenia w przyszłości",
+        "odp_4": "Kopia zapasowa wszystkich plików użytkownika",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Który z poniższych protokołów nie jest szyfrowany?",
+        "odp_1": "FTPS",
+        "odp_2": "FTP",
+        "odp_3": "SSH",
+        "odp_4": "HTTPS",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co robi komenda intitle: w wyszukiwarce Google?",
+        "odp_1": "Szuka określonych słów w treści dokumentu",
+        "odp_2": "Zawęża wyniki do określonej domeny",
+        "odp_3": "Szuka podanej frazy w tytule stron internetowych",
+        "odp_4": "Szuka plików o określonym rozszerzeniu",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co robi polecenie kill w Linuxie?",
+        "odp_1": "Kończy działanie procesu",
+        "odp_2": "Usuwa plik",
+        "odp_3": "Restartuje system",
+        "odp_4": "Wyświetla katalog roboczy",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaka jest dziesiętna reprezentacja liczby binarnej 10101?",
+        "odp_1": "21",
+        "odp_2": "22",
+        "odp_3": "19",
+        "odp_4": "20",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Dlaczego systemy 64-bitowe mogą obsługiwać więcej pamięci RAM?",
+        "odp_1": "Dzięki większej przestrzeni adresowej",
+        "odp_2": "Dzięki optymalizacji algorytmów",
+        "odp_3": "Dzięki zastosowaniu SSD",
+        "odp_4": "Dzięki kompresji danych",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co to jest Tor?",
+        "odp_1": "Algorytm szyfrujący dane w przeglądarkach",
+        "odp_2": "Narzędzie do przechowywania danych w chmurze",
+        "odp_3": "System zarządzania domenami",
+        "odp_4": "Sieć maskująca ruch online poprzez wielowarstwowe szyfrowanie",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co reguluje artykuł 31 Konwencji Budapesztańskiej?",
+        "odp_1": "Wykorzystywanie szyfrowania danych",
+        "odp_2": "Dostęp do przechowywanych danych przez organy ścigania",
+        "odp_3": "Przechwytywanie komunikacji w sieci",
+        "odp_4": "Przepisy dotyczące cyberprzestępczości finansowej",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Gdzie znajdują się pliki wymagane podczas ładowania systemu w Linuxie?",
+        "odp_1": "/var/log",
+        "odp_2": "/tmp",
+        "odp_3": "/usr/bin",
+        "odp_4": "/boot",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót UTC w kontekście czasu uniwersalnego?",
+        "odp_1": "Universal Time Calibration",
+        "odp_2": "Universal Time Code",
+        "odp_3": "Unified Temporal Calculation",
+        "odp_4": "Coordinated Universal Time",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co to jest RAID 10?",
+        "odp_1": "Połączenie redundancji i wysokiej wydajności",
+        "odp_2": "Tylko redundancja bez wzrostu wydajności",
+        "odp_3": "Połączenie stripingu i parzystości danych",
+        "odp_4": "Wyłącznie wysokiej wydajności bez redundancji",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką komendą sprawdzisz adres IP w systemie Linux?",
+        "odp_1": "ifconfig",
+        "odp_2": "ipconfig",
+        "odp_3": "tracert",
+        "odp_4": "nslookup",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakiego polecenia użyjesz w przeglądarce Google, aby wyszukać konkretną frazę na wybranej stronie internetowej?",
+        "odp_1": "intitle:",
+        "odp_2": "inurl:",
+        "odp_3": "site:",
+        "odp_4": "filetype:",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Dlaczego protokół WEP (Wired Equivalent Privacy) jest uznawany za niebezpieczny?",
+        "odp_1": "Jest podatny na ataki typu brute-force z powodu braku uwierzytelniania",
+        "odp_2": "Używa zbyt długich kluczy szyfrowania, co zwiększa złożoność ataków",
+        "odp_3": "Używa statycznych kluczy szyfrowania, które można łatwo przechwycić i złamać",
+        "odp_4": "Nie obsługuje szyfrowania danych podczas transmisji",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest DNS?",
+        "odp_1": "Usługa przechowywania danych w chmurze",
+        "odp_2": "System tłumaczący nazwy domen na adresy IP",
+        "odp_3": "Protokół odpowiedzialny za trasowanie pakietów",
+        "odp_4": "System dynamicznego przydzielania adresów",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie dane są szyfrowane przez protokół HTTPS?",
+        "odp_1": "Tylko dane logowania",
+        "odp_2": "Tylko pliki tekstowe",
+        "odp_3": "Wyłącznie pliki wideo",
+        "odp_4": "Wszystkie dane przesyłane między klientem a serwerem",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót RAID?",
+        "odp_1": "Rapid Automated Integration Development",
+        "odp_2": "Randomized Array of Independent Drives",
+        "odp_3": "Remote Access Identifier Device",
+        "odp_4": "Redundant Array of Independent Disks",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza polecenie mv w systemie Linux?",
+        "odp_1": "Przenosi lub zmienia nazwę pliku",
+        "odp_2": "Kopiuje plik",
+        "odp_3": "Tworzy nowy katalog",
+        "odp_4": "Wyświetla zawartość katalogu",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką długość ma hash generowany przez MD5?",
+        "odp_1": "160 bitów",
+        "odp_2": "64 bity",
+        "odp_3": "128 bitów",
+        "odp_4": "256 bitów",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jak działa atak ARP cache poisoning?",
+        "odp_1": "Koduje dane w sieci",
+        "odp_2": "Łamie zabezpieczenia routera",
+        "odp_3": "Modyfikuje tablicę ARP w celu przekierowania ruchu",
+        "odp_4": "Powoduje brak dostępu do DNS",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Które z poniższych rozszerzeń plików są związane z formatami zdjęć?",
+        "odp_1": ".csv, .xls, .txt",
+        "odp_2": ".mp3, .wav, .aac",
+        "odp_3": ".jpeg, .png, .tiff, .raw",
+        "odp_4": ".exe, .bin, .dll",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Czym jest \"ciepła lokalizacja\" (warm site)?",
+        "odp_1": "Serwerownią z pełnymi danymi klientów",
+        "odp_2": "Tymczasową lokalizacją bez żadnej infrastruktury IT",
+        "odp_3": "Głównym centrum danych przedsiębiorstwa",
+        "odp_4": "Wyposażonym centrum danych bez danych klientów, służącym do odzyskiwania infrastruktury",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co wyróżnia rootkit na tle innego złośliwego oprogramowania?",
+        "odp_1": "Automatycznie usuwa wirusy",
+        "odp_2": "Maskuje swoją obecność w systemie",
+        "odp_3": "Służy do przechwytywania haseł",
+        "odp_4": "Umożliwia odzyskanie danych z zaszyfrowanych plików",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie dane przechowuje plik .log?",
+        "odp_1": "Dane multimedialne",
+        "odp_2": "Klucze szyfrowania",
+        "odp_3": "Bazy danych",
+        "odp_4": "Informacje o zdarzeniach systemowych",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót PGP?",
+        "odp_1": "Personal Generated Privacy",
+        "odp_2": "Perfect Global Privacy",
+        "odp_3": "Private Good Protocol",
+        "odp_4": "Pretty Good Privacy",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Czy MD5 jest uważany za bezpieczny w nowoczesnych zastosowaniach?",
+        "odp_1": "Nie, ponieważ jest podatny na kolizje hashy",
+        "odp_2": "Nie, ponieważ nie obsługuje szyfrowania",
+        "odp_3": "Tak, w szyfrowaniu wiadomości e-mail",
+        "odp_4": "Tak, dzięki długości 128 bitów",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co to jest TLS?",
+        "odp_1": "Protokół zabezpieczający połączenia internetowe",
+        "odp_2": "System plików",
+        "odp_3": "Narzędzie do monitorowania sieci",
+        "odp_4": "Algorytm szyfrowania",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót CAPTCHA?",
+        "odp_1": "Completely Automated Public Turing test to tell Computers and Humans Apart",
+        "odp_2": "Completely Automated Public Traffic Analysis",
+        "odp_3": "Complex Algorithm Protecting Cyber Traffic and Human Access",
+        "odp_4": "Comprehensive Automated Protection for Threats and Cybersecurity Hacks",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "W którym z poniższych programów można rozszyfrować klucz PGP?",
+        "odp_1": "VirtualBox",
+        "odp_2": "Gpg4win",
+        "odp_3": "Microsoft Excel",
+        "odp_4": "Adobe Acrobat",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Czym jest \"honeypot\" w kontekście cyberbezpieczeństwa?",
+        "odp_1": "Jest to program antywirusowy, który skanuje i usuwa złośliwe oprogramowanie z urządzeń użytkowników.",
+        "odp_2": "Jest to fałszywy system komputerowy lub sieć, mający na celu przyciągnięcie i monitorowanie ataków hakerskich.",
+        "odp_3": "Jest to narzędzie do szyfrowania danych w celu ochrony prywatności użytkowników w sieci.",
+        "odp_4": "Jest to rodzaj zapory sieciowej, która automatycznie blokuje nieautoryzowane połączenia.",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Ile bitów ma jeden bajt?",
+        "odp_1": "4",
+        "odp_2": "16",
+        "odp_3": "8",
+        "odp_4": "64",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót FTP?",
+        "odp_1": "Fixed Transfer Protocol",
+        "odp_2": "File Tracking Program",
+        "odp_3": "File Transfer Protocol",
+        "odp_4": "Fast Transmission Path",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakim poleceniem można uzyskać informacje o strukturze dysku w macOS?",
+        "odp_1": "mount",
+        "odp_2": "fdisk",
+        "odp_3": "lsblk",
+        "odp_4": "diskutil list",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co to jest backup?",
+        "odp_1": "Skanowanie systemu",
+        "odp_2": "Formatowanie dysku",
+        "odp_3": "Szyfrowanie plików",
+        "odp_4": "Kopia zapasowa danych",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza \"routing cebulowy\" w Torze?",
+        "odp_1": "Przesyłanie danych w niezaszyfrowanej postaci",
+        "odp_2": "Analizę ruchu sieciowego",
+        "odp_3": "Tworzenie kopii zapasowych danych",
+        "odp_4": "Wielowarstwowe szyfrowanie przesyłanych danych",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza polecenie chmod 777 w Linuxie?",
+        "odp_1": "Usuwa plik z katalogu",
+        "odp_2": "Zmienia uprawnienia pliku na pełny dostęp dla wszystkich użytkowników",
+        "odp_3": "Wyświetla ukryte pliki",
+        "odp_4": "Tworzy nowy katalog",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką wielkość danych oznacza 2 MB?",
+        "odp_1": "2048 bajtów",
+        "odp_2": "2097152 bajtów",
+        "odp_3": "2 gigabajty",
+        "odp_4": "2000 kilobajtów",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie pliki przechowuje katalog /Windows/Prefetch?",
+        "odp_1": "Pliki tymczasowe wykorzystywane do optymalizacji uruchamiania aplikacji",
+        "odp_2": "Logi systemowe",
+        "odp_3": "Kopie zapasowe plików systemowych",
+        "odp_4": "Pliki instalacyjne aplikacji",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakie pliki przechowuje katalog /var w Linuxie?",
+        "odp_1": "Dane użytkowników",
+        "odp_2": "Pliki systemowe",
+        "odp_3": "Pliki logów i tymczasowe",
+        "odp_4": "Pliki konfiguracyjne",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest EXIF w metadanych?",
+        "odp_1": "Szyfrowanie danych w pliku graficznym",
+        "odp_2": "Informacje o zdjęciu, takie jak czas i lokalizacja wykonania",
+        "odp_3": "Format pliku",
+        "odp_4": "System plików",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaki obszar geograficzny obsługuje AFRINIC?",
+        "odp_1": "Ameryka Północna",
+        "odp_2": "Azja",
+        "odp_3": "Afryka",
+        "odp_4": "Europa",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaką długość ma klucz szyfrowania w algorytmie AES-256?",
+        "odp_1": "128 bitów",
+        "odp_2": "256 bitów",
+        "odp_3": "64 bity",
+        "odp_4": "512 bitów",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza pojęcie \"reszta\" (change) w kontekście transakcji Bitcoin?",
+        "odp_1": "Część środków, która jest dzielona między górników za potwierdzenie transakcji",
+        "odp_2": "Niewykorzystane środki z wejścia transakcji, które są zwracane na adres nadawcy",
+        "odp_3": "Kwotę wysyłaną do odbiorcy po potrąceniu opłaty sieciowej",
+        "odp_4": "Kwotę, która jest naliczana jako prowizja za przeprowadzenie transakcji",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak działa komenda site: w wyszukiwarce Google?",
+        "odp_1": "Wyszukuje treści w podfolderach serwera",
+        "odp_2": "Wyszukuje frazy w tytułach stron internetowych",
+        "odp_3": "Zawęża wyniki wyszukiwania do określonej domeny lub strony internetowej",
+        "odp_4": "Wyszukuje pliki o określonym rozszerzeniu",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza macierz RAID?",
+        "odp_1": "Zabezpieczenie przed atakami",
+        "odp_2": "Protokół ochrony danych",
+        "odp_3": "System logów sieciowych",
+        "odp_4": "Łączenie dysków dla wydajności lub redundancji",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakiego języka programowania użyjesz do automatyzowania działań w arkuszach MS Excel?",
+        "odp_1": "Python",
+        "odp_2": "Java",
+        "odp_3": "VBA",
+        "odp_4": "C++",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jak działa kryptografia asymetryczna?",
+        "odp_1": "Używa tego samego klucza do szyfrowania i deszyfrowania",
+        "odp_2": "Używa pary kluczy: publicznego i prywatnego",
+        "odp_3": "Wykorzystuje klucze jednorazowe",
+        "odp_4": "Szyfruje dane na serwerach proxy",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie dane można znaleźć w bazie WHOIS?",
+        "odp_1": "Dane lokalizacji w czasie rzeczywistym",
+        "odp_2": "Informacje o właścicielach domen, takie jak dane kontaktowe",
+        "odp_3": "Zasoby przeznaczone do tworzenia kopii zapasowych",
+        "odp_4": "Szyfrowane adresy użytkowników",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaka jest wartość szesnastkowa liczby dziesiętnej 255?",
+        "odp_1": "F0",
+        "odp_2": "0F",
+        "odp_3": "F1",
+        "odp_4": "FF",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakie metody translacji adresów sieciowych stosuje NAT?",
+        "odp_1": "Translacja statyczna i portowa",
+        "odp_2": "Translacja statyczna i dynamiczna",
+        "odp_3": "Translacja dynamiczna i adresowa",
+        "odp_4": "Translacja portów i symetryczna",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza skrót BEC w kontekście cyberbezpieczeństwa?",
+        "odp_1": "Basic Encryption Cycle",
+        "odp_2": "Business Email Compromise",
+        "odp_3": "Blockchain Electronic Certificate",
+        "odp_4": "Backup Encryption Channel",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaki port jest domyślnie używany przez protokół HTTPS?",
+        "odp_1": "25",
+        "odp_2": "21",
+        "odp_3": "442",
+        "odp_4": "443",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jak działa podpis cyfrowy?",
+        "odp_1": "Weryfikuje autentyczność i integralność danych",
+        "odp_2": "Szyfruje dane użytkownika",
+        "odp_3": "Kompresuje pliki do mniejszych rozmiarów",
+        "odp_4": "Generuje hasła jednorazowe",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Którego programu można użyć do analizy danych eksportowanych z systemu UBA?",
+        "odp_1": "Word",
+        "odp_2": "Excel",
+        "odp_3": "Outlook",
+        "odp_4": "PowerPoint",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Który adres jest niepoprawny ?",
+        "odp_1": "172.276.255.255",
+        "odp_2": "wszystkie wskazane",
+        "odp_3": "255.255.256.0",
+        "odp_4": "1050::0000::0000:0000:0005:0600:300c:326b",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie urządzenie służy do segmentacji sieci lokalnej na poziomie warstwy 2 modelu OSI?",
+        "odp_1": "Router",
+        "odp_2": "Firewall",
+        "odp_3": "Modem",
+        "odp_4": "Switch",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakim poleceniem w Linuxie skopiujesz plik plik.txt do katalogu /home/user?",
+        "odp_1": "rm plik.txt /home/user",
+        "odp_2": "ls plik.txt /home/user",
+        "odp_3": "mv plik.txt /home/user",
+        "odp_4": "cp plik.txt /home/user",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót MD5?",
+        "odp_1": "Message Digest 5",
+        "odp_2": "Manual Data 5",
+        "odp_3": "Multi-Digest 5",
+        "odp_4": "Memory Data 5",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jak działa ransomware?",
+        "odp_1": "Monitoruje aktywność użytkownika w systemie",
+        "odp_2": "Generuje fałszywe adresy IP",
+        "odp_3": "Usuwa dane z dysku",
+        "odp_4": "Szyfruje dane użytkownika i żąda okupu za ich odblokowanie",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Czym jest tokenizacja w kontekście technologii cyfrowej?",
+        "odp_1": "Proces szyfrowania danych za pomocą unikalnych tokenów",
+        "odp_2": "Zamiana praw lub fizycznych produktów na ich cyfrowe odpowiedniki",
+        "odp_3": "Mechanizm tworzenia kopii zapasowych danych w chmurze",
+        "odp_4": "Sposób na kompresję dużych zbiorów danych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką funkcję pełni certyfikat SSL?",
+        "odp_1": "Skanuje ruch sieciowy",
+        "odp_2": "Weryfikuje tożsamość użytkownika",
+        "odp_3": "Służy do szyfrowania połączeń internetowych",
+        "odp_4": "Blokuje złośliwe oprogramowanie",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza pojęcie zero-day exploit?",
+        "odp_1": "Luka w oprogramowaniu bez dostępnej poprawki",
+        "odp_2": "Eksploit wykorzystujący szyfrowanie danych",
+        "odp_3": "Atak na kopię zapasową danych",
+        "odp_4": "Włamanie do sieci bezprzewodowej",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co to jest \"zombie\" w kontekście ataków DDoS?",
+        "odp_1": "Zainfekowany komputer wykorzystywany do ataku",
+        "odp_2": "Skrypt blokujący dane",
+        "odp_3": "Serwer przynęta używany w sieci",
+        "odp_4": "Oprogramowanie do analizy ruchu",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jak działa serwer proxy?",
+        "odp_1": "Przekształca dane w postaci binarnej",
+        "odp_2": "Pośredniczy w połączeniach między klientem a serwerem",
+        "odp_3": "Optymalizuje transfer plików",
+        "odp_4": "Zabezpiecza dane poprzez szyfrowanie",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaka jest funkcja maski podsieci?",
+        "odp_1": "Oddziela część adresu IP na sieć i hosty",
+        "odp_2": "Przypisuje dynamiczne adresy IP",
+        "odp_3": "Tłumaczy adresy prywatne na publiczne",
+        "odp_4": "Chroni sieć przed atakami",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "W jakim znaczniku w HTML definiuje się połączenie z zewnętrznym plikiem CSS?",
+        "odp_1": "<script>",
+        "odp_2": "<style>",
+        "odp_3": "<link>",
+        "odp_4": "<meta>",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest atak MITM (Man-In-The-Middle)?",
+        "odp_1": "Wykorzystywanie luki w szyfrowaniu HTTPS",
+        "odp_2": "Przejęcie komunikacji między dwoma stronami bez ich wiedzy",
+        "odp_3": "Podszywanie się pod zaufane źródło w e-mailach",
+        "odp_4": "Szyfrowanie danych przez złośliwe oprogramowanie",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co to jest SEED w kontekście kluczy prywatnych?",
+        "odp_1": "Mechanizm kontroli transakcji w blockchainie",
+        "odp_2": "Plik do przechowywania transakcji",
+        "odp_3": "Zestaw losowych słów generujący klucze prywatne w portfelach kryptowalutowych",
+        "odp_4": "Losowy klucz publiczny do szyfrowania danych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest exit node w sieci TOR?",
+        "odp_1": "Ostatni węzeł przed wyjściem na Internet",
+        "odp_2": "Punkt szyfrowania danych",
+        "odp_3": "Serwer zarządzający użytkownikami",
+        "odp_4": "Początek trasy danych",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Który z poniższych protokołów jest używany do przesyłania poczty elektronicznej?",
+        "odp_1": "DNS",
+        "odp_2": "SNMP",
+        "odp_3": "FTP",
+        "odp_4": "SMTP",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót CSS?",
+        "odp_1": "Computer Style Syntax",
+        "odp_2": "Cascading Style System",
+        "odp_3": "Complex Style Sheets",
+        "odp_4": "Cascading Style Sheets",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót SSO w kontekście systemów uwierzytelniania?",
+        "odp_1": "Simplified Security Option",
+        "odp_2": "Shared System Operation",
+        "odp_3": "Single Sign-On",
+        "odp_4": "Secure Sign-On",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co charakteryzuje blockchain?",
+        "odp_1": "Narzędzie do zarządzania licencjami",
+        "odp_2": "Publicznie dostępny i rozproszony system rejestrów",
+        "odp_3": "Szyfrowany rejestr dostępny tylko dla administratorów",
+        "odp_4": "Centralna baza danych dla użytkowników",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Czym jest exploit w kontekście bezpieczeństwa systemów?",
+        "odp_1": "Programem szyfrującym dane użytkownika",
+        "odp_2": "Kodem lub techniką wykorzystującą lukę w systemie do przejęcia kontroli",
+        "odp_3": "Narzędziem do monitorowania ruchu sieciowego",
+        "odp_4": "Mechanizmem przechowywania logów systemowych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką wartość zwróci polecenie print(imiona[2]) w wierszu poleceń Python, mając zmienną imiona = [\"Adam\", \"Jan\", \"Damian\"]?",
+        "odp_1": "Adam",
+        "odp_2": "Null",
+        "odp_3": "Damian",
+        "odp_4": "Jan",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza termin formatowanie szybkie?",
+        "odp_1": "Usunięcie danych z dysku bez dokładnego wymazywania",
+        "odp_2": "Kompresowanie danych",
+        "odp_3": "Kopiowanie danych między dyskami",
+        "odp_4": "Tworzenie nowego systemu plików",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Który port jest domyślny dla protokołu HTTPS?",
+        "odp_1": "443",
+        "odp_2": "80",
+        "odp_3": "22",
+        "odp_4": "21",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką funkcję pełni NAT?",
+        "odp_1": "Analiza trasowania pakietów",
+        "odp_2": "Monitorowanie ruchu sieciowego",
+        "odp_3": "Optymalizacja transferu danych",
+        "odp_4": "Translacja adresów prywatnych na publiczne",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaką funkcję pełni CSS w połączeniu z HTML?",
+        "odp_1": "Służy do definiowania wyglądu i stylu elementów HTML",
+        "odp_2": "Tworzy strukturę strony internetowej",
+        "odp_3": "Służy do wykonywania interaktywnych akcji na stronie",
+        "odp_4": "Umożliwia przechowywanie danych w bazie",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jak działa metoda uwierzytelniania 2FA (dwuskładnikowa)?",
+        "odp_1": "Wymaga hasła oraz dodatkowego czynnika (np. kod SMS)",
+        "odp_2": "Korzysta z dwóch haseł",
+        "odp_3": "Używa jedynie haseł szyfrowanych",
+        "odp_4": "Automatycznie generuje jednorazowe hasła",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakie dane mogą być przechowywane w sieci na podstawie ESI (Electronically Stored Information)?",
+        "odp_1": "wszystkie wymienione",
+        "odp_2": "e-mail",
+        "odp_3": "bazy danych",
+        "odp_4": "arkusze kalkulacyjne",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Który z poniższych katalogów w Linuxie zawiera lokalne pliki binarne instalowane przez użytkownika lub administratora?",
+        "odp_1": "/etc/bin",
+        "odp_2": "/bin",
+        "odp_3": "/usr/local/bin",
+        "odp_4": "/usr/bin",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza polecenie umount w systemie Linux?",
+        "odp_1": "Formatuje partycję",
+        "odp_2": "Kopiuje pliki między partycjami",
+        "odp_3": "Montuje system plików",
+        "odp_4": "Odmontowuje system plików",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Wskaż zdanie prawdziwe dotyczące kryptowalut:",
+        "odp_1": "Kryptowaluty są regulowane przez banki centralne.",
+        "odp_2": "Służą jedynie do inwestycji spekulacyjnych.",
+        "odp_3": "Wszystkie transakcje są anonimowe i nie można ich śledzić.",
+        "odp_4": "Są transakcjami publicznymi, których dane są rozproszone na wielu serwerach.",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza termin \"snifowanie sieci\"?",
+        "odp_1": "Szyfrowanie danych podczas transmisji",
+        "odp_2": "Analiza ruchu sieciowego w celu optymalizacji transferu",
+        "odp_3": "Przechwytywanie danych przesyłanych przez sieć",
+        "odp_4": "Monitorowanie logów systemowych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza pojęcie cyfrowy ślad?",
+        "odp_1": "Dane szyfrowane w czasie rzeczywistym",
+        "odp_2": "Dane pozostawiane przez użytkownika podczas korzystania z sieci",
+        "odp_3": "Dane przechowywane w chmurze",
+        "odp_4": "Dane tymczasowe w pamięci podręcznej",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaka jest funkcja katalogu /boot w systemach Linux?",
+        "odp_1": "Służy do przechowywania logów systemowych",
+        "odp_2": "Przechowuje pliki tymczasowe użytkownika",
+        "odp_3": "Zawiera pliki konfiguracyjne systemu",
+        "odp_4": "Przechowuje pliki niezbędne do uruchomienia systemu operacyjnego",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza znacznik <head> w HTML?",
+        "odp_1": "Zawiera metadane i linki do zewnętrznych zasobów, np. stylów CSS",
+        "odp_2": "Wyświetla treść strony",
+        "odp_3": "Służy do definiowania tabel na stronie",
+        "odp_4": "Wyświetla obrazki na stronie",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką funkcję pełni polecenie sudo w systemach Linux?",
+        "odp_1": "Wyświetla listę użytkowników",
+        "odp_2": "Usuwa pliki systemowe",
+        "odp_3": "Tworzy nowe katalogi",
+        "odp_4": "Pozwala użytkownikowi wykonać polecenie z uprawnieniami administratora",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakiego rodzaju atak może być związany z plikami PPSM?",
+        "odp_1": "Szyfrowanie danych przez ransomware",
+        "odp_2": "Zmiana uprawnień do pliku przez exploit",
+        "odp_3": "Wykorzystanie makr w celu uruchomienia złośliwego kodu",
+        "odp_4": "Automatyczne przesyłanie danych do zewnętrznego serwera",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakie narzędzie jest często używane do snifowania sieci?",
+        "odp_1": "Wireshark",
+        "odp_2": "Netstat",
+        "odp_3": "Tor",
+        "odp_4": "Aircrack-ng",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaka jest wartość ósemkowa liczby dziesiętnej 64?",
+        "odp_1": "110",
+        "odp_2": "80",
+        "odp_3": "101",
+        "odp_4": "100",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Który z poniższych adresów IP jest niepoprawny?",
+        "odp_1": "256.1.1.1",
+        "odp_2": "10.0.0.1",
+        "odp_3": "192.168.0.1",
+        "odp_4": "172.16.0.10",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Ile maksymalnie pamięci RAM może obsłużyć system 32-bitowy?",
+        "odp_1": "16 GB",
+        "odp_2": "4 GB",
+        "odp_3": "32 GB",
+        "odp_4": "8 GB",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza termin \"fork\" w kontekście kryptowalut?",
+        "odp_1": "Zmianę w protokole blockchainu, która może prowadzić do podziału łańcucha",
+        "odp_2": "Automatyczne wydobycie nowego bloku",
+        "odp_3": "Utworzenie nowej kryptowaluty niezależnej od istniejącej",
+        "odp_4": "Rozdzielenie łańcucha bloków na dwie równoległe ścieżki",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką funkcję pełni polecenie cat w systemach Linux?",
+        "odp_1": "Usuwa plik",
+        "odp_2": "Edytuje zawartość pliku",
+        "odp_3": "Wyświetla zawartość pliku",
+        "odp_4": "Przenosi plik do innego katalogu",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Który protokół działa na warstwie transportowej modelu OSI?",
+        "odp_1": "DNS",
+        "odp_2": "HTTP",
+        "odp_3": "TCP",
+        "odp_4": "FTP",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "W systemie Windows, przy uruchomieniu aplikacji domyślnie działa ona z uprawnieniami:",
+        "odp_1": "Root",
+        "odp_2": "User",
+        "odp_3": "Guest",
+        "odp_4": "Administrator",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak nazywają się specjalne domeny używane w sieci TOR?",
+        "odp_1": ".hidden",
+        "odp_2": ".onion",
+        "odp_3": ".dark",
+        "odp_4": ".secure",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaki jest podstawowy cel działania VPN?",
+        "odp_1": "Optymalizacja transferu danych",
+        "odp_2": "Automatyczna blokada złośliwego oprogramowania",
+        "odp_3": "Zwiększenie anonimowości i bezpieczeństwa w sieci",
+        "odp_4": "Przyspieszenie połączenia z Internetem",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Która z poniższych wyszukiwarek jest często używana w sieci TOR?",
+        "odp_1": "Yahoo",
+        "odp_2": "Google",
+        "odp_3": "Bing",
+        "odp_4": "DuckDuckGo",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaka jest maksymalna długość kabla w standardzie Ethernet 100BASE-TX?",
+        "odp_1": "100 metrów",
+        "odp_2": "50 metrów",
+        "odp_3": "200 metrów",
+        "odp_4": "300 metrów",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Która z poniższych przeglądarek służy do wyszukiwania i indeksowania stron z końcówką .onion w sieci TOR?",
+        "odp_1": "Ahmia",
+        "odp_2": "Google",
+        "odp_3": "Brave",
+        "odp_4": "DuckDuckGo",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Który z poniższych zasobów ułatwia odnalezienie stron w sieci TOR?",
+        "odp_1": "TorSearch",
+        "odp_2": "HTTPS Everywhere",
+        "odp_3": "Hidden Wiki",
+        "odp_4": "OnionCrypt",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Do czego służy tokenizacja?",
+        "odp_1": "Kompresji danych w systemach informatycznych",
+        "odp_2": "Zamiany praw i obowiązków w formę cyfrową",
+        "odp_3": "Szyfrowania kluczy publicznych",
+        "odp_4": "Tworzenia tymczasowych tokenów bezpieczeństwa",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką procedurę opisuje artykuł 30 Konwencji Budapesztańskiej?",
+        "odp_1": "Współpracę międzynarodową w dochodzeniach",
+        "odp_2": "Ochronę danych osobowych",
+        "odp_3": "Zasady retencji danych",
+        "odp_4": "Tworzenie kopii zapasowych",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaka jest binarna reprezentacja liczby dziesiętnej 15?",
+        "odp_1": "1001",
+        "odp_2": "1100",
+        "odp_3": "1111",
+        "odp_4": "1010",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaki system plików jest używany jako domyślny w systemach Linux?",
+        "odp_1": "NTFS",
+        "odp_2": "APFS",
+        "odp_3": "EXT4",
+        "odp_4": "FAT32",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Która pętla w języku Python wykonuje blok kodu tak długo, jak warunek jest spełniony?",
+        "odp_1": "while",
+        "odp_2": "do-while",
+        "odp_3": "switch",
+        "odp_4": "for",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza polecenie &nbsp; w HTML?",
+        "odp_1": "tabulator",
+        "odp_2": "nową linię",
+        "odp_3": "spację",
+        "odp_4": "twardą spację",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Ile pikseli zawiera jeden megapiksel?",
+        "odp_1": "10 milionów",
+        "odp_2": "100 tysięcy",
+        "odp_3": "miliard",
+        "odp_4": "milion",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Do czego używany jest język HTML?",
+        "odp_1": "Zarządzania serwerami",
+        "odp_2": "Analizy baz danych",
+        "odp_3": "Tworzenia oprogramowania desktopowego",
+        "odp_4": "Projektowania stron internetowych",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Która z organizacji międzynarodowych zajmuje się nadawaniem adresów IP?",
+        "odp_1": "RIPE",
+        "odp_2": "ARIN",
+        "odp_3": "ICANN",
+        "odp_4": "IANA",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza skrót AES?",
+        "odp_1": "Advanced Encryption Standard",
+        "odp_2": "Asynchronous Encryption Setup",
+        "odp_3": "Algorithmic Encryption Standard",
+        "odp_4": "Automated Encryption System",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakie jest główne zastosowanie firewalla?",
+        "odp_1": "Zarządzanie ruchem sieciowym i ochrona przed zagrożeniami",
+        "odp_2": "Szyfrowanie danych",
+        "odp_3": "Blokowanie ataków typu DDoS",
+        "odp_4": "Ochrona przed złośliwym oprogramowaniem",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakiej komendy użyjesz w Linuxie, aby sprawdzić użytkowników należących do grupy administratorów (sudo)?",
+        "odp_1": "groups sudo",
+        "odp_2": "id sudo",
+        "odp_3": "whoami sudo",
+        "odp_4": "getent group sudo",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Zintegrowana pamięć umożliwiająca maksymalne wykorzystanie możliwości komputera to:",
+        "odp_1": "SSD",
+        "odp_2": "RAM",
+        "odp_3": "SCSI",
+        "odp_4": "ROM",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie jest główne zastosowanie TLS?",
+        "odp_1": "Narzędzie do szyfrowania plików offline",
+        "odp_2": "Protokół zabezpieczający połączenia internetowe",
+        "odp_3": "Algorytm szyfrowania danych",
+        "odp_4": "Szyfrowanie obrazów",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie urządzenie jest używane do łączenia dwóch różnych sieci?",
+        "odp_1": "Repeater",
+        "odp_2": "Hub",
+        "odp_3": "Switch",
+        "odp_4": "Router",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaka jest główna funkcja szyfrowania PGP?",
+        "odp_1": "Tworzenie kopii zapasowych danych",
+        "odp_2": "Skanowanie ruchu sieciowego",
+        "odp_3": "Weryfikacja logów systemowych",
+        "odp_4": "Szyfrowanie e-maili i plików dla zapewnienia poufności",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza polecenie df w Linuxie?",
+        "odp_1": "Tworzy nowy katalog",
+        "odp_2": "Wyświetla informacje o wolnym miejscu na dysku",
+        "odp_3": "Usuwa pliki",
+        "odp_4": "Kopiuje pliki",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie jest główne zastosowanie firewalla?",
+        "odp_1": "Ochrona przed złośliwym oprogramowaniem",
+        "odp_2": "Szyfrowanie danych",
+        "odp_3": "Blokowanie ataków typu DDoS",
+        "odp_4": "Zarządzanie ruchem sieciowym i ochrona przed zagrożeniami",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaką funkcję pełni polecenie top w systemie Linux?",
+        "odp_1": "Tworzy nowy katalog",
+        "odp_2": "Wyświetla listę aktywnych procesów",
+        "odp_3": "Przełącza użytkowników",
+        "odp_4": "Restartuje system",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką funkcję pełni Hidden Wiki w sieci TOR?",
+        "odp_1": "Oferuje szyfrowane narzędzia do komunikacji",
+        "odp_2": "Służy jako platforma do wymiany plików między użytkownikami TOR",
+        "odp_3": "Kataloguje odnośniki do stron działających w ukrytej sieci",
+        "odp_4": "Zawiera kopie zapasowe danych przechowywanych w sieci",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "W jaki sposób sieć Tor chroni prywatność użytkownika?",
+        "odp_1": "Maskuje ruch dzięki wielowarstwowej trasie szyfrowanej",
+        "odp_2": "Monitoruje aktywność w Internecie i usuwa zagrożenia",
+        "odp_3": "Przechowuje dane użytkownika w zaszyfrowanej chmurze",
+        "odp_4": "Automatycznie blokuje złośliwe oprogramowanie",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Z jakim oprogramowaniem związany jest Structured Query Language (SQL)?",
+        "odp_1": "MySQL",
+        "odp_2": "Elasticsearch",
+        "odp_3": "Apache",
+        "odp_4": "Docker",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Ile hostów można podłączyć w podsieci o masce 255.255.255.0?",
+        "odp_1": "254",
+        "odp_2": "256",
+        "odp_3": "512",
+        "odp_4": "128",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jak wyświetlić zawartość pliku plik.txt za pomocą polecenia cat?",
+        "odp_1": "view plik.txt",
+        "odp_2": "cat plik.txt",
+        "odp_3": "open plik.txt",
+        "odp_4": "cat -x plik.txt",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaki jest główny cel macierzy RAID?",
+        "odp_1": "Łączenie dysków w celu poprawy wydajności lub zapewnienia redundancji danych",
+        "odp_2": "Monitorowanie i analiza ruchu w sieciach lokalnych",
+        "odp_3": "Zabezpieczenie danych przed nieautoryzowanym dostępem",
+        "odp_4": "Przechowywanie kopii zapasowych w chmurze",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Ile kilobajtów zawiera jeden megabajt (MB)?",
+        "odp_1": "1000 KB",
+        "odp_2": "512 KB",
+        "odp_3": "2048 KB",
+        "odp_4": "1024 KB",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaką funkcję pełni polecenie cp w systemie Linux?",
+        "odp_1": "Kopiuje pliki",
+        "odp_2": "Przenosi pliki",
+        "odp_3": "Tworzy nowy katalog",
+        "odp_4": "Wyświetla katalog roboczy",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakie jest zastosowanie kryptografii symetrycznej?",
+        "odp_1": "Używa różnych kluczy do szyfrowania i deszyfrowania danych",
+        "odp_2": "Optymalizuje ruch sieciowy",
+        "odp_3": "Używa tego samego klucza do szyfrowania i deszyfrowania danych",
+        "odp_4": "Służy do podpisów cyfrowych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest publiczny klucz w kryptografii asymetrycznej?",
+        "odp_1": "Klucz prywatny użytkownika",
+        "odp_2": "Klucz do deszyfrowania danych",
+        "odp_3": "Klucz dostępny dla wszystkich, używany do szyfrowania danych",
+        "odp_4": "Klucz służący do weryfikacji haseł",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Które z poniższych poleceń w Pythonie spowoduje wyświetlenie żądanej treści?",
+        "odp_1": "Display",
+        "odp_2": "Show",
+        "odp_3": "Echo",
+        "odp_4": "Print",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co oznacza polecenie ping?",
+        "odp_1": "Testuje dostępność zdalnego hosta",
+        "odp_2": "Usuwa dane",
+        "odp_3": "Przesyła dane między katalogami",
+        "odp_4": "Wyświetla trasę pakietów",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Czym jest ESI (Electronically Stored Information) w kontekście prawa i technologii?",
+        "odp_1": "Dane cyfrowe, które mogą być dowodami w procesach sądowych",
+        "odp_2": "Informacje dostępne na żądanie w ramach procedur prawnych lub audytów",
+        "odp_3": "Wszystkie odpowiedzi są prawidłowe",
+        "odp_4": "Informacje przechowywane w systemach elektronicznych, takie jak e-maile, dokumenty czy bazy danych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Który standard Ethernet obsługuje przepustowość do 10 Gbps?",
+        "odp_1": "1000BASE-T",
+        "odp_2": "10BASE-T",
+        "odp_3": "10GBASE-T",
+        "odp_4": "100BASE-TX",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest whaling w kontekście cyberbezpieczeństwa?",
+        "odp_1": "Atak skierowany na małych przedsiębiorców",
+        "odp_2": "Atak na dostawców usług sieciowych",
+        "odp_3": "Złośliwe oprogramowanie szyfrujące dane",
+        "odp_4": "Atak na osoby na wysokich stanowiskach w firmach",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "W jakim trybie karta sieciowa ogranicza dostęp tylko do autoryzowanych adresów?",
+        "odp_1": "Zastrzeżony",
+        "odp_2": "Dynamiczny",
+        "odp_3": "Otwarty",
+        "odp_4": "Monitorujący",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką funkcję pełni plik hosts w systemie Windows?",
+        "odp_1": "Służy do przechowywania logów",
+        "odp_2": "Przechowuje informacje o trasie",
+        "odp_3": "Tłumaczy nazwy domen na adresy IP lokalnie",
+        "odp_4": "Zawiera dane użytkowników",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Która firma stworzyła system operacyjny Android?",
+        "odp_1": "Apple",
+        "odp_2": "Google",
+        "odp_3": "IBM",
+        "odp_4": "Microsoft",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jaką funkcję pełni plik hosts w systemach operacyjnych?",
+        "odp_1": "Tłumaczy nazwy domen na adresy IP lokalnie",
+        "odp_2": "Optymalizuje działanie sieci",
+        "odp_3": "Przechowuje dane użytkowników",
+        "odp_4": "Zawiera kopie zapasowe systemu",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Czym była platforma Silk Road w darknecie?",
+        "odp_1": "Narzędzie do szyfrowania danych",
+        "odp_2": "Anonimowa giełda kryptowalut",
+        "odp_3": "Narkotykowy rynek w darknecie",
+        "odp_4": "Forum technologiczne",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Która domena e-mailowa oferuje największe bezpieczeństwo?",
+        "odp_1": ".gov.pl",
+        "odp_2": ".org",
+        "odp_3": ".pl",
+        "odp_4": ".com",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co to jest adres IP?",
+        "odp_1": "Adres identyfikujący urządzenie w sieci",
+        "odp_2": "Adres routera domowego",
+        "odp_3": "Adres serwera proxy",
+        "odp_4": "Adres MAC",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót HTML?",
+        "odp_1": "Hyper Text Markup Layout",
+        "odp_2": "Hyper Text Markup Language",
+        "odp_3": "High-Tech Markup Language",
+        "odp_4": "Hyperlink Text Management Language",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakie jest domyślne działanie polecenia cd, jeśli zostanie użyte bez argumentów?",
+        "odp_1": "przechodzi do głównego katalogu",
+        "odp_2": "przechodzi do katalogu poniżej",
+        "odp_3": "przechodzi do katalogu next level",
+        "odp_4": "przechodzi do katalogu root",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaki czas jest uniwersalny dla systemów komputerowych?",
+        "odp_1": "UTC",
+        "odp_2": "GMT",
+        "odp_3": "EST",
+        "odp_4": "CET",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaki protokół używany jest w połączeniach bezpiecznych stron internetowych?",
+        "odp_1": "DNS",
+        "odp_2": "FTP",
+        "odp_3": "HTTPS",
+        "odp_4": "HTTP",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest rootkit?",
+        "odp_1": "Narzędzie do zarządzania uprawnieniami w systemie",
+        "odp_2": "Program do tworzenia kopii zapasowych",
+        "odp_3": "Złośliwe oprogramowanie umożliwiające ukryty dostęp do systemu i maskujące swoją obecność",
+        "odp_4": "Złośliwe oprogramowanie, które szyfruje dane użytkownika",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakie jest główne zastosowanie szyfrowania asymetrycznego?",
+        "odp_1": "Tworzenie kopii zapasowych",
+        "odp_2": "Optymalizacja transferu danych",
+        "odp_3": "Szyfrowanie plików w czasie rzeczywistym",
+        "odp_4": "Wymiana kluczy i podpisy cyfrowe",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaki jest główny powód użycia polecenia sudo zamiast logowania jako root?",
+        "odp_1": "Wyłączenie logów systemowych",
+        "odp_2": "Zwiększenie bezpieczeństwa przez ograniczenie czasu dostępu do uprawnień administratora",
+        "odp_3": "Automatyczne tworzenie kopii zapasowych",
+        "odp_4": "Zwiększenie szybkości wykonywania komend",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co robi polecenie related: w wyszukiwarce Google?",
+        "odp_1": "Wyszukuje strony powiązane tematycznie z podaną stroną",
+        "odp_2": "Szuka stron podobnych do wskazanej strony internetowej",
+        "odp_3": "Szuka treści w tytułach stron internetowych",
+        "odp_4": "Zawęża wyniki wyszukiwania do określonej lokalizacji",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza termin \"logowanie jednokrotne (SSO)\"?",
+        "odp_1": "Możliwość zalogowania się do wielu systemów przy użyciu jednego konta",
+        "odp_2": "Logowanie z wykorzystaniem VPN",
+        "odp_3": "Logowanie przy użyciu tokena SMS",
+        "odp_4": "Automatyczne logowanie do systemu",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót WEP w kontekście sieci Wi-Fi?",
+        "odp_1": "Wi-Fi Encryption Program",
+        "odp_2": "Wired Equivalent Privacy",
+        "odp_3": "Wireless Enhanced Protocol",
+        "odp_4": "Wireless Encrypted Protection",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co to jest adres MAC?",
+        "odp_1": "Adres IP routera",
+        "odp_2": "Fizyczny adres sprzętowy urządzenia sieciowego",
+        "odp_3": "Adres użytkownika przypisany dynamicznie",
+        "odp_4": "Adres hosta zarejestrowany w DNS",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak działa atak typu spoofing?",
+        "odp_1": "Atakuje serwer DNS",
+        "odp_2": "Tworzy fałszywe strony internetowe",
+        "odp_3": "Szyfruje dane na urządzeniu",
+        "odp_4": "Podszywa się pod zaufane źródło",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Dlaczego AES jest uważany za bezpieczne szyfrowanie w sieciach Wi-Fi?",
+        "odp_1": "Ponieważ działa wyłącznie w sieciach prywatnych",
+        "odp_2": "Ponieważ używa kluczy o długości do 256 bitów, co utrudnia ich złamanie",
+        "odp_3": "Ponieważ automatycznie zmienia klucze co sekundę",
+        "odp_4": "Ponieważ jest szybki i wydajny",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Czy rootkit może być wykrywany przez standardowe oprogramowanie antywirusowe?",
+        "odp_1": "Nie, ponieważ często maskuje swoją obecność",
+        "odp_2": "Tak, pod warunkiem że jest to rootkit sprzętowy",
+        "odp_3": "Nie, jeśli działa na poziomie użytkownika",
+        "odp_4": "Tak, zawsze",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza skrót DHCP i jakie jest jego główne zadanie?",
+        "odp_1": "Dynamic Host Configuration Protocol, przypisywanie dynamicznych adresów IP urządzeniom w sieci",
+        "odp_2": "Direct Host Communication Protocol, nawiązywanie bezpośrednich połączeń między hostami",
+        "odp_3": "Dynamic Hypertext Configuration Protocol, konfiguracja stron internetowych",
+        "odp_4": "Domain Host Control Protocol, zarządzanie nazwami domen",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co to jest swap w kontekście systemu Linux?",
+        "odp_1": "Pamięć wirtualna używana jako przedłużenie RAM-u",
+        "odp_2": "Obszar przechowywania logów",
+        "odp_3": "Rodzaj systemu plików",
+        "odp_4": "Tymczasowy katalog użytkownika",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Który protokół służy do dynamicznego przydzielania adresów IP?",
+        "odp_1": "DNS",
+        "odp_2": "SNMP",
+        "odp_3": "DHCP",
+        "odp_4": "ARP",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót sudo w systemach Linux?",
+        "odp_1": "Secure User Data Organization",
+        "odp_2": "Super User Do",
+        "odp_3": "System Upgrade Deployment Operator",
+        "odp_4": "Simple User Directory Organizer",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Który z poniższych to model sieciowy używany do klasyfikacji protokołów i usług?",
+        "odp_1": "HTTP",
+        "odp_2": "OSI",
+        "odp_3": "FTP",
+        "odp_4": "DHCP",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza skrót IRC w kontekście komunikacji internetowej?",
+        "odp_1": "International Relay Connection",
+        "odp_2": "Internal Relay Chat",
+        "odp_3": "Internet Radio Chat",
+        "odp_4": "Internet Relay Chat",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakie jest maksymalne teoretyczne wykorzystanie adresów w IPv4?",
+        "odp_1": "2^64",
+        "odp_2": "2^128",
+        "odp_3": "2^32",
+        "odp_4": "2^16",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co robi polecenie inurl: w wyszukiwarce Google?",
+        "odp_1": "Ogranicza wyniki do plików o wskazanym rozszerzeniu",
+        "odp_2": "Szuka podanej frazy w adresie URL stron",
+        "odp_3": "Szuka frazy w nagłówkach strony",
+        "odp_4": "Wyszukuje pliki w konkretnej domenie",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza skrót SHA w kryptografii?",
+        "odp_1": "Simple Hash Analyzer",
+        "odp_2": "Sequential Hash Algorithm",
+        "odp_3": "System Hyper Analysis",
+        "odp_4": "Secure Hash Algorithm",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Gdzie można znaleźć informacje o rejestratorze domeny?",
+        "odp_1": "W metadanych HTML strony",
+        "odp_2": "W bazie WHOIS",
+        "odp_3": "W protokole DNS",
+        "odp_4": "W pliku EXIF domeny",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Który protokół Wi-Fi jest uznawany za najmniej bezpieczny?",
+        "odp_1": "WPA3",
+        "odp_2": "WPA",
+        "odp_3": "WPA2",
+        "odp_4": "WEP",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Który z poniższych adresów IP jest niepoprawny?",
+        "odp_1": "256.0.0.1",
+        "odp_2": "172.16.0.5",
+        "odp_3": "192.168.1.1",
+        "odp_4": "10.0.0.0",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakie jest główne zagrożenie wynikające z phishingu?",
+        "odp_1": "Zablokowanie plików",
+        "odp_2": "Szyfrowanie wiadomości",
+        "odp_3": "Wyłudzenie danych osobowych",
+        "odp_4": "Przejęcie serwera DNS",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakim poleceniem lub ścieżką preinstalowaną wczytuje się system Linux?",
+        "odp_1": "/start",
+        "odp_2": "/boot",
+        "odp_3": "/system",
+        "odp_4": "/load",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak działa protokół ARP?",
+        "odp_1": "Tłumaczy adresy IP na adresy MAC",
+        "odp_2": "Przekształca dane binarne w dane ASCII",
+        "odp_3": "Tłumaczy adresy domen na adresy IP",
+        "odp_4": "Monitoruje aktywność w sieci",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Do czego służy komenda archive?",
+        "odp_1": "Spakowuje pliki lub foldery w jedno skompresowane archiwum",
+        "odp_2": "Wyświetla listę plików w folderze roboczym",
+        "odp_3": "Tworzy kopię zapasową systemu operacyjnego",
+        "odp_4": "Usuwa niepotrzebne pliki tymczasowe",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Tor jest platformą typu:",
+        "odp_1": "Scentralizowana",
+        "odp_2": "Zamknięte źródło",
+        "odp_3": "Komercyjna",
+        "odp_4": "Open source",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Co to jest VLAN?",
+        "odp_1": "Protokół szyfrowania danych",
+        "odp_2": "Wirtualna sieć lokalna",
+        "odp_3": "Rodzaj sprzętu sieciowego",
+        "odp_4": "Zasób sieciowy",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza polecenie pwd w systemie Linux?",
+        "odp_1": "Wyświetla procesy użytkownika",
+        "odp_2": "Wyświetla aktualny katalog roboczy",
+        "odp_3": "Zmienia uprawnienia plików",
+        "odp_4": "Przenosi katalogi",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Które z poniższych narzędzi graficznych służy do zarządzania kluczami PGP?",
+        "odp_1": "Kleopatra",
+        "odp_2": "OpenSSL",
+        "odp_3": "TrueCrypt",
+        "odp_4": "Putty",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co oznacza polecenie mount w Linuxie?",
+        "odp_1": "Wyświetla procesy użytkownika",
+        "odp_2": "Zmienia uprawnienia plików",
+        "odp_3": "Usuwa partycje",
+        "odp_4": "Montuje systemy plików do katalogu",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Na czym polega atak typu BEC?",
+        "odp_1": "Atakujący szyfruje dane ofiary i żąda okupu",
+        "odp_2": "Podszywanie się pod zaufane źródło e-mail w celu oszukania firmy",
+        "odp_3": "Wykorzystanie luki w protokole HTTPS",
+        "odp_4": "Przechwytywanie komunikacji w sieci lokalnej",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakim poleceniem w Linuxie można przejść do katalogu /usr/bin?",
+        "odp_1": "cd /usr/bin",
+        "odp_2": "ls /usr/bin",
+        "odp_3": "mkdir /usr/bin",
+        "odp_4": "pwd /usr/bin",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jaką funkcję pełni plik APK w systemie Android?",
+        "odp_1": "Służy do aktualizacji systemu",
+        "odp_2": "Służy jako kopia zapasowa aplikacji",
+        "odp_3": "Jest instalatorem aplikacji na urządzeniach Android",
+        "odp_4": "Przechowuje konfigurację aplikacji",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jaką funkcję pełni polecenie tracert w systemie Windows?",
+        "odp_1": "Wyświetla aktywne połączenia",
+        "odp_2": "Monitoruje ruch sieciowy",
+        "odp_3": "Śledzi trasę pakietu w sieci",
+        "odp_4": "Zamyka połączenia",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest hypervisor w wirtualizacji?",
+        "odp_1": "Narzędzie do tworzenia kopii zapasowych systemu",
+        "odp_2": "Oprogramowanie zarządzające maszynami wirtualnymi i zasobami fizycznymi",
+        "odp_3": "Zasób pamięci wirtualnej w systemie",
+        "odp_4": "Mechanizm szyfrowania danych na maszynach wirtualnych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co oznacza termin \"Google Dorks\"?",
+        "odp_1": "Funkcja indeksowania treści w czasie rzeczywistym",
+        "odp_2": "Narzędzie do wyszukiwania stron niezindeksowanych przez Google",
+        "odp_3": "Słownik pojęć stosowanych w przeglądarce Google",
+        "odp_4": "Specjalne zapytania pozwalające wyszukiwać specyficzne dane lub luki w systemach za pomocą Google",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jaką funkcję pełni polecenie ps w Linuxie?",
+        "odp_1": "Wyświetla historię poleceń",
+        "odp_2": "Wyświetla listę aktualnie działających procesów",
+        "odp_3": "Usuwa procesy",
+        "odp_4": "Kopiuje pliki między katalogami",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jak nazywa się organizacja zajmująca się rejestracją i zarządzaniem adresami IP oraz domenami w Europie?",
+        "odp_1": "RIPE",
+        "odp_2": "ICANN",
+        "odp_3": "LACNIC",
+        "odp_4": "ARIN",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Która z masek podsieci wskazuje, że może ona obsługiwać dokładnie 254 hosty?",
+        "odp_1": "255.255.255.0",
+        "odp_2": "255.255.255.128",
+        "odp_3": "255.255.254.0",
+        "odp_4": "255.255.252.0",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Z jakiego protokołu skorzystasz przy wysyłaniu wiadomości e-mail?",
+        "odp_1": "SNMP",
+        "odp_2": "IMAP",
+        "odp_3": "SMTP",
+        "odp_4": "POP3",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Jakiego przełącznika w poleceniu ls użyjesz, aby wyświetlić zawartość katalogów rekurencyjnie?",
+        "odp_1": "ls -r",
+        "odp_2": "ls -l",
+        "odp_3": "ls -R",
+        "odp_4": "ls -D",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza skrót APK w kontekście Androida?",
+        "odp_1": "Application Package Key",
+        "odp_2": "Android Program Kernel",
+        "odp_3": "Android Package Kit",
+        "odp_4": "App Programming Kit",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co to jest ransomware?",
+        "odp_1": "Narzędzie do monitorowania sieci",
+        "odp_2": "Złośliwe oprogramowanie blokujące dane w celu wymuszenia okupu",
+        "odp_3": "Program do ochrony przed wirusami",
+        "odp_4": "Oprogramowanie do wykonywania kopii zapasowych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Jakim językiem programowania jest JavaScript?",
+        "odp_1": "Kompilowanym",
+        "odp_2": "Szyfrowanym",
+        "odp_3": "Interpretowanym",
+        "odp_4": "Strukturalnym",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Co oznacza protokół ARP?",
+        "odp_1": "Asynchronous Relay Protocol",
+        "odp_2": "Address Resolution Protocol",
+        "odp_3": "Advanced Resolution Protocol",
+        "odp_4": "Automated Routing Protocol",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Przelicz liczbę szesnastkową 1A na system dziesiętny.",
+        "odp_1": "25",
+        "odp_2": "24",
+        "odp_3": "27",
+        "odp_4": "26",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Do czego służy protokół DHCP?",
+        "odp_1": "do dynamicznego przydzielania adresów IP",
+        "odp_2": "do przekierowywania ruchu w sieci",
+        "odp_3": "do szyfrowania komunikacji w sieci",
+        "odp_4": "do statycznego przydzielania adresów IP",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Ile bitów ma adres IPv4?",
+        "odp_1": "128",
+        "odp_2": "32",
+        "odp_3": "64",
+        "odp_4": "16",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Co to jest adres MAC?",
+        "odp_1": "Fizyczny adres urządzenia sieciowego",
+        "odp_2": "Adres sieciowy domeny",
+        "odp_3": "Kod kraju producenta",
+        "odp_4": "Adres IP urządzenia",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Co to jest botnet?",
+        "odp_1": "System wykrywania intruzów w sieci",
+        "odp_2": "Zaszyfrowane dane przechowywane w chmurze",
+        "odp_3": "Sieć bezprzewodowa z kontrolowanym dostępem",
+        "odp_4": "Grupa komputerów zainfekowanych i kontrolowanych przez atakującego",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Jakim poleceniem w Linuxie można wyświetlić listę aktywnych procesów?",
+        "odp_1": "ls",
+        "odp_2": "cat",
+        "odp_3": "pwd",
+        "odp_4": "ps",
+        "correct_odp": "odp_4"
+        },
+        {
+        "pytanie": "Przestępstwa komputerowe przeciwko bezpieczeństwu elektronicznie przetwarzanych danych i systemów komputerowych wg koncepcji Rady Europy o cyberprzestępczości (ETS 185)to:",
+        "odp_1": "nielegalne przechwytywanie danych, hacking, nielegalna ingerencja w system, piractwo komputerowe",
+        "odp_2": "nielegalne przechwytywanie danych, hacking, nielegalna ingerencja w system, posiadanie narzedzi do popełnienia wymienionych wcześniej przestępstw",
+        "odp_3": "hacking, carding, phreacking, piractwo komputerowe",
+        "odp_4": "Oszustwo komputerowe, hacking, ingerencja w system, posiadanie narzedzi do popełnienia wymienionych wcześniej przestępstw",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Przeszukanie i zajęcie przechowywanych danych komputerowych wg konwencji Rady Europy o cyberprzestępczości (ETS185) nie pozwala na:",
+        "odp_1": "zajęcie przedmiotów (komputerów, dyskietek)",
+        "odp_2": "zniszczenie narzędzi hackerskich",
+        "odp_3": "przeszukanie zasobów za pomocą sieci teleinformatycznej",
+        "odp_4": "kopiowanie danych",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Podpis elektroniczny polega na :",
+        "odp_1": "zeskanowaniu podpisu ręcznego i dołączeniu skanu do dokumentu elektronicznego",
+        "odp_2": "dołączeniu do dokumentu elektronicznego ciągu znaków obliczonego przy użyciu klucza prywatnego podpisującego",
+        "odp_3": "dołączeniu do dokumentu elektronicznego ciągu znaków obliczonego przy użyciu klucza publicznego podpisującego",
+        "odp_4": "Dołączeniu do dokumentu elektronicznego ciągu znaków szyfrujących dokument",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Społeczeństwo informacyjne to :",
+        "odp_1": "społeczeństwo uznające prymat informacji nad wiedzą",
+        "odp_2": "grupa ludzi informujących się nawzajem",
+        "odp_3": "społeczeństwo, w którym dominują informatorzy",
+        "odp_4": "społeczeństwo posiadające środki teleinformatyczne i wiedzę jak z tych środków skorzystać",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "NIE MA (uwaga na zaprzeczenie) wartości dowodowej( jako nośnik trwale zapisanych danych):",
+        "odp_1": "pamięć ROM",
+        "odp_2": "dysk twardy",
+        "odp_3": "taśma streamera",
+        "odp_4": "pamięć RAM",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Elementem wskazującym jednoznacznie na określony komputer w sieci Internet jest:",
+        "odp_1": "nazwa domeny",
+        "odp_2": "adres domeny",
+        "odp_3": "adres IP",
+        "odp_4": "nazwa komputera",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Zabezpieczając jednostkę centralną komputera do badań kryminalistycznych należy kolejno (proszę wybrać najlepsze działania):",
+        "odp_1": "zabezpieczyć przed nieuprawnioną ingerencją, spisać protokół zabezpieczenia",
+        "odp_2": "zdemontować dyski twarde i zabezpieczyć osobno, spisać protokół zabezpieczenia",
+        "odp_3": "spisać protokół zabezpieczenia, sprawdzić zawartość dysku",
+        "odp_4": "zabezpieczyć przed uszkodzeniem mechanicznym, spisać protokół zabezpieczenia",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Dysk twardy będzie poprawnie zabezpieczony do dalszych badań kryminalistycznych jeżeli będzie:",
+        "odp_1": "wstępnie zbadany programem antywirusowym",
+        "odp_2": "zapakowany w folii anty-elektrostatycznej w oryginalnym pudełku",
+        "odp_3": "skopiowany na inny czysty nośnik ( wszystkie pliki)",
+        "odp_4": "zabezpieczony przed uszkodzeniem i modyfikacja zawartości",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Ustalenie sprawcy przestępstwa w Internecie :",
+        "odp_1": "wymaga powiązania osoby z ustalonym komputerem",
+        "odp_2": "jest niemożliwe",
+        "odp_3": "wymaga uzyskania informacji z bazy użytkowników Internetu",
+        "odp_4": "jest uwarunkowane zabezpieczeniem procesowym komputera",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Strony internetowe zapisane w formacie HTML:",
+        "odp_1": "zawierają wiarygodną informację o serwerze, na którym są umieszczone",
+        "odp_2": "zawierają wiarygodna informację o autorze strony",
+        "odp_3": "nie mogą być modyfikowane w sposób nieupoważniony",
+        "odp_4": "mogą zawierać informacje niewidoczne dla oglądającego stronę",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Sztuczna inteligencja (AI) to:",
+        "odp_1": "zachowanie komputera, które w zachowaniu człowieka określa się inteligentnym",
+        "odp_2": "wyćwiczona zdolność zapamiętywania liczb",
+        "odp_3": "komputer potrafiący mówić",
+        "odp_4": "komputer oparty na biotechnologii",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Określenie e-Polska oznacza:",
+        "odp_1": "strategię rozwoju społeczeństwa informacyjnego w Polsce",
+        "odp_2": "polski serwer poczty elektronicznej",
+        "odp_3": "polskie podziemie internetowe",
+        "odp_4": "polską sieć transmisji danych",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Przestępczość komputerowa to :",
+        "odp_1": "każdy czyn przestępny , w którym komputer jest albo narzędziem albo przedmiotem przestępstwa",
+        "odp_2": "wszelkie bezprawne, nieetyczne i nieuprawnione zachowania odnoszące się do procesu przetwarzania i/lub przekazywania danych",
+        "odp_3": "wszystkie odpowiedzi są prawidłowe",
+        "odp_4": "akty przynoszące straty, szkody lub uszkodzenia, do których dokonania wykorzystano systemy przetwarzania danych",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Przestępczość komputerowa charakteryzuje się :",
+        "odp_1": "przypadkowością ujawniania, transgranicznymi działaniami sprawców",
+        "odp_2": "skomplikowanym działaniem, niemożliwością usunięcia śladów",
+        "odp_3": "częstym ujawnianiem przestępstw, niedostępnością narzędzi",
+        "odp_4": "trudnością dokonania czynu, ograniczeniem terytorialnym działania sprawców",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Polityka bezpieczeństwa systemu informatycznego to:",
+        "odp_1": "dokument opisujący zabezpieczenia techniczne wydziału informatyki",
+        "odp_2": "dokument opisujący sposób pracy i kierownictwa w zarządzaniu informacjami",
+        "odp_3": "dokument opisujący sposób wykonania kopii bezpieczeństwa danych w firmie",
+        "odp_4": "dokument opisujący wymagane zabezpieczenia organizacyjne, logiczne i fizyczne w konkretnym systemie",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Karta grafiki komputera klasy PC zawiera, oprócz procesora graficznego:",
+        "odp_1": "pamięć operacyjną",
+        "odp_2": "pamięć operacyjną i pamięć trwale zapisującą historię tworzonych obrazów",
+        "odp_3": "procesor transmisyjny protokołu X.25",
+        "odp_4": "złącza magistrali : danych i systemowej oraz złącze klawiatury",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Dostęp do usług w sieci komputerowej pracującej w protokole TCP/IP (np. Internet) mają komputery posiadające:",
+        "odp_1": "połączenie sieciowe z ta siecią , oprogramowanie sieciowe, nr IP",
+        "odp_2": "połączenie sieciowe, oprogramowanie sieciowe, nr IP, oprogramowanie klienckie usług",
+        "odp_3": "nr IP i adres domenowy (np. www.wspol.edu.pl)",
+        "odp_4": "oprogramowanie klienckie (np. Internet Explorer, Outlook Express)",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Do stałego, legalnego używania oprogramowania objętego licencją shareware wystarcza:",
+        "odp_1": "zainstalować oprogramowanie, zapoznać się z warunkami liecencji",
+        "odp_2": "zainstalować oprogramowanie, spełnić warunki licencji (np. wnieść opłatę)",
+        "odp_3": "zainstalować oprogramowanie",
+        "odp_4": "zapoznać się z warunkami licencji, reinstalować oprogramowanie po okresie użytkowania próbnego",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Licencja OEM (Original Equipmeny Manufacturer) oznacza, że:",
+        "odp_1": "oprogramowanie jest instalowane na fabrycznie nowych komputerach lub sprzedawane razem z elementami komputera",
+        "odp_2": "oprogramowanie jest  dostarczane w oryginalnych opakowaniach i na oryginalnych nośnikach",
+        "odp_3": "autorzy oprogramowania zrzekli się praw autorskich na rzecz producenta",
+        "odp_4": "wytwórca oprogramowania gwarantuje jego oryginalność",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "System otwarty to system, który:",
+        "odp_1": "jest zdolny współpracować z innymi systemami otwartymi",
+        "odp_2": "jest otwarty na wszystkie modyfikacje dokonywane przez użytkownika",
+        "odp_3": "jest niezabezpieczony przed wirusami",
+        "odp_4": "pozwala pracować bez podania nazwy użytkownika i jego hasła",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Przestępstwem komputerowym jest:",
+        "odp_1": "sprawdzenie czy komputer w sieci jest odpowiednio zabezpieczony",
+        "odp_2": "zniszczenie dysku twardego zawierającego istotne dane",
+        "odp_3": "przecięcie kabla łączącego drukarkę z komputerem",
+        "odp_4": "kradzież komputera",
+        "correct_odp": "odp_2"
+        },
+{
+        "pytanie": "Elementem wskazującym jednoznacznie na określony komputer w sieci Internet jest:",
+        "odp_1": "nazwa domeny",
+        "odp_2": "adres domeny",
+        "odp_3": "nazwa komputera",
+        "odp_4": "adres IP",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Ślady po odwiedzanych witrynach internetowych w systemie MS Windows XP standardowo można znaleźć w folderze:",
+        "odp_1": "./Temporary Internet Files/",
+        "odp_2": "./tmp/",
+        "odp_3": "./Program Files/Internet/",
+        "odp_4": "./temp/",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Jakimi rozszerzeniami są oznaczane pliki wykonywalne (programy):",
+        "odp_1": "com, exe",
+        "odp_2": "txt, bmp",
+        "odp_3": "com, jpg, gif, exe",
+        "odp_4": "jpg, gif, mpeg",
+        "correct_odp": "odp_1"
+        },
+{
+        "pytanie": "Ścieżka przekazywania poczty elektronicznej w nagłówku e-maila podawana jest w polach zaczynających się od słowa(ów):",
+        "odp_1": "Replay- To",
+        "odp_2": "X-Headers",
+        "odp_3": "Recieved",
+        "odp_4": "Return path",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Osobę odpowiedzialną za funkcjonowanie serwera www w Internecie możemy ustalić sprawdzając:",
+        "odp_1": "adres domenowy serwera w bazie WHEREIS",
+        "odp_2": "adres domenowy serwera w bazie WHOIS",
+        "odp_3": "adres internetowy serwera w bazie WHEREIS",
+        "odp_4": "adres internetowy serwera w bazie WHOIS",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Postanowienie o dopuszczeniu dowodu z opinii biegłego w sprawie o nielegalne uzyskanie programu komputerowego (art 278 par 2 kk) zawiera pytanie mające  na celu ustalenie:",
+        "odp_1": "na jakie oprogramowanie zapisane są w komputerze licencje",
+        "odp_2": "jakie oprogramowanie jest zainstalowane na komputerze i czy były dokonywane modyfikacje tego oprogramowania",
+        "odp_3": "jakie oprogramowanie jest zainstalowane na komputerze i kto jest właścicielem praw autorskich do tego oprogramowania",
+        "odp_4": "jakie oprogramowanie jest zainstalowane na komputerze",
+        "correct_odp": "odp_4"
+        },
+{
+        "pytanie": "Mechanizmy (roboty) wyszukiwarek klasyfikują informacje na podstawie:",
+        "odp_1": "adresów internetowych",
+        "odp_2": "treści umieszczonych na stronie",
+        "odp_3": "wszystkie odpowiedzi są prawidłowe",
+        "odp_4": "zapisu w polu <META Content=\"\"",
+        "correct_odp": "odp_3"
+        },
+{
+        "pytanie": "Ustalenie adresu IP komputera www.wspol.edu.pl można dokonać poleceniem",
+        "odp_1": "command www@wspol.edu.pl",
+        "odp_2": "ping www.wspol.edu.pl",
+        "odp_3": "ping www@wspol.edu.pl",
+        "odp_4": "command www.wspol.edu.pl",
+        "correct_odp": "odp_2"
+        }
+
+    ]
+}

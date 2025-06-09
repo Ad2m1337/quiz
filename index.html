@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna - Centrum Wiedzy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Zaktualizowano wersję Font Awesome dla lepszej kompatybilności ikon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-5xl bg-white dark:bg-slate-800 rounded-2xl shadow-2xl p-6 md:p-8">
+        
+        <!-- Nagłówek -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-2">Centrum Wiedzy</h1>
+            <p class="text-lg text-slate-600 dark:text-slate-400">Wybierz quiz lub przejdź do materiałów edukacyjnych.</p>
+        </div>
+
+        <!-- Sekcja z Quizami -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-700 dark:text-slate-300 border-b-2 border-indigo-500 pb-2 mb-6">Sprawdź się w Quizach</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Karta Quizu: Wiedza IT -->
+                <a href="quizy/quizit.html" class="card block bg-slate-50 dark:bg-slate-700 p-6 rounded-xl text-center">
+                    <i class="fas fa-laptop-code text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Quiz z Wiedzy IT</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Ogólne pytania z zakresu technologii informatycznych.</p>
+                </a>
+                
+                <!-- Karta Quizu: Angielski -->
+                <a href="quizy/quizang.html" class="card block bg-slate-50 dark:bg-slate-700 p-6 rounded-xl text-center">
+                    <i class="fas fa-language text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Quiz z Angielskiego</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Sprawdź swoje słownictwo i gramatykę.</p>
+                </a>
+                
+                <!-- Karta Quizu: Prawo -->
+                <a href="quizy/quizprawa.html" class="card block bg-slate-50 dark:bg-slate-700 p-6 rounded-xl text-center">
+                    <i class="fas fa-gavel text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Quiz z Prawa</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Podstawy prawa cywilnego i karnego.</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Sekcja z Materiałami -->
+        <div>
+            <h2 class="text-2xl font-bold text-slate-700 dark:text-slate-300 border-b-2 border-indigo-500 pb-2 mb-6">Materiały Edukacyjne</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                
+                 <!-- Karta Materiałów: IT -->
+                <a href="materialy/materialit.html" class="card block bg-slate-50 dark:bg-slate-700 p-6 rounded-xl text-center">
+                    <i class="fas fa-book-reader text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Materiały IT</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Notatki, artykuły i opracowania z dziedziny IT.</p>
+                </a>
+
+                <!-- Karta Materiałów: Prawo -->
+                <a href="materialy/materialprawo.html" class="card block bg-slate-50 dark:bg-slate-700 p-6 rounded-xl text-center">
+                    <i class="fas fa-scroll text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Materiały z Prawa</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Opracowania ustaw, kazusy i artykuły prawne.</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiały IT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 
+      Struktura Aplikacji:
+      Strona została zaprojektowana jako Single Page Application (SPA) z nawigacją po lewej stronie i dynamicznie ładowaną treścią po prawej.
+      Taki układ jest idealny dla materiałów referencyjnych, jak to kompendium, ponieważ pozwala użytkownikowi na błyskawiczne
+      przechodzenie między różnymi kategoriami wiedzy bez konieczności przeładowywania całej strony.
+      Treść w każdej sekcji jest zorganizowana w formie "kart", co poprawia czytelność i pozwala na logiczne grupowanie informacji.
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #d1d5db; /* text-gray-300 */
+        }
+        .content-section { 
+            display: none; 
+            animation: fadeIn 0.5s;
+        }
+        .content-section.active { 
+            display: block; 
+        }
+        .nav-link.active { 
+            background-color: #374151; /* bg-gray-700 */
+            color: white; 
+            border-left: 3px solid #10b981; /* border-emerald-500 */
+        }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding-left: 1rem;
+            border-left: 3px solid transparent;
+        }
+        .code-block { 
+            position: relative; 
+        }
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background-color: #4b5563; /* bg-gray-600 */
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem; /* rounded-md */
+            font-size: 0.75rem; /* text-xs */
+            cursor: pointer;
+            opacity: 0.2;
+            transition: all 0.2s;
+        }
+        .code-block:hover .copy-btn { 
+            opacity: 1; 
+        }
+        .copy-btn:hover { 
+            background-color: #374151; /* bg-gray-700 */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Zapewnienie równej wysokości kart w siatce */
+        .grid {
+            display: grid;
+        }
+        .grid > .card { /* Stosowanie do bezpośrednich dzieci z klasą card */
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-72 bg-gray-800 text-white flex-shrink-0 flex flex-col">
+            <div class="p-4 border-b border-gray-700 h-[65px] flex items-center">
+                <h1 class="text-2xl font-bold">Materiały IT</h1>
+            </div>
+            <nav class="mt-4 flex-1 space-y-1">
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50 active" data-target="terminy">
+                    <span class="w-6 text-center text-lg">📙</span> Skróty i Terminy
+                </a>
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="system">
+                    <span class="w-6 text-center text-lg">💻</span> System i Sprzęt
+                </a>
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="raid">
+                    <span class="w-6 text-center text-lg">💾</span> Macierze RAID
+                </a>
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="modele">
+                    <span class="w-6 text-center text-lg">🌐</span> Modele Sieciowe
+                </a>
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="koncepcje">
+                    <span class="w-6 text-center text-lg">⚙️</span> Koncepcje Sieciowe
+                </a>
+                 <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="kryptografia">
+                    <span class="w-6 text-center text-lg">🔑</span> Kryptografia i Hashing
+                </a>
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="ataki">
+                    <span class="w-6 text-center text-lg">🛡️</span> Ataki i Luki
+                </a>
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="blockchain">
+                    <span class="w-6 text-center text-lg">🔗</span> Technologie Blockchain
+                </a>
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="wywiad">
+                    <span class="w-6 text-center text-lg">🕵️</span> Wywiad i Identyfikatory
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 md:p-10 overflow-y-auto">
+
+            <!-- Section 1: Skróty i Terminy -->
+            <section id="terminy" class="content-section active">
+                <h2 class="text-3xl font-bold mb-2 text-white">Skróty i Podstawowe Terminy</h2>
+                <p class="mb-6 text-gray-400">Definicje kluczowych akronimów i pojęć ze świata IT.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">SATA (Serial Advanced Technology Attachment)</h3>
+                        <p class="mt-2 text-sm flex-grow">Nowoczesny interfejs (standard komunikacji) używany do podłączania urządzeń pamięci masowej, takich jak dyski twarde (HDD) i dyski półprzewodnikowe (SSD), do płyty głównej komputera. Nie jest to rodzaj pamięci, a sposób jej podłączenia.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">DHCP (Dynamic Host Configuration Protocol)</h3>
+                        <p class="mt-2 text-sm flex-grow">Protokół sieciowy, który automatycznie przydziela adresy IP i inne parametry sieciowe (maska podsieci, brama domyślna, serwery DNS) urządzeniom w sieci. Upraszcza zarządzanie siecią, eliminując potrzebę ręcznej konfiguracji każdego hosta.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">IMSI (International Mobile Subscriber Identity)</h3>
+                        <p class="mt-2 text-sm flex-grow">Unikalny numer przypisany do karty SIM, służący do identyfikacji abonenta w sieciach komórkowych. Składa się z:<br>• <strong>MCC</strong> (kod kraju, np. 260 dla PL)<br>• <strong>MNC</strong> (kod sieci, np. 01 dla Orange)<br>• <strong>MSIN</strong> (numer abonenta).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">BEC (Business Email Compromise)</h3>
+                        <p class="mt-2 text-sm flex-grow">Zaawansowany atak phishingowy, w którym cyberprzestępca podszywa się pod osobę na wysokim stanowisku, aby nakłonić pracownika do wykonania nieautoryzowanej transakcji finansowej lub ujawnienia danych.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Software vs Hardware</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Software (Oprogramowanie):</strong> Zbiór instrukcji, programów i danych, które mówią komputerowi, co ma robić (np. system operacyjny, przeglądarka).<br><strong>Hardware (Sprzęt):</strong> Fizyczne komponenty komputera (np. procesor, dysk twardy, karta graficzna).</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">AFU (After First Unlock)</h3>
+                        <p class="mt-2 text-sm flex-grow">Stan urządzenia (szczególnie w kontekście systemów mobilnych jak Android/iOS), które zostało uruchomione i odblokowane przez użytkownika po raz pierwszy (np. przez podanie kodu PIN). W tym stanie większość danych użytkownika jest już odszyfrowana i dostępna dla aplikacji.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section: System i Sprzęt -->
+            <section id="system" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">System i Sprzęt</h2>
+                <p class="mb-6 text-gray-400">Pojęcia związane z systemami operacyjnymi, sprzętem i programowaniem.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Montowanie Dysku</h3>
+                        <p class="mt-2 text-sm flex-grow">Proces "podłączania" systemu plików znajdującego się na partycji dysku do głównego drzewa katalogów systemu operacyjnego. Dzięki temu dane na dysku stają się dostępne pod określoną ścieżką (punktem montowania), np. `/mnt/data`.<br>• `mount -r`: Montuje system plików w trybie tylko do odczytu (read-only).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Polecenia Linux: `ps`, `cat`, `ip`</h3>
+                         <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
+<pre><code># Wyświetla listę aktualnie działających procesów
+ps aux
+
+# Nadpisuje zawartość plik2 zawartością plik1
+cat plik1 > plik2
+
+# Wyświetla adresy MAC interfejsów sieciowych
+ip link show
+ifconfig -a # starsze polecenie</code></pre>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">EFI Lock (Blokada Hasłem Firmware)</h3>
+                        <p class="mt-2 text-sm flex-grow">Zabezpieczenie na poziomie firmware'u (UEFI) w komputerach (głównie Apple), które uniemożliwia uruchomienie systemu z innego nośnika niż wskazany dysk startowy oraz blokuje dostęp do zaawansowanych opcji startowych (np. trybu odzyskiwania) bez podania hasła. Chroni przed nieautoryzowanym dostępem fizycznym.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Kompilator i Semantyka</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Kompilator:</strong> Program, który tłumaczy kod źródłowy napisany w języku programowania wysokiego poziomu (np. C++) na kod maszynowy zrozumiały dla procesora.<br><strong>Semantyka:</strong> W programowaniu, to znaczenie i logika przypisana do poszczególnych konstrukcji językowych. Określa, co dany fragment kodu faktycznie robi.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Identyfikator Pliku (Inode)</h3>
+                        <p class="mt-2 text-sm flex-grow">W systemach plików typu Unix (Linux, macOS), każdy plik i katalog jest identyfikowany nie przez nazwę, a przez unikalny numer zwany <strong>i-węzłem (inode)</strong>. Inode przechowuje wszystkie metadane o pliku (uprawnienia, właściciel, rozmiar, wskaźniki na bloki danych), z wyjątkiem jego nazwy.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Środowisko graficzne vs Terminal</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Środowisko graficzne (GUI):</strong> np. GNOME, KDE, XFCE. To wizualna powłoka systemu z oknami, ikonami i kursorem.<br><strong>Terminal (CLI):</strong> To interfejs wiersza poleceń. Nie jest środowiskiem graficznym; jest to program pozwalający na interakcję z systemem za pomocą poleceń tekstowych.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Pamięć ROM (Read-Only Memory)</h3>
+                        <p class="mt-2 text-sm flex-grow">Rodzaj pamięci komputerowej, której zawartość nie jest (lub jest bardzo trudno) modyfikowalna i nie ulega skasowaniu po wyłączeniu zasilania. Przechowuje kluczowe oprogramowanie, takie jak firmware UEFI/BIOS, niezbędne do uruchomienia komputera.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Komunikacja Międzyprocesowa (IPC)</h3>
+                        <p class="mt-2 text-sm flex-grow">Mechanizmy, które pozwalają różnym, niezależnym procesom działającym w systemie operacyjnym na wymianę danych i synchronizację swoich działań. Przykłady to potoki (pipes), gniazda (sockets) czy pamięć współdzielona.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section: RAID -->
+            <section id="raid" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Macierze RAID</h2>
+                <p class="mb-6 text-gray-400">Szczegółowy opis konfiguracji Redundant Array of Independent Disks.</p>
+                <div class="space-y-6">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-semibold text-xl text-white">RAID 0 (Stripping)</h3>
+                        <p class="mt-2 text-sm">Dane są dzielone na bloki i zapisywane naprzemiennie na co najmniej dwóch dyskach.</p>
+                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div><strong class="text-green-400">Zalety:</strong><p>Bardzo wysoka wydajność (prędkość odczytu/zapisu jest niemal sumą prędkości poszczególnych dysków).</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Brak jakiejkolwiek odporności na awarie. Awaria jednego dysku powoduje utratę WSZYSTKICH danych z całej macierzy.</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-semibold text-xl text-white">RAID 1 (Mirroring)</h3>
+                        <p class="mt-2 text-sm">Dane są w całości kopiowane na co najmniej dwa dyski, tworząc lustrzane odbicie.</p>
+                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div><strong class="text-green-400">Zalety:</strong><p>Wysoka odporność na awarie. Macierz działa, dopóki sprawny jest co najmniej jeden dysk. Szybki odczyt.</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Pojemność macierzy jest równa pojemności najmniejszego dysku. 50% przestrzeni dyskowej jest "tracone" na kopię zapasową.</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-semibold text-xl text-white">RAID 5 (Stripping with Distributed Parity)</h3>
+                        <p class="mt-2 text-sm">Wymaga min. 3 dysków. Dane i bity parzystości (informacje kontrolne) są rozkładane na wszystkich dyskach, co pozwala odtworzyć dane w przypadku awarii jednego z nich.</p>
+                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div><strong class="text-green-400">Zalety:</strong><p>Dobry kompromis między wydajnością, pojemnością a bezpieczeństwem. Dobra prędkość odczytu.</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Awaria drugiego dysku przed odbudową macierzy prowadzi do utraty danych. Spadek wydajności zapisu z powodu konieczności obliczania parzystości.</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-semibold text-xl text-white">RAID 6 (Stripping with Double Distributed Parity)</h3>
+                        <p class="mt-2 text-sm">Wymaga min. 4 dysków. Podobny do RAID 5, ale używa podwójnych bitów parzystości.</p>
+                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div><strong class="text-green-400">Zalety:</strong><p>Bardzo wysoka odporność – macierz może przetrwać awarię dwóch dysków jednocześnie.</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Większy spadek wydajności zapisu niż w RAID 5 z powodu obliczania dwóch sum kontrolnych. Wyższy koszt.</p></div>
+                        </div>
+                    </div>
+                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-semibold text-xl text-white">RAID 10 (1+0)</h3>
+                        <p class="mt-2 text-sm">Wymaga min. 4 dysków. Kombinacja RAID 1 (mirroring) i RAID 0 (stripping). Tworzy się dwie lub więcej macierzy RAID 1, a następnie łączy je w RAID 0.</p>
+                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div><strong class="text-green-400">Zalety:</strong><p>Bardzo wysoka wydajność zapisu i odczytu oraz wysoka odporność na awarie.</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Wysoki koszt, ponieważ połowa całkowitej przestrzeni dyskowej jest zużywana na lustrzane kopie.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Modele Sieciowe -->
+            <section id="modele" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Modele Sieciowe</h2>
+                 <p class="mb-6 text-gray-400">Dwa fundamentalne modele opisujące architekturę komunikacji sieciowej.</p>
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-xl text-white">Model ISO/OSI (7 warstw)</h3>
+                        <p class="text-sm text-gray-400 mt-1">Teoretyczny model referencyjny.</p>
+                        <ol class="list-decimal list-inside mt-4 space-y-2 text-sm">
+                            <li><strong>Fizyczna:</strong> Transmisja bitów (kable, sygnały).</li>
+                            <li><strong>Łącza danych:</strong> Adresacja MAC, ramki.</li>
+                            <li><strong>Sieciowa:</strong> Adresacja IP, routing pakietów.</li>
+                            <li><strong>Transportowa:</strong> Komunikacja end-to-end (TCP/UDP).</li>
+                            <li><strong>Sesji:</strong> Zarządzanie sesjami.</li>
+                            <li><strong>Prezentacji:</strong> Formatowanie, szyfrowanie danych.</li>
+                            <li><strong>Aplikacji:</strong> Interfejs dla użytkownika (HTTP, FTP).</li>
+                        </ol>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-xl text-white">Model TCP/IP (4 warstwy)</h3>
+                        <p class="text-sm text-gray-400 mt-1">Praktyczny model, na którym działa internet.</p>
+                        <ol class="list-decimal list-inside mt-4 space-y-2 text-sm">
+                            <li><strong>Dostępu do sieci:</strong> Łączy funkcje warstwy fizycznej i łącza danych z modelu OSI (Ethernet, Wi-Fi).</li>
+                            <li><strong>Internetowa:</strong> Odpowiednik warstwy sieciowej OSI. Odpowiada za adresowanie i routing (IP, ICMP, ARP).</li>
+                            <li><strong>Transportowa:</strong> Taka sama jak w modelu OSI. Zapewnia komunikację między hostami (TCP, UDP).</li>
+                            <li><strong>Aplikacji:</strong> Łączy funkcje warstw sesji, prezentacji i aplikacji z OSI (HTTP, DNS, FTP, SMTP).</li>
+                        </ol>
+                    </div>
+                 </div>
+            </section>
+            
+            <!-- Section: Koncepcje Sieciowe -->
+            <section id="koncepcje" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Koncepcje Sieciowe</h2>
+                <p class="mb-6 text-gray-400">Zasady i protokoły rządzące komunikacją w sieciach komputerowych.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Tryby komunikacji: Half/Full Duplex</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Half-duplex:</strong> Komunikacja odbywa się w obu kierunkach, ale nie jednocześnie (jak w krótkofalówce - jedna osoba mówi, druga słucha).<br><strong>Full-duplex:</strong> Komunikacja odbywa się w obu kierunkach jednocześnie (jak w rozmowie telefonicznej).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Broadcast</h3>
+                        <p class="mt-2 text-sm flex-grow">Metoda wysyłania pakietów danych, w której jeden pakiet jest adresowany i dostarczany do wszystkich urządzeń (hostów) w danej sieci lokalnej (domenie rozgłoszeniowej). Używany m.in. przez protokół ARP.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">VPN (Virtual Private Network)</h3>
+                        <p class="mt-2 text-sm flex-grow">Wirtualna sieć prywatna. Technologia, która tworzy bezpieczny, szyfrowany "tunel" przez sieć publiczną (np. internet), pozwalając na rozszerzenie sieci prywatnej. Umożliwia bezpieczny zdalny dostęp do zasobów firmowych.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Ping (ICMP)</h3>
+                        <p class="mt-2 text-sm flex-grow">Narzędzie diagnostyczne używające protokołu <strong>ICMP</strong> (Internet Control Message Protocol) do sprawdzania, czy dany host w sieci jest osiągalny. Wysyła pakiet "echo request" i mierzy czas oczekiwania na odpowiedź "echo reply", co pozwala ocenić opóźnienia w sieci.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Przełącznik (Switch) a Urządzenie brzegowe</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Przełącznik (switch)</strong> działa wewnątrz sieci lokalnej (w warstwie 2 OSI), łącząc urządzenia. **Nie jest** urządzeniem brzegowym.<br><strong>Urządzenie brzegowe</strong> (np. router, firewall) znajduje się na granicy sieci i łączy ją z inną siecią (np. z internetem).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Bluetooth i Sieć PAN</h3>
+                        <p class="mt-2 text-sm flex-grow">Bluetooth to technologia komunikacji bezprzewodowej na krótkie dystanse, która tworzy sieć typu <strong>PAN (Personal Area Network)</strong> - Osobistą Sieć Komputerową. Służy do łączenia urządzeń osobistych, takich jak słuchawki, myszy, klawiatury.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section 3: Kryptografia -->
+            <section id="kryptografia" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Kryptografia i Hashing</h2>
+                <p class="mb-6 text-gray-400">Podstawy szyfrowania, weryfikacji integralności i bezpieczeństwa danych.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Przechowywanie Haseł</h3>
+                        <p class="mt-2 text-sm flex-grow">Hasła nie są przechowywane w adresie MAC. W nowoczesnych systemach operacyjnych (np. macOS, Windows) hasła użytkownika i certyfikaty są przechowywane w bezpiecznym, zaszyfrowanym kontenerze zwanym <strong>pękiem kluczy (keychain)</strong> lub menedżerem poświadczeń.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Surowa Kopia Binarna (`dd`)</h3>
+                        <p class="mt-2 text-sm flex-grow">Polecenie `dd` w systemach uniksowych tworzy dokładną, bit-po-bicie kopię nośnika danych (dysku, partycji) do pliku obrazu. Jest to fundamentalne narzędzie w informatyce śledczej, ponieważ pozwala zachować oryginalny nośnik w nienaruszonym stanie i pracować na jego wiernej kopii.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Bloker Sprzętowy (Hardware Blocker)</h3>
+                        <p class="mt-2 text-sm flex-grow">Urządzenie fizyczne (sprzętowe), które uniemożliwia zapis danych na podłączonym nośniku (np. dysku twardym). Jest kluczowym narzędziem w informatyce śledczej, gwarantując, że podczas akwizycji danych (tworzenia kopii binarnej) oryginalny nośnik dowodowy nie zostanie w żaden sposób zmodyfikowany.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section 5: Ataki i Luki -->
+            <section id="ataki" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Ataki i Luki Bezpieczeństwa</h2>
+                <p class="mb-6 text-gray-400">Zrozumienie podstawowych wektorów ataków i słabości systemów.</p>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Exploit Zdalny vs Lokalny</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Exploit zdalny:</strong> Wykorzystuje lukę w systemie przez sieć, bez potrzeby fizycznego dostępu do urządzenia. Atakujący może być w dowolnym miejscu na świecie.<br><strong>Exploit lokalny:</strong> Wymaga, aby atakujący miał już jakiś (zazwyczaj ograniczony) dostęp do systemu w celu eskalacji uprawnień.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Zdalny Dostęp: Telnet vs SSH</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Telnet</strong> jest protokołem niezabezpieczonym, ponieważ cała komunikacja, włącznie z hasłami, jest przesyłana otwartym tekstem. Jest podatny na podsłuchiwanie.<br><strong>SSH (Secure Shell)</strong> to bezpieczny, szyfrowany protokół, który powinien być używany do zdalnego zarządzania systemami.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Maskowanie Adresu IP</h3>
+                        <p class="mt-2 text-sm flex-grow">Techniki ukrywania prawdziwego adresu IP użytkownika w celu zwiększenia anonimowości lub ominięcia cenzury. Najpopularniejsze metody to:<br>• <strong>VPN:</strong> Szyfruje cały ruch i kieruje go przez serwer pośredniczący.<br>• <strong>Proxy:</strong> Działa jako pośrednik dla konkretnego ruchu (np. WWW).<br>• <strong>TOR:</strong> Zapewnia najwyższy poziom anonimowości poprzez wielowarstwowe szyfrowanie i trasowanie cebulowe.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">PuTTY</h3>
+                        <p class="mt-2 text-sm flex-grow">PuTTY to popularny, darmowy klient dla systemu Windows, który implementuje wiele protokołów sieciowych. Najczęściej jest używany jako klient <strong>SSH</strong>, ale obsługuje również <strong>Telnet</strong>, rlogin i połączenia szeregowe. Nie obsługuje natywnie protokołu FTP.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section 6: Blockchain -->
+            <section id="blockchain" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Technologie Blockchain</h2>
+                 <p class="mb-6 text-gray-400">Kluczowe koncepcje stojące za technologią rozproszonego rejestru.</p>
+                 <div class="space-y-6">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-xl text-white">Merkle Tree (Drzewo Merkle'a)</h3>
+                        <p class="mt-2 text-sm">Struktura danych w postaci drzewa, używana do wydajnej i bezpiecznej weryfikacji integralności danych w bloku. Liśćmi drzewa są hashe transakcji, a jego wierzchołek (Merkle Root) jest zapisywany w nagłówku bloku jako skondensowany dowód zawartości.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-xl text-white">Hard Fork</h3>
+                        <p class="mt-2 text-sm">Radykalna, niekompatybilna wstecz zmiana w protokole blockchaina. Prowadzi do trwałego rozdzielenia łańcucha na dwa osobne, ponieważ węzły ze starym oprogramowaniem nie mogą weryfikować nowych bloków.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 7: Wywiad i Identyfikatory -->
+            <section id="wywiad" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Wywiad i Identyfikatory</h2>
+                 <p class="mb-6 text-gray-400">Metody pozyskiwania informacji i znaczenie unikalnych identyfikatorów.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Struktura Dysku Fizycznego</h3>
+                        <p class="mt-2 text-sm flex-grow">Adresowanie <strong>Głowica 1, Talerz 0, Sektor 0</strong> (lub podobne, w zależności od schematu) odnosi się do fizycznej lokalizacji danych na dysku twardym. Pierwsze sektory dysku są kluczowe, ponieważ często zawierają <strong>sektor rozruchowy (MBR/GPT)</strong>, który zawiera informacje niezbędne do uruchomienia systemu operacyjnego.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">SOCMINT i Geotagging</h3>
+                         <p class="mt-2 text-sm flex-grow"><strong>SOCMINT (Social Media Intelligence):</strong> Dziedzina białego wywiadu (OSINT) polegająca na zbieraniu i analizie publicznie dostępnych informacji z mediów społecznościowych.<br><strong>Geotagging:</strong> Proces dodawania metadanych geograficznych (lokalizacji) do mediów. Cenne źródło informacji w analizie SOCMINT.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+            const copyButtons = document.querySelectorAll('.copy-btn');
+
+            // Nawigacja między sekcjami
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('data-target');
+
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    link.classList.add('active');
+
+                    contentSections.forEach(section => {
+                        section.classList.toggle('active', section.id === targetId);
+                    });
+                });
+            });
+
+            // Funkcjonalność przycisków "Kopiuj"
+            copyButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeBlock = button.nextElementSibling; // <pre>
+                    const textToCopy = codeBlock.innerText;
+
+                    const textArea = document.createElement('textarea');
+                    textArea.value = textToCopy;
+                    textArea.style.position = 'fixed';
+                    textArea.style.left = '-9999px';
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    try {
+                        document.execCommand('copy');
+                        button.innerText = 'Skopiowano!';
+                        button.style.backgroundColor = '#10b981';
+                        setTimeout(() => {
+                            button.innerText = 'Kopiuj';
+                            button.style.backgroundColor = '';
+                        }, 2000);
+                    } catch (err) {
+                        console.error('Błąd kopiowania do schowka', err);
+                        button.innerText = 'Błąd';
+                         setTimeout(() => {
+                            button.innerText = 'Kopiuj';
+                        }, 2000);
+                    }
+                    document.body.removeChild(textArea);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

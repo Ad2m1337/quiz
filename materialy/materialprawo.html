@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberprzestępczość - Przewodnik Prawny</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #d1d5db; /* text-gray-300 */
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .nav-link.active {
+            background-color: #374151; /* bg-gray-700 */
+            color: white;
+        }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem; /* gap-3 */
+        }
+        /* Styling for details/summary accordion */
+        details > summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 1rem;
+            background-color: #1f2937; /* bg-gray-800 */
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 600;
+            color: white;
+            transition: background-color 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        details > summary:hover {
+            background-color: #374151; /* bg-gray-700 */
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        /* NEW SVG ICON */
+        details > summary::before {
+            content: '';
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%239ca3af'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' d='m8.25 4.5 7.5 7.5-7.5 7.5' /%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-size: 1rem 1rem;
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.75rem;
+            display: inline-block;
+            transition: transform 0.2s;
+            transform: rotate(0deg);
+        }
+        details[open] > summary::before {
+            transform: rotate(90deg);
+        }
+        details div.content {
+            padding: 1rem;
+            background-color: #1f2937; /* bg-gray-800 */
+            border-top: 1px solid #374151; /* border-gray-700 */
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-300">
+
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-72 bg-gray-800 text-white flex-shrink-0 flex flex-col">
+            <div class="p-4 border-b border-gray-700 h-[61px] flex items-center">
+                <h1 class="text-xl font-bold">Przewodnik Prawny</h1>
+            </div>
+            <nav class="mt-4 flex-1 px-2">
+                <a href="#" class="nav-link text-sm py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 active" data-target="kk">
+                    <span class="w-6 text-center text-lg">⚖️</span> Kodeks Karny
+                </a>
+                <a href="#" class="nav-link text-sm py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="kw">
+                    <span class="w-6 text-center text-lg">📜</span> Kodeks Wykroczeń
+                </a>
+                <a href="#" class="nav-link text-sm py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="konwencja">
+                    <span class="w-6 text-center text-lg">🌐</span> Konwencja Budapesztańska
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 md:p-10 overflow-y-auto">
+
+            <!-- Section 1: Kodeks Karny -->
+            <section id="kk" class="content-section active">
+                <h2 class="text-3xl font-bold mb-2 text-white">Kodeks Karny</h2>
+                <p class="mb-6 text-gray-400">Wybrane artykuły dotyczące cyberprzestępczości.</p>
+                <div class="space-y-4">
+                    <details>
+                        <summary>Rozdział XXXIII: Przestępstwa przeciwko ochronie informacji</summary>
+                        <div class="content space-y-4">
+                            <p><b>Art. 267 KK – Nieuprawnione uzyskanie informacji (hacking)</b><br>§ 1: Przełamanie zabezpieczeń w celu uzyskania dostępu do informacji.<br>§ 2: Uzyskanie dostępu do całości lub części systemu informatycznego.<br>§ 3: Użycie oprogramowania szpiegującego (spyware, keyloggery).<br>§ 4: Ujawnienie informacji uzyskanej nielegalnie.</p>
+                            <p><b>Art. 268 KK – Niszczenie danych informatycznych</b><br>§ 1: Niszczenie, uszkadzanie, usuwanie lub zmienianie zapisu istotnej informacji.<br>§ 2: Zaostrzenie kary, jeśli czyn dotyczy zapisu na informatycznym nośniku danych.</p>
+                            <p><b>Art. 268a KK – Zakłócanie pracy systemu</b><br>§ 1: Zakłócanie przetwarzania danych lub utrudnianie do nich dostępu (np. ataki DDoS).<br>§ 2: Zaostrzenie kary, jeśli wyrządzono znaczną szkodę majątkową.</p>
+                            <p><b>Art. 269 KK – Sabotaż komputerowy</b><br>Dotyczy niszczenia danych o szczególnym znaczeniu dla obronności, bezpieczeństwa lub funkcjonowania administracji państwowej.</p>
+                            <p><b>Art. 269a KK – Narzędzia hakerskie</b><br>Wytwarzanie, pozyskiwanie lub udostępnianie programów/urządzeń do popełniania cyberprzestępstw (np. exploitów).</p>
+                            <p><b>Art. 269b KK – Nielegalne pozyskiwanie haseł/kodów</b><br>Dotyczy nieuprawnionego pozyskiwania lub udostępniania danych dostępowych.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Inne istotne artykuły</summary>
+                        <div class="content space-y-4">
+                            <p><b>Art. 287 KK – Oszustwo komputerowe</b><br>Wpływanie na przetwarzanie danych w celu osiągnięcia korzyści majątkowej (np. phishing).</p>
+                            <p><b>Art. 190a KK – Stalking / Podszywanie się</b><br>§ 1: Uporczywe nękanie (cyberstalking).<br>§ 2: Podszywanie się pod inną osobę (catfishing) w celu wyrządzenia jej szkody.</p>
+                             <p><b>Art. 202 KK – Dziecięca pornografia</b><br>Penalizuje produkcję, rozpowszechnianie, a także posiadanie (np. § 4a) materiałów pornograficznych z udziałem małoletniego.</p>
+                            <p><b>Art. 256 KK – Mowa nienawiści</b><br>Publiczne nawoływanie do nienawiści na tle różnic narodowościowych, etnicznych, rasowych lub wyznaniowych.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Section 2: Kodeks Wykroczeń -->
+            <section id="kw" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Kodeks Wykroczeń</h2>
+                <p class="mb-6 text-gray-400">Przepisy mogące znaleźć zastosowanie w przypadku incydentów o mniejszej wadze.</p>
+                 <div class="space-y-4">
+                    <details>
+                        <summary>Art. 107 KW – Złośliwe niepokojenie</summary>
+                        <div class="content">
+                           <p>Kto w celu dokuczenia innej osobie złośliwie wprowadza ją w błąd lub w inny sposób złośliwie niepokoi.<br>Może dotyczyć np. uporczywego wysyłania niechcianych wiadomości (spam-bombing), jeśli nie wyczerpuje to znamion przestępstwa stalkingu z KK.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Section 3: Konwencja Budapesztańska -->
+            <section id="konwencja" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Konwencja Budapesztańska (ETS nr 185)</h2>
+                <p class="mb-6 text-gray-400">Międzynarodowy traktat o cyberprzestępczości harmonizujący prawo i współpracę.</p>
+                <div class="space-y-4">
+                    <details>
+                        <summary>Definicje (Art. 1)</summary>
+                        <div class="content space-y-2">
+                           <p><b>System komputerowy:</b> Urządzenie lub grupa urządzeń wykonujących automatyczne przetwarzanie danych.</p>
+                           <p><b>Dane komputerowe:</b> Przedstawienie faktów, informacji, pojęć w formie właściwej do przetwarzania, w tym programy.</p>
+                           <p><b>Dostawca usług:</b> Podmiot dostarczający usługi łączności lub przetwarzający/przechowujący dane.</p>
+                           <p><b>Dane o ruchu:</b> Metadane połączenia (źródło, cel, droga, czas, rozmiar itp.), bez treści.</p>
+                        </div>
+                    </details>
+                     <details>
+                        <summary>Prawo karne materialne (Art. 2-13)</summary>
+                        <div class="content space-y-2">
+                            <p><b>Art. 2: Nielegalny dostęp</b> (Hacking)</p>
+                            <p><b>Art. 3: Nielegalne przechwytywanie</b> (Podsłuch niepublicznych transmisji)</p>
+                            <p><b>Art. 4: Naruszenie integralności danych</b> (Uszkadzanie, usuwanie, blokowanie danych)</p>
+                            <p><b>Art. 5: Naruszenie integralności systemu</b> (Poważne zakłócanie pracy systemu, np. DDoS)</p>
+                            <p><b>Art. 6: Nadużycie urządzeń</b> (Produkcja, sprzedaż, posiadanie narzędzi hakerskich, haseł)</p>
+                            <p><b>Art. 7: Fałszerstwo komputerowe</b></p>
+                            <p><b>Art. 8: Oszustwo komputerowe</b></p>
+                            <p><b>Art. 9: Przestępstwa związane z pornografią dziecięcą</b></p>
+                            <p><b>Art. 10: Naruszenie praw autorskich</b></p>
+                            <p><b>Art. 11-13:</b> Podżeganie, pomocnictwo, usiłowanie, odpowiedzialność osób prawnych i sankcje.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Prawo procesowe (Art. 14-21)</summary>
+                        <div class="content space-y-2">
+                            <p><b>Art. 16: Szybkie zabezpieczenie przechowywanych danych</b> (tzw. "zamrożenie" dowodów cyfrowych).</p>
+                            <p><b>Art. 18: Nakaz przedstawienia</b> (zobowiązanie do wydania danych).</p>
+                            <p><b>Art. 19: Przeszukanie i zajęcie</b> (w tym możliwość rozszerzenia na inny system dostępny z przeszukiwanego).</p>
+                            <p><b>Art. 20: Gromadzenie danych o ruchu w czasie rzeczywistym</b> (monitoring "na żywo" metadanych).</p>
+                             <p><b>Art. 21: Przechwytywanie danych o treści w czasie rzeczywistym</b> (monitoring treści, np. rozmów).</p>
+                        </div>
+                    </details>
+                     <details>
+                        <summary>Współpraca międzynarodowa (Art. 23-35)</summary>
+                        <div class="content">
+                           <p>Konwencja ustanawia ramy dla efektywnej współpracy międzynarodowej, w tym poprzez sieć punktów kontaktowych działających 24/7, które zapewniają natychmiastową pomoc w dochodzeniach transgranicznych.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    const targetId = link.getAttribute('data-target');
+
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    link.classList.add('active');
+
+                    contentSections.forEach(section => {
+                        section.classList.toggle('active', section.id === targetId);
+                    });
+
+                    // Scroll to top of main content on section change
+                    document.querySelector('main').scrollTop = 0;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

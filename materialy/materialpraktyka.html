@@ -17,35 +17,64 @@
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
-        body { 
+        body {
             font-family: 'Inter', sans-serif;
-            background-color: #111827;
-            color: #d1d5db;
+            background-color: #111827; /* bg-gray-900 */
+            color: #d1d5db; /* text-gray-300 */
         }
-        .content-section { display: none; }
-        .content-section.active { display: block; }
-        .nav-link.active { background-color: #374151; color: white; }
+        .content-section { 
+            display: none; 
+            animation: fadeIn 0.5s;
+        }
+        .content-section.active { 
+            display: block; 
+        }
+        .nav-link.active { 
+            background-color: #374151; /* bg-gray-700 */
+            color: white; 
+            border-left: 3px solid #10b981; /* border-emerald-500 */
+        }
         .nav-link {
             display: flex;
             align-items: center;
             gap: 0.75rem;
+            padding-left: 1rem;
+            border-left: 3px solid transparent;
         }
-        .code-block { position: relative; }
+        .code-block { 
+            position: relative; 
+        }
         .copy-btn {
             position: absolute;
             top: 0.5rem;
             right: 0.5rem;
-            background-color: #4b5563;
+            background-color: #4b5563; /* bg-gray-600 */
             color: white;
             padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            font-size: 0.75rem;
+            border-radius: 0.375rem; /* rounded-md */
+            font-size: 0.75rem; /* text-xs */
             cursor: pointer;
-            opacity: 0.5;
+            opacity: 0.2;
             transition: all 0.2s;
         }
-        .code-block:hover .copy-btn { opacity: 1; }
-        .copy-btn:hover { background-color: #374151; }
+        .code-block:hover .copy-btn { 
+            opacity: 1; 
+        }
+        .copy-btn:hover { 
+            background-color: #374151; /* bg-gray-700 */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Zapewnienie równej wysokości kart w siatce */
+        .grid {
+            display: grid;
+        }
+        .grid > .card { /* Stosowanie do bezpośrednich dzieci z klasą card */
+            display: flex;
+            flex-direction: column;
+        }
         kbd {
             background-color: #4b5563;
             border: 1px solid #6b7280;
@@ -59,28 +88,28 @@
 
     <div class="flex h-screen">
         <!-- Sidebar -->
-        <aside class="w-64 bg-gray-800 text-white flex-shrink-0 flex flex-col">
-            <div class="p-4 border-b border-gray-700 h-[61px] flex items-center">
+        <aside class="w-72 bg-gray-800 text-white flex-shrink-0 flex flex-col">
+            <div class="p-4 border-b border-gray-700 h-[65px] flex items-center">
                 <h1 class="text-2xl font-bold">Cyber</h1>
             </div>
-            <nav class="mt-4 flex-1">
-                <a href="#" class="nav-link py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 active" data-target="plikow">
-                    <span class="w-6 text-center">📁</span> System Plików
+            <nav class="mt-4 flex-1 space-y-1">
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50 active" data-target="plikow">
+                    <span class="w-6 text-center text-lg">📁</span> System Plików
                 </a>
-                <a href="#" class="nav-link py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="metadanych">
-                    <span class="w-6 text-center">🏷️</span> Metadane
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="metadanych">
+                    <span class="w-6 text-center text-lg">🏷️</span> Metadane
                 </a>
-                <a href="#" class="nav-link py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="steganografia">
-                    <span class="w-6 text-center">👁️‍🗨️</span> Steganografia
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="steganografia">
+                    <span class="w-6 text-center text-lg">👁️‍🗨️</span> Steganografia
                 </a>
-                <a href="#" class="nav-link py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="kryptografia">
-                    <span class="w-6 text-center">🔑</span> Kryptografia
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="kryptografia">
+                    <span class="w-6 text-center text-lg">🔑</span> Kryptografia
                 </a>
-                <a href="#" class="nav-link py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="email">
-                    <span class="w-6 text-center">✉️</span> Analiza E-mail
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="email">
+                    <span class="w-6 text-center text-lg">✉️</span> Analiza E-mail
                 </a>
-                <a href="#" class="nav-link py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="praktyki">
-                    <span class="w-6 text-center">⚙️</span> Dobre Praktyki
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="praktyki">
+                    <span class="w-6 text-center text-lg">⚙️</span> Dobre Praktyki
                 </a>
             </nav>
         </aside>
@@ -92,11 +121,10 @@
             <section id="plikow" class="content-section active">
                 <h2 class="text-3xl font-bold mb-2 text-white">Analiza Systemu Plików</h2>
                 <p class="mb-6 text-gray-400">Podstawowe operacje związane z badaniem struktury plików i ich integralności.</p>
-                
                 <div class="space-y-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Odkrywanie ukrytych plików/katalogów</h3>
-                        <div class="mt-4 grid md:grid-cols-2 gap-4">
+                        <div class="mt-4 grid md:grid-cols-2 gap-4 flex-grow">
                             <div class="bg-gray-900 p-4 rounded-md">
                                 <h4 class="font-medium text-white">🐧 Linux</h4>
                                 <p class="text-sm my-2">GUI: <kbd>Ctrl</kbd> + <kbd>H</kbd></p>
@@ -120,11 +148,10 @@ dir /a:h</code></pre>
                             </div>
                         </div>
                     </div>
-
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Zmiana uprawnień do plików</h3>
                         <p class="text-sm text-gray-400 mt-1">Gdy system zgłasza "Brak dostępu".</p>
-                         <div class="mt-4 grid md:grid-cols-2 gap-4">
+                         <div class="mt-4 grid md:grid-cols-2 gap-4 flex-grow">
                             <div class="bg-gray-900 p-4 rounded-md">
                                 <h4 class="font-medium text-white">🐧 Linux (Terminal)</h4>
                                 <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
@@ -141,16 +168,15 @@ chmod -R 755 /katalog</code></pre>
                                 <p class="text-sm my-2">GUI: `PPM -> Właściwości -> Zabezpieczenia`</p>
                                 <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-1">
                                     <button class="copy-btn">Kopiuj</button>
-                                    <pre><code># Nadanie pełnej kontroli użytkownikowi
+                                    <pre><code># Nadanie pełnej kontroli
 icacls "plik.txt" /grant Uzytkownik:F</code></pre>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Obliczanie sum kontrolnych (Hashy)</h3>
-                         <div class="mt-4 grid md:grid-cols-2 gap-4">
+                         <div class="mt-4 grid md:grid-cols-2 gap-4 flex-grow">
                              <div class="bg-gray-900 p-4 rounded-md">
                                 <h4 class="font-medium text-white">🐧 Linux (Terminal)</h4>
                                 <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-1">
@@ -179,32 +205,30 @@ certutil -hashfile &lt;plik&gt; MD5</code></pre>
                 <h2 class="text-3xl font-bold mb-2 text-white">Analiza Metadanych i Plików</h2>
                 <p class="mb-6 text-gray-400">Pliki często zawierają dodatkowe, ukryte informacje.</p>
                 <div class="space-y-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Ekstrakcja metadanych (EXIF)</h3>
-                        <p class="text-sm text-gray-400 mt-1">Użyj <span class="font-bold text-teal-300">ExifTool</span> do odczytu metadanych z plików.</p>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
+                        <p class="text-sm text-gray-400 mt-1">Użyj <span class="font-bold text-teal-300">ExifTool</span> do odczytu metadanych.</p>
+                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
                             <button class="copy-btn">Kopiuj</button>
                             <pre><code>exiftool &lt;nazwa_pliku_jpg&gt;</code></pre>
                         </div>
                     </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Przykładowy wynik `exiftool` i objaśnienie</h3>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Przykładowy wynik `exiftool`</h3>
+                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
                             <pre><code>ExifTool Version Number         : 12.40
-File Name                       : obraz.jpg
-<span class="text-yellow-400">Make                            : Apple</span>         # Producent urządzenia
-<span class="text-yellow-400">Camera Model Name               : iPhone 13</span>       # Model urządzenia
-<span class="text-cyan-400">Date/Time Original              : 2023:05:10 14:30:15</span> # Data i czas wykonania zdjęcia
-<span class="text-cyan-400">Create Date                     : 2023:05:10 14:30:15</span>
-<span class="text-fuchsia-400">GPS Latitude                    : 53 deg 8' 54.14" N</span>  # Szerokość geograficzna
-<span class="text-fuchsia-400">GPS Longitude                   : 21 deg 3' 11.43" E</span>  # Długość geograficzna
-<span class="text-green-400">Software                        : Adobe Photoshop 22.0</span>  # Oprogramowanie użyte do edycji
+<span class="text-yellow-400">Make                            : Apple</span>
+<span class="text-yellow-400">Camera Model Name               : iPhone 13</span>
+<span class="text-cyan-400">Date/Time Original              : 2023:05:10 14:30:15</span>
+<span class="text-fuchsia-400">GPS Latitude                    : 53 deg 8' 54.14" N</span>
+<span class="text-fuchsia-400">GPS Longitude                   : 21 deg 3' 11.43" E</span>
+<span class="text-green-400">Software                        : Adobe Photoshop 22.0</span>
 </code></pre>
                         </div>
                     </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Analiza Heksadecymalna</h3>
-                        <p class="text-sm text-gray-400 mt-1">Sprawdzaj sygnatury plików (magic numbers) w <span class="font-bold text-teal-300">HxD</span> lub <span class="font-bold text-teal-300">GHex</span>.</p>
+                        <p class="text-sm text-gray-400 mt-1 flex-grow">Sprawdzaj sygnatury plików w <span class="font-bold text-teal-300">HxD</span> lub <span class="font-bold text-teal-300">GHex</span>.</p>
                         <div class="overflow-x-auto mt-2">
                             <table class="w-full text-sm text-left">
                                 <thead class="text-xs text-gray-400 uppercase bg-gray-700"><tr><th class="px-6 py-3">Format</th><th class="px-6 py-3">Sygnatura (HEX)</th></tr></thead>
@@ -223,17 +247,17 @@ File Name                       : obraz.jpg
             <!-- Section 3: Steganografia -->
             <section id="steganografia" class="content-section">
                  <h2 class="text-3xl font-bold mb-2 text-white">Steganografia i Odzyskiwanie Danych</h2>
-                 <div class="space-y-6 mt-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Odzyskiwanie danych z obrazu dysku</h3>
-                        <p class="text-sm text-gray-400 mt-1">Zawsze pracuj na kopii. Narzędzia: <span class="font-bold text-teal-300">FTK Imager</span>, <span class="font-bold text-teal-300">Autopsy</span>.</p>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Odzyskiwanie danych</h3>
+                        <p class="mt-2 text-sm flex-grow">Zawsze pracuj na kopii (obrazie dysku). Narzędzia: <span class="font-bold text-teal-300">FTK Imager</span>, <span class="font-bold text-teal-300">Autopsy</span>.</p>
                     </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Steganografia</h3>
-                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
-                           <li><b>Niestandardowe otwieranie:</b> Otwórz plik w programie do innego formatu (np. .txt w Paint).</li>
-                           <li><b>Ukryty tekst:</b> W edytorze tekstu (`LibreOffice`, `Word`) zaznacz wszystko (<kbd>Ctrl</kbd>+<kbd>A</kbd>) i zmień kolor czcionki.</li>
-                           <li><b>Narzędzia:</b> <span class="font-bold text-teal-300">Steghide</span> (ukrywanie), <span class="font-bold text-teal-300">Zsteg</span> (wykrywanie).</li>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2 flex-grow">
+                           <li><b>Niestandardowe otwieranie:</b> Otwórz plik w programie do innego formatu.</li>
+                           <li><b>Ukryty tekst:</b> W edytorze tekstu zaznacz wszystko (<kbd>Ctrl</kbd>+<kbd>A</kbd>) i zmień kolor czcionki.</li>
+                           <li><b>Narzędzia:</b> <span class="font-bold text-teal-300">Steghide</span>, <span class="font-bold text-teal-300">Zsteg</span>.</li>
                         </ul>
                     </div>
                  </div>
@@ -242,12 +266,12 @@ File Name                       : obraz.jpg
             <!-- Section 4: Kryptografia -->
             <section id="kryptografia" class="content-section">
                 <h2 class="text-3xl font-bold mb-2 text-white">Kryptografia i Archiwa</h2>
-                <div class="space-y-6 mt-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg"><h3 class="font-semibold text-lg text-white">Deszyfrowanie PGP/GPG</h3><p class="text-sm text-gray-400 mt-1">Narzędzia: <span class="font-bold text-teal-300">Kleopatra</span> (Windows), <span class="font-bold text-teal-300">GnuPG</span> (Linux).</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg"><h3 class="font-semibold text-lg text-white">Archiwa chronione hasłem</h3><p class="text-sm text-gray-400 mt-1">Użyj <span class="font-bold text-teal-300">7-Zip</span> do otwarcia. Do łamania haseł: <span class="font-bold text-teal-300">John the Ripper</span>.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Dekompresja archiwów (Linux Terminal)</h3>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Deszyfrowanie PGP/GPG</h3><p class="mt-2 text-sm flex-grow">Narzędzia: <span class="font-bold text-teal-300">Kleopatra</span> (Windows), <span class="font-bold text-teal-300">GnuPG</span> (Linux).</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Archiwa chronione hasłem</h3><p class="mt-2 text-sm flex-grow">Użyj <span class="font-bold text-teal-300">7-Zip</span> do otwarcia. Do łamania haseł: <span class="font-bold text-teal-300">John the Ripper</span>.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Dekompresja archiwów (Linux)</h3>
+                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
                             <button class="copy-btn">Kopiuj</button>
                             <pre><code>tar -xvzf plik.tar.gz
 unzip plik.zip</code></pre>
@@ -260,24 +284,20 @@ unzip plik.zip</code></pre>
             <section id="email" class="content-section">
                 <h2 class="text-3xl font-bold mb-2 text-white">Analiza Poczty E-mail</h2>
                 <div class="space-y-6 mt-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Analiza źródła wiadomości</h3>
-                        <p class="text-sm text-gray-400 mt-1">Zawsze analizuj pełne źródło. Użyj analizatorów online, jak <span class="font-bold text-teal-300">MXToolbox Email Header Analyzer</span>.</p>
+                        <p class="mt-2 text-sm flex-grow">Zawsze analizuj pełne źródło. Użyj analizatorów online, jak <span class="font-bold text-teal-300">MXToolbox</span>.</p>
                     </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Przykład sfałszowanego nagłówka (Spoofing)</h3>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
-                        <pre><code>From: "Ważny Bank" &lt;ważny_bank@example.com&gt;  <span class="text-yellow-400">&lt;-- Sfałszowane pole</span>
-To: "Ofiara" &lt;ofiara@example.net&gt;
-Subject: Pilna weryfikacja konta
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Sfałszowany nagłówek (Spoofing)</h3>
+                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
+                        <pre><code>From: "Ważny Bank" &lt;bank@example.com&gt;  <span class="text-yellow-400">&lt;-- Pole sfałszowane</span>
 ...
-<span class="text-green-400">Received: from mail.prawdziwy_bank.com (mail.prawdziwy_bank.com [1.2.3.4])
-    by mx.google.com with ESMTP id ...</span>
+<span class="text-green-400">Received: from mail.prawdziwy_bank.com [1.2.3.4]</span>
     <span class="text-green-400">&lt;-- Prawdziwy serwer (dla porównania)</span>
     
-<span class="text-red-400">Received: from evil.server.com (unknown [192.168.1.100])
-    by mail.ważny_bank.com (Postfix) with ESMTP id ...</span>
-    <span class="text-red-400">&lt;-- Rzeczywiste źródło ataku, widoczne po analizie</span></code></pre>
+<span class="text-red-400">Received: from evil.server.com [192.168.1.100]</span>
+    <span class="text-red-400">&lt;-- Rzeczywiste źródło ataku</span></code></pre>
                         </div>
                     </div>
                 </div>
@@ -286,19 +306,19 @@ Subject: Pilna weryfikacja konta
             <!-- Section 6: Dobre Praktyki -->
             <section id="praktyki" class="content-section">
                 <h2 class="text-3xl font-bold mb-2 text-white">Dobre Praktyki i Sztuczki</h2>
-                <div class="space-y-6 mt-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Złote Zasady</h3>
-                         <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                         <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2 flex-grow">
                            <li><span class="font-bold">Pracuj na kopii:</span> NIGDY nie pracuj na oryginalnym nośniku.</li>
-                           <li><span class="font-bold">Dokumentuj wszystko:</span> Prowadź dziennik swoich działań (chain of custody).</li>
+                           <li><span class="font-bold">Dokumentuj wszystko:</span> Prowadź dziennik działań (chain of custody).</li>
                            <li><span class="font-bold">Uważaj na szczegóły:</span> Sprawdzaj literówki, czytaj dokładnie polecenia.</li>
                         </ul>
                     </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Przydatne Polecenie: `strings` (Linux)</h3>
-                        <p class="text-sm text-gray-400 mt-1">Wyświetla czytelne ciągi znaków z dowolnego pliku.</p>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Polecenie: `strings` (Linux)</h3>
+                        <p class="mt-2 text-sm">Wyświetla czytelne ciągi znaków z dowolnego pliku.</p>
+                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
                             <button class="copy-btn">Kopiuj</button>
                             <pre><code>strings nazwa_pliku | less</code></pre>
                         </div>
@@ -317,7 +337,6 @@ Subject: Pilna weryfikacja konta
             navLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    
                     const targetId = link.getAttribute('data-target');
 
                     navLinks.forEach(navLink => navLink.classList.remove('active'));
@@ -333,24 +352,33 @@ Subject: Pilna weryfikacja konta
                 button.addEventListener('click', () => {
                     const codeBlock = button.nextElementSibling;
                     const textToCopy = codeBlock.innerText;
-                    
+
                     const textArea = document.createElement('textarea');
                     textArea.value = textToCopy;
+                    textArea.style.position = 'fixed';
+                    textArea.style.left = '-9999px';
                     document.body.appendChild(textArea);
                     textArea.select();
                     try {
                         document.execCommand('copy');
                         button.innerText = 'Skopiowano!';
+                        button.style.backgroundColor = '#10b981';
                         setTimeout(() => {
                             button.innerText = 'Kopiuj';
+                            button.style.backgroundColor = '';
                         }, 2000);
                     } catch (err) {
-                        console.error('Błąd kopiowania', err);
+                        console.error('Błąd kopiowania do schowka', err);
+                        button.innerText = 'Błąd';
+                         setTimeout(() => {
+                            button.innerText = 'Kopiuj';
+                        }, 2000);
                     }
                     document.body.removeChild(textArea);
                 });
             });
         });
     </script>
+
 </body>
 </html>

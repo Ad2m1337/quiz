@@ -17,6 +17,7 @@
         }
         .content-section {
             display: none;
+            animation: fadeIn 0.5s;
         }
         .content-section.active {
             display: block;
@@ -24,53 +25,25 @@
         .nav-link.active {
             background-color: #374151; /* bg-gray-700 */
             color: white;
+            border-left: 3px solid #10b981; /* border-emerald-500 */
         }
         .nav-link {
             display: flex;
             align-items: center;
             gap: 0.75rem; /* gap-3 */
+            padding-left: 1rem;
+            border-left: 3px solid transparent;
         }
-        /* Styling for details/summary accordion */
-        details > summary {
-            list-style: none;
-            cursor: pointer;
-            padding: 1rem;
-            background-color: #1f2937; /* bg-gray-800 */
-            border-radius: 0.5rem; /* rounded-lg */
-            font-weight: 600;
-            color: white;
-            transition: background-color 0.2s;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .grid > .card {
             display: flex;
-            align-items: center;
+            flex-direction: column;
         }
-        details > summary:hover {
-            background-color: #374151; /* bg-gray-700 */
-        }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-        /* NEW SVG ICON */
-        details > summary::before {
-            content: '';
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%239ca3af'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' d='m8.25 4.5 7.5 7.5-7.5 7.5' /%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-size: 1rem 1rem;
-            width: 1rem;
-            height: 1rem;
-            margin-right: 0.75rem;
-            display: inline-block;
-            transition: transform 0.2s;
-            transform: rotate(0deg);
-        }
-        details[open] > summary::before {
-            transform: rotate(90deg);
-        }
-        details div.content {
-            padding: 1rem;
-            background-color: #1f2937; /* bg-gray-800 */
-            border-top: 1px solid #374151; /* border-gray-700 */
-            border-bottom-left-radius: 0.5rem;
-            border-bottom-right-radius: 0.5rem;
+        .card-content {
+            flex-grow: 1;
         }
     </style>
 </head>
@@ -80,17 +53,14 @@
     <div class="flex h-screen">
         <!-- Sidebar -->
         <aside class="w-72 bg-gray-800 text-white flex-shrink-0 flex flex-col">
-            <div class="p-4 border-b border-gray-700 h-[61px] flex items-center">
-                <h1 class="text-xl font-bold">Przewodnik Prawny</h1>
+            <div class="p-4 border-b border-gray-700 h-[65px] flex items-center">
+                <h1 class="text-2xl font-bold">Przewodnik Prawny</h1>
             </div>
-            <nav class="mt-4 flex-1 px-2">
-                <a href="#" class="nav-link text-sm py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 active" data-target="kk">
+            <nav class="mt-4 flex-1 space-y-1">
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50 active" data-target="kk">
                     <span class="w-6 text-center text-lg">⚖️</span> Kodeks Karny
                 </a>
-                <a href="#" class="nav-link text-sm py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="kw">
-                    <span class="w-6 text-center text-lg">📜</span> Kodeks Wykroczeń
-                </a>
-                <a href="#" class="nav-link text-sm py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-target="konwencja">
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="konwencja">
                     <span class="w-6 text-center text-lg">🌐</span> Konwencja Budapesztańska
                 </a>
             </nav>
@@ -103,41 +73,23 @@
             <section id="kk" class="content-section active">
                 <h2 class="text-3xl font-bold mb-2 text-white">Kodeks Karny</h2>
                 <p class="mb-6 text-gray-400">Wybrane artykuły dotyczące cyberprzestępczości.</p>
-                <div class="space-y-4">
-                    <details>
-                        <summary>Rozdział XXXIII: Przestępstwa przeciwko ochronie informacji</summary>
-                        <div class="content space-y-4">
-                            <p><b>Art. 267 KK – Nieuprawnione uzyskanie informacji (hacking)</b><br>§ 1: Przełamanie zabezpieczeń w celu uzyskania dostępu do informacji.<br>§ 2: Uzyskanie dostępu do całości lub części systemu informatycznego.<br>§ 3: Użycie oprogramowania szpiegującego (spyware, keyloggery).<br>§ 4: Ujawnienie informacji uzyskanej nielegalnie.</p>
-                            <p><b>Art. 268 KK – Niszczenie danych informatycznych</b><br>§ 1: Niszczenie, uszkadzanie, usuwanie lub zmienianie zapisu istotnej informacji.<br>§ 2: Zaostrzenie kary, jeśli czyn dotyczy zapisu na informatycznym nośniku danych.</p>
-                            <p><b>Art. 268a KK – Zakłócanie pracy systemu</b><br>§ 1: Zakłócanie przetwarzania danych lub utrudnianie do nich dostępu (np. ataki DDoS).<br>§ 2: Zaostrzenie kary, jeśli wyrządzono znaczną szkodę majątkową.</p>
-                            <p><b>Art. 269 KK – Sabotaż komputerowy</b><br>Dotyczy niszczenia danych o szczególnym znaczeniu dla obronności, bezpieczeństwa lub funkcjonowania administracji państwowej.</p>
-                            <p><b>Art. 269a KK – Narzędzia hakerskie</b><br>Wytwarzanie, pozyskiwanie lub udostępnianie programów/urządzeń do popełniania cyberprzestępstw (np. exploitów).</p>
-                            <p><b>Art. 269b KK – Nielegalne pozyskiwanie haseł/kodów</b><br>Dotyczy nieuprawnionego pozyskiwania lub udostępniania danych dostępowych.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Inne istotne artykuły</summary>
-                        <div class="content space-y-4">
-                            <p><b>Art. 287 KK – Oszustwo komputerowe</b><br>Wpływanie na przetwarzanie danych w celu osiągnięcia korzyści majątkowej (np. phishing).</p>
-                            <p><b>Art. 190a KK – Stalking / Podszywanie się</b><br>§ 1: Uporczywe nękanie (cyberstalking).<br>§ 2: Podszywanie się pod inną osobę (catfishing) w celu wyrządzenia jej szkody.</p>
-                             <p><b>Art. 202 KK – Dziecięca pornografia</b><br>Penalizuje produkcję, rozpowszechnianie, a także posiadanie (np. § 4a) materiałów pornograficznych z udziałem małoletniego.</p>
-                            <p><b>Art. 256 KK – Mowa nienawiści</b><br>Publiczne nawoływanie do nienawiści na tle różnic narodowościowych, etnicznych, rasowych lub wyznaniowych.</p>
-                        </div>
-                    </details>
+                
+                <h3 class="text-2xl font-semibold mb-4 text-white">Rozdział XXXIII: Przestępstwa przeciwko ochronie informacji</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 267 KK – Hacking</h3><p class="mt-2 text-sm card-content">§ 1: Przełamanie zabezpieczeń.<br>§ 2: Dostęp do systemu informatycznego.<br>§ 3: Użycie oprogramowania szpiegującego.<br>§ 4: Ujawnienie uzyskanych informacji.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 268 KK – Niszczenie danych</h3><p class="mt-2 text-sm card-content">§ 1: Niszczenie, uszkadzanie, zmiana zapisu informacji.<br>§ 2: Zaostrzenie kary przy nośniku informatycznym.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 268a KK – Zakłócanie pracy systemu</h3><p class="mt-2 text-sm card-content">§ 1: Zakłócanie przetwarzania, utrudnianie dostępu (np. DDoS).<br>§ 2: Zaostrzenie kary przy znacznej szkodzie majątkowej.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 269 KK – Sabotaż komputerowy</h3><p class="mt-2 text-sm card-content">Niszczenie danych o szczególnym znaczeniu dla państwa (obronność, bezpieczeństwo, administracja).</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 269a KK – Narzędzia hakerskie</h3><p class="mt-2 text-sm card-content">Wytwarzanie, pozyskiwanie, udostępnianie programów lub urządzeń przeznaczonych do popełniania cyberprzestępstw.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 269b KK – Nielegalne hasła/kody</h3><p class="mt-2 text-sm card-content">Pozyskiwanie lub udostępnianie haseł, kodów i innych danych dostępowych.</p></div>
                 </div>
-            </section>
 
-            <!-- Section 2: Kodeks Wykroczeń -->
-            <section id="kw" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-white">Kodeks Wykroczeń</h2>
-                <p class="mb-6 text-gray-400">Przepisy mogące znaleźć zastosowanie w przypadku incydentów o mniejszej wadze.</p>
-                 <div class="space-y-4">
-                    <details>
-                        <summary>Art. 107 KW – Złośliwe niepokojenie</summary>
-                        <div class="content">
-                           <p>Kto w celu dokuczenia innej osobie złośliwie wprowadza ją w błąd lub w inny sposób złośliwie niepokoi.<br>Może dotyczyć np. uporczywego wysyłania niechcianych wiadomości (spam-bombing), jeśli nie wyczerpuje to znamion przestępstwa stalkingu z KK.</p>
-                        </div>
-                    </details>
+                <h3 class="text-2xl font-semibold mb-4 text-white">Inne istotne artykuły</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 287 KK – Oszustwo komputerowe</h3><p class="mt-2 text-sm card-content">Wpływanie na przetwarzanie danych w celu osiągnięcia korzyści majątkowej lub wyrządzenia szkody (np. phishing).</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 190a KK – Stalking / Podszywanie się</h3><p class="mt-2 text-sm card-content">§ 1: Uporczywe nękanie (cyberstalking).<br>§ 2: Podszywanie się pod inną osobę (catfishing) w celu wyrządzenia szkody.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 202 KK – Pornografia dziecięca</h3><p class="mt-2 text-sm card-content">Penalizuje produkcję, rozpowszechnianie, a także posiadanie (np. § 4a) materiałów z udziałem małoletniego.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 256 KK – Mowa nienawiści</h3><p class="mt-2 text-sm card-content">Publiczne nawoływanie do nienawiści na tle różnic narodowościowych, etnicznych, rasowych lub wyznaniowych.</p></div>
                 </div>
             </section>
 
@@ -145,47 +97,32 @@
             <section id="konwencja" class="content-section">
                 <h2 class="text-3xl font-bold mb-2 text-white">Konwencja Budapesztańska (ETS nr 185)</h2>
                 <p class="mb-6 text-gray-400">Międzynarodowy traktat o cyberprzestępczości harmonizujący prawo i współpracę.</p>
-                <div class="space-y-4">
-                    <details>
-                        <summary>Definicje (Art. 1)</summary>
-                        <div class="content space-y-2">
-                           <p><b>System komputerowy:</b> Urządzenie lub grupa urządzeń wykonujących automatyczne przetwarzanie danych.</p>
-                           <p><b>Dane komputerowe:</b> Przedstawienie faktów, informacji, pojęć w formie właściwej do przetwarzania, w tym programy.</p>
-                           <p><b>Dostawca usług:</b> Podmiot dostarczający usługi łączności lub przetwarzający/przechowujący dane.</p>
-                           <p><b>Dane o ruchu:</b> Metadane połączenia (źródło, cel, droga, czas, rozmiar itp.), bez treści.</p>
-                        </div>
-                    </details>
-                     <details>
-                        <summary>Prawo karne materialne (Art. 2-13)</summary>
-                        <div class="content space-y-2">
-                            <p><b>Art. 2: Nielegalny dostęp</b> (Hacking)</p>
-                            <p><b>Art. 3: Nielegalne przechwytywanie</b> (Podsłuch niepublicznych transmisji)</p>
-                            <p><b>Art. 4: Naruszenie integralności danych</b> (Uszkadzanie, usuwanie, blokowanie danych)</p>
-                            <p><b>Art. 5: Naruszenie integralności systemu</b> (Poważne zakłócanie pracy systemu, np. DDoS)</p>
-                            <p><b>Art. 6: Nadużycie urządzeń</b> (Produkcja, sprzedaż, posiadanie narzędzi hakerskich, haseł)</p>
-                            <p><b>Art. 7: Fałszerstwo komputerowe</b></p>
-                            <p><b>Art. 8: Oszustwo komputerowe</b></p>
-                            <p><b>Art. 9: Przestępstwa związane z pornografią dziecięcą</b></p>
-                            <p><b>Art. 10: Naruszenie praw autorskich</b></p>
-                            <p><b>Art. 11-13:</b> Podżeganie, pomocnictwo, usiłowanie, odpowiedzialność osób prawnych i sankcje.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Prawo procesowe (Art. 14-21)</summary>
-                        <div class="content space-y-2">
-                            <p><b>Art. 16: Szybkie zabezpieczenie przechowywanych danych</b> (tzw. "zamrożenie" dowodów cyfrowych).</p>
-                            <p><b>Art. 18: Nakaz przedstawienia</b> (zobowiązanie do wydania danych).</p>
-                            <p><b>Art. 19: Przeszukanie i zajęcie</b> (w tym możliwość rozszerzenia na inny system dostępny z przeszukiwanego).</p>
-                            <p><b>Art. 20: Gromadzenie danych o ruchu w czasie rzeczywistym</b> (monitoring "na żywo" metadanych).</p>
-                             <p><b>Art. 21: Przechwytywanie danych o treści w czasie rzeczywistym</b> (monitoring treści, np. rozmów).</p>
-                        </div>
-                    </details>
-                     <details>
-                        <summary>Współpraca międzynarodowa (Art. 23-35)</summary>
-                        <div class="content">
-                           <p>Konwencja ustanawia ramy dla efektywnej współpracy międzynarodowej, w tym poprzez sieć punktów kontaktowych działających 24/7, które zapewniają natychmiastową pomoc w dochodzeniach transgranicznych.</p>
-                        </div>
-                    </details>
+                
+                <h3 class="text-2xl font-semibold mb-4 text-white">Prawo karne materialne (Art. 2-13)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 2: Nielegalny dostęp</h3><p class="mt-2 text-sm card-content">Hacking.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 3: Nielegalne przechwytywanie</h3><p class="mt-2 text-sm card-content">Podsłuch niepublicznych transmisji.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 4: Naruszenie integralności danych</h3><p class="mt-2 text-sm card-content">Uszkadzanie, usuwanie danych.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 5: Naruszenie integralności systemu</h3><p class="mt-2 text-sm card-content">Poważne zakłócanie pracy (np. DDoS).</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 6: Nadużycie urządzeń</h3><p class="mt-2 text-sm card-content">Produkcja/sprzedaż narzędzi hakerskich.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 7-10: Inne</h3><p class="mt-2 text-sm card-content">Fałszerstwo komputerowe, oszustwo, pornografia dziecięca, naruszenia praw autorskich.</p></div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4 text-white">Prawo procesowe i Jurysdykcja (Art. 14-22)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 14-15: Zakres i Warunki</h3><p class="mt-2 text-sm card-content">Określają, że procedury stosuje się do cyberprzestępstw i gromadzenia dowodów elektronicznych, z poszanowaniem praw człowieka i zasady proporcjonalności.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 16-17: Szybkie zabezpieczenie</h3><p class="mt-2 text-sm card-content">Umożliwia "zamrożenie" (zachowanie) przechowywanych danych komputerowych i danych o ruchu, które są podatne na utratę.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 18: Nakaz przedstawienia</h3><p class="mt-2 text-sm card-content">Zobowiązuje osobę fizyczną, prawną lub dostawcę usług do wydania określonych danych komputerowych lub informacji o abonencie.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 19: Przeszukanie i zajęcie</h3><p class="mt-2 text-sm card-content">Umożliwia przeszukanie systemu komputerowego i zajęcie danych, z możliwością rozszerzenia na inny system dostępny z przeszukiwanego.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 20-21: Monitoring "na żywo"</h3><p class="mt-2 text-sm card-content">Pozwala na gromadzenie danych o ruchu (metadanych) w czasie rzeczywistym (Art. 20) oraz, w poważnych sprawach, treści komunikacji (Art. 21).</p></div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 22: Jurysdykcja</h3><p class="mt-2 text-sm card-content">Państwo ma jurysdykcję, gdy przestępstwo popełniono na jego terytorium, na jego statku/samolocie lub przez jego obywatela.</p></div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4 text-white">Współpraca międzynarodowa (Art. 23-35)</h3>
+                 <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <p class="text-sm card-content">Ten rozdział ustanawia ramy dla szerokiej i efektywnej współpracy międzynarodowej. Obejmuje zasady ogólne (pomoc prawna, ekstradycja) oraz postanowienia szczegółowe dotyczące m.in. wzajemnej pomocy w zabezpieczaniu i dostępie do danych, transgranicznego dostępu do danych czy przechwytywania komunikacji. Kluczowym elementem jest ustanowienie sieci punktów kontaktowych działających 24/7 w celu zapewnienia natychmiastowej pomocy w dochodzeniach.</p>
+                    </div>
                 </div>
             </section>
         </main>

@@ -98,8 +98,7 @@
 
     <script type="module">
         
-        import quizData from '../data/pytaniaprawo.json' with { type: 'json' };
-        console.log(quizData.pytania.length)
+        import quizData from '../data/pytaniaIT.json' with { type: 'json' };
 
 
         // --- ELEMENTY DOM ---
@@ -119,8 +118,8 @@
         const resultStatus = document.getElementById('result-status');
 
         // --- ZMIENNE STANU QUIZU ---
-        const TOTAL_QUESTIONS = 30;
-        const MINIMUM_SCORE = 20;
+        const TOTAL_QUESTIONS = 40;
+        const MINIMUM_SCORE = 21;
         let questionsForQuiz = [];
         let currentQuestionIndex = 0;
         let score = 0;

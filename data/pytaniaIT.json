@@ -3271,7 +3271,70 @@
         "odp_3": "ping www@wspol.edu.pl",
         "odp_4": "command www.wspol.edu.pl",
         "correct_odp": "odp_2"
+        },
+        {
+        "pytanie": "Jakie bootloadery nie należą do linuxa",
+        "odp_1": "Zadne z wymienionych",
+        "odp_2": "Lilo",
+        "odp_3": "Grub",
+        "odp_4": "",
+        "correct_odp": "odp_1"
+        },
+        {
+        "pytanie": "Telefon został uruchomiony ponownie i odblokowany jak nazywa sie ten stan",
+        "odp_1": "AFU",
+        "odp_2": "BFU",
+        "odp_3": "bootloader",
+        "odp_4": "exit",
+        "correct_odp": "odp_1"
+        },
+        {
+        "pytanie": "Standardy takie jak SATA, IDE oraz iSCSI to interfejsy komunikacyjne wykorzystywane głównie do podłączania jakiej kategorii urządzeń?",
+        "odp_1": "Modułów pamięci operacyjnej ",
+        "odp_2": "Dysków twardych",
+        "odp_3": "Pamięci Flash",
+        "odp_4": "Urządzeń wejścia, takich jak myszy i klawiatury",
+        "correct_odp": "odp_2"
+        },
+                {
+        "pytanie": "Za pomoca którego z poleceń robi sie binarna nie zmieniona kopie plików",
+        "odp_1": "dd",
+        "odp_2": "rawcp",
+        "odp_3": "rsync",
+        "odp_4": "cp",
+        "correct_odp": "odp_1"
+        },
+        {
+        "pytanie": "Które z wymienionych urządzeń z zasady nie jest uznawane za element brzegowy sieci komputerowej?",
+        "odp_1": "Komputer osobisty",
+        "odp_2": "Serwer",
+        "odp_3": "Smartfon",
+        "odp_4": "Switch",
+        "correct_odp": "odp_4"
+        },
+        {
+        "pytanie": "Jak nazywa sie technologia, która pozwala rozszerzyć sieć prywatną na sieci publiczną?",
+        "odp_1": "Sieć lokalna",
+        "odp_2": "Wirtualna sieć prywatna",
+        "odp_3": "Wewnętrzna siec w firmie",
+        "odp_4": "",
+        "correct_odp": "odp_2"
+        },
+        {
+        "pytanie": "W którym z poniższych katalogów przechowywane są kluczowe pliki dla procesu rozruchu systemu Linux?",
+        "odp_1": "/etc",
+        "odp_2": "/boot",
+        "odp_3": "/sbin",
+        "odp_4": "/init",
+        "correct_odp": "odp_2"
+        },
+        {        
+        "pytanie": "Która z poniższych nazw oprogramowania nie służy do szyfrowania danych?",
+        "odp_1": "VeraCrypt",
+        "odp_2": "FileVault",
+        "odp_3": "AVS",
+        "odp_4": "BitLocker",
+        "correct_odp": "odp_3"
         }
-
     ]
 }

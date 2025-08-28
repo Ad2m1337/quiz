@@ -3335,6 +3335,206 @@
         "odp_3": "AVS",
         "odp_4": "BitLocker",
         "correct_odp": "odp_3"
+        },
+         {
+        "pytanie": "Każda aplikacja wykorzystująca komunikację sieciową ma zaimplementowane...",
+        "odp_1": "protokoły komunikacyjne",
+        "odp_2": "mechanizmy szyfrowania",
+        "odp_3": "odpowiednie algorytmy",
+        "odp_4": "mechanizmy autoryzacji",
+        "correct_odp": "odp_1"
+        },
+        {
+                "pytanie": "Które ze stwierdzeń dotyczących akronimu URL jest prawdziwe?",
+                "odp_1": "to protokół komunikacyjny",
+                "odp_2": "to mechanizm stosowany do wysyłania i odbierania poczty elektronicznej",
+                "odp_3": "to proces uruchamiany na serwerze WWW",
+                "odp_4": "to inaczej nazwa domeny internetowej",
+                "correct_odp": "odp_4"
+        },
+        {
+                "pytanie": "Jaka usługa musi być uruchomiona na serwerze, aby adres domeny internetowej został zamieniony na adres IP serwera?",
+                "odp_1": "FTP",
+                "odp_2": "SNMP",
+                "odp_3": "Gnutella",
+                "odp_4": "DNS",
+                "correct_odp": "odp_4"
+        },
+        {
+                "pytanie": "Które ze stwierdzeń dotyczących akronimu HTML jest prawdziwe?",
+                "odp_1": "to proces serwera działający na porcie 80",
+                "odp_2": "to usługa sieciowa wykorzystywana przez protokół DHCP",
+                "odp_3": "to opisowy język wykorzystywany do tworzenia stron WWW",
+                "odp_4": "to skryptowy język programowania stron WWW",
+                "correct_odp": "odp_3"
+        },
+        {
+                "pytanie": "Metoda GET stosowana jest przez klienta WWW do...",
+                "odp_1": "żądania od serwera WWW zapisania danych użytkownika w jego pamięci podręcznej.",
+                "odp_2": "żądania od serwera WWW strony internetowej",
+                "odp_3": "żądania od serwera WWW nagłówka strony internetowej",
+                "odp_4": "nie jest obecnie stosowana przez żaden protokół",
+                "correct_odp": "odp_2"
+        },
+        {
+                "pytanie": "O czym informuje komunikat błędu 404?",
+                "odp_1": "klient wykorzystuje niewłaściwą metodę żądania",
+                "odp_2": "serwer jest zajęty",
+                "odp_3": "żądany zasób nie został znaleziony",
+                "odp_4": "klient nie ma uprawnień do żądanego zasobu",
+                "correct_odp": "odp_3"
+        },
+        {
+                "pytanie": "Protokół HTTP wykorzystujący szyfrowanie komunikacji pomiędzy klientem a serwerem, to protokół...",
+                "odp_1": "TELNET",
+                "odp_2": "SSH",
+                "odp_3": "HTTPS",
+                "odp_4": "FTPS",
+                "correct_odp": "odp_3"
+        },
+        {
+                "pytanie": "Para protokołów stosowanych do obsługi poczty elektronicznej to...",
+                "odp_1": "POP3 i IMAP",
+                "odp_2": "IMAP i HTTP",
+                "odp_3": "FTPS i SMTP",
+                "odp_4": "POP3 i SMTP",
+                "correct_odp": "odp_4"
+        },
+        {
+                "pytanie": "Proces MUA uruchamiany jest...",
+                "odp_1": "tylko na kliencie",
+                "odp_2": "na kliencie i serwerze",
+                "odp_3": "tylko na serwerze",
+                "odp_4": "żadna z wymienionych odpowiedzi",
+                "correct_odp": "odp_1"
+        },
+        {
+                "pytanie": "Na jakim porcie działa szyfrowana odmiana protokołu POP3?",
+                "odp_1": "3030",
+                "odp_2": "995",
+                "odp_3": "476",
+                "odp_4": "993",
+                "correct_odp": "odp_2"
+        },
+        {
+                "pytanie": "Jaka ilość połączeń jest wymagana do sprawnej komunikacji z wykorzystaniem protokołu FTP?",
+                "odp_1": "2",
+                "odp_2": "4",
+                "odp_3": "3",
+                "odp_4": "1",
+                "correct_odp": "odp_1"
+        },
+        {
+                "pytanie": "Który port wykorzystywany jest przez protokół FTP do przesyłania plików?",
+                "odp_1": "20",
+                "odp_2": "30",
+                "odp_3": "443",
+                "odp_4": "21",
+                "correct_odp": "odp_1"
+        },
+        {
+                "pytanie": "Do czego wykorzystywany jest protokół SSH?",
+                "odp_1": "do zdalnego zarządzania hostami - komunikacja jest szyfrowana",
+                "odp_2": "do przesyłania plików do zdalnego hosta",
+                "odp_3": "do zdalnego zarządzania hostami - komunikacja nie jest szyfrowana",
+                "odp_4": "do zdalnego zarządzania użytkownikami w sieci",
+                "correct_odp": "odp_1"
+        },
+        {
+                "pytanie": "Program PUTTY wykorzystuje protokoły...",
+                "odp_1": "FTP i SNMP",
+                "odp_2": "TELNET i SSH",
+                "odp_3": "POP3 i SMTP",
+                "odp_4": "HTTP i HTTPS",
+                "correct_odp": "odp_2"
+        },
+        {
+                "pytanie": "Jak nazywa się usługa systemowa zamieniająca adresy domenowe na adresy IP",
+                "odp_1": "DNS chname",
+                "odp_2": "DNS translator",
+                "odp_3": "NSLOOKUP",
+                "odp_4": "DNS resolver",
+                "correct_odp": "odp_4"
+        },
+        {
+                "pytanie": "Rekordy typu MX zapisane na serwerze DNS dotyczą...",
+                "odp_1": "adresów urządzeń końcowych",
+                "odp_2": "adresów drukarek",
+                "odp_3": "adresów stron WWW",
+                "odp_4": "adresów skrzynek pocztowych",
+                "correct_odp": "odp_4"
+        },
+        {
+                "pytanie": "Jakie polecenie w konsoli systemu Windows służy do sprawdzenia zapisanych rekordów pamięci podręcznej usługi DNS",
+                "odp_1": "ipconfig /dnsresolver",
+                "odp_2": "ipconfig /dnsdisplay",
+                "odp_3": "ipconfig /showdns",
+                "odp_4": "ipconfig /displaydns",
+                "correct_odp": "odp_4"
+        },
+        {
+                "pytanie": "W sieci lokalnej protokołem dynamicznej konfiguracji adresów IP jest...",
+                "odp_1": "DNS",
+                "odp_2": "DHCP",
+                "odp_3": "SNMP",
+                "odp_4": "FTP",
+                "correct_odp": "odp_2"
+        },
+        {
+                "pytanie": "Który wymieniony protokół zapewnia korzystanie z szyfrowanego połączenia ze stroną internetową?",
+                "odp_1": "HTTPS",
+                "odp_2": "NetBIOS",
+                "odp_3": "SPX",
+                "odp_4": "FTPS",
+                "correct_odp": "odp_1"
+        },
+        {
+                "pytanie": "Który z protokołów nie jest protokołem warstwy aplikacji w modelu ISO/OSI?",
+                "odp_1": "SNMP",
+                "odp_2": "ARP",
+                "odp_3": "SSH",
+                "odp_4": "SMTP",
+                "correct_odp": "odp_2"
+        },
+        {
+                "pytanie": "Który port jest wykorzystywany przez protokół FTP (File transfer Protocol)",
+                "odp_1": "22",
+                "odp_2": "123",
+                "odp_3": "18",
+                "odp_4": "20",
+                "correct_odp": "odp_4"
+        },
+        {
+                "pytanie": "Które stwierdzenie dotyczące protokołu DHCP jest prawidłowe?",
+                "odp_1": "Jest to protokół routingu",
+                "odp_2": "Jest to protokół konfiguracji hosta",
+                "odp_3": "Jest to protokół dostępu do bazy danych",
+                "odp_4": "Jest to protokół przesyłania plików",
+                "correct_odp": "odp_2"
+        },
+        {
+                "pytanie": "Serwer DNS jest serwerem",
+                "odp_1": "dzięki któremu nazwy mnemoniczne (opisowe) mogą zostać zamienione na odpowiadające im adresy IP",
+                "odp_2": "dynamicznie przydzielającym adresy IP",
+                "odp_3": "zdalnego i szyfrowanego dostępu",
+                "odp_4": "usług terminalowych",
+                "correct_odp": "odp_1"
+        },
+        {
+                "pytanie": "Protokół używany przez usługę WWW to...",
+                "odp_1": "FTP",
+                "odp_2": "HTTP",
+                "odp_3": "IPSec",
+                "odp_4": "TELNET",
+                "correct_odp": "odp_2"
+        },
+        {
+                "pytanie": "Które zdanie opisuje protokół SSH (Secure Shell)?",
+                "odp_1": "Sesje SSH nie pozwalają określić, czy punkty końcowe są autentyczne",
+                "odp_2": "Protokół do zdalnej pracy na odległym komputerze niezapewniający kodowania transmisji",
+                "odp_3": "Bezpieczny protokół terminalu sieciowego udostępniający usługi szyfrowania połączenia",
+                "odp_4": "Sesje SSH powodują wysyłanie zwykłego tekstu, niezaszyfrowanych danych",
+                "correct_odp": "odp_3"
         }
     ]
 }

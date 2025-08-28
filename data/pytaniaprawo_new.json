@@ -1,0 +1,389 @@
+{
+  "pytania": 
+  [
+     {
+    "pytanie": "Czego dotyczy Artykuł 1 Konwencji Budapesztańskiej?",
+    "odp_1": "Ustanowienia kar za hacking.",
+    "odp_2": "Definicji kluczowych pojęć, takich jak 'system komputerowy' i 'dane'.",
+    "odp_3": "Zasad ekstradycji sprawców.",
+    "odp_4": "Odpowiedzialności karnej podmiotów zbiorowych (firm).",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 2 Konwencji Budapesztańskiej?",
+    "odp_1": "Nielegalnego dostępu do systemu (tzw. hacking).",
+    "odp_2": "Umyślnego niszczenia i modyfikowania danych komputerowych.",
+    "odp_3": "Podsłuchiwania transmisji danych w sieciach prywatnych i publicznych.",
+    "odp_4": "Tworzenia i dystrybucji narzędzi przeznaczonych do popełniania cyberprzestępstw.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 3 Konwencji Budapesztańskiej?",
+    "odp_1": "Poważnego zakłócania pracy systemów, np. poprzez ataki DDoS.",
+    "odp_2": "Nielegalnego przechwytywania danych.",
+    "odp_3": "Celowego uzyskania dostępu do systemu komputerowego bez uprawnień.",
+    "odp_4": "Fałszowania dokumentów w postaci cyfrowej.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 4 Konwencji Budapesztańskiej?",
+    "odp_1": "Zakłócania integralności systemu.",
+    "odp_2": "Naruszenia integralności danych, czyli ich bezprawnego uszkadzania lub zmieniania.",
+    "odp_3": "Oszustwa komputerowego.",
+    "odp_4": "Posiadania oprogramowania hakerskiego w celu popełnienia przestępstwa.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 5 Konwencji Budapesztańskiej?",
+    "odp_1": "Naruszenia integralności samych danych.",
+    "odp_2": "Nielegalnego kopiowania danych z systemu.",
+    "odp_3": "Kradzieży tożsamości w celach zarobkowych.",
+    "odp_4": "Naruszenia integralności systemu komputerowego.",
+    "correct_odp": "odp_4"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 6 Konwencji Budapesztańskiej?",
+    "odp_1": "Nadużycia urządzeń, np. posiadania programów hakerskich.",
+    "odp_2": "Aktu włamania do systemu w celu kradzieży informacji.",
+    "odp_3": "Fizycznej kradzieży sprzętu komputerowego.",
+    "odp_4": "Uzyskania dostępu do skrzynki e-mail bez zgody właściciela.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 7 Konwencji Budapesztańskiej?",
+    "odp_1": "Oszustwa w celu bezpośredniego uzyskania korzyści majątkowej.",
+    "odp_2": "Fałszerstwa komputerowego.",
+    "odp_3": "Naruszenia praw autorskich do oprogramowania i utworów cyfrowych.",
+    "odp_4": "Zdefiniowania pojęcia 'dane o ruchu'.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 8 Konwencji Budapesztańskiej?",
+    "odp_1": "Zmiany danych w celu stworzenia fałszywego dokumentu.",
+    "odp_2": "Bezprawnego niszczenia danych.",
+    "odp_3": "Oszustwa komputerowego.",
+    "odp_4": "Posiadania i dystrybucji programów hakerskich.",
+    "correct_odp": "odp_3"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 9 Konwencji Budapesztańskiej?",
+    "odp_1": "Przestępstw związanych z pornografią dziecięcą.",
+    "odp_2": "Propagowania mowy nienawiści w internecie.",
+    "odp_3": "Organizacji nielegalnego hazardu online.",
+    "odp_4": "Naruszenia praw autorskich na dużą skalę.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 10 Konwencji Budapesztańskiej?",
+    "odp_1": "Fałszerstwa komputerowego.",
+    "odp_2": "Naruszenia praw autorskich.",
+    "odp_3": "Nielegalnego przechwytu danych z sieci Wi-Fi.",
+    "odp_4": "Oszustwa komputerowego, w tym phishingu.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 11 Konwencji Budapesztańskiej?",
+    "odp_1": "Usiłowania, podżegania i pomocnictwa.",
+    "odp_2": "Odpowiedzialności karnej podmiotów zbiorowych (firm).",
+    "odp_3": "Definicji sankcji i środków karnych, które muszą być skuteczne.",
+    "odp_4": "Ustalania jurysdykcji terytorialnej w sprawach transgranicznych.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 12 Konwencji Budapesztańskiej?",
+    "odp_1": "Zasad pomocnictwa w popełnieniu przestępstwa.",
+    "odp_2": "Odpowiedzialności osób prawnych.",
+    "odp_3": "Określenia wysokości kar za poszczególne cyberprzestępstwa.",
+    "odp_4": "Gwarancji procesowych dla osób podejrzanych.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 13 Konwencji Budapesztańskiej?",
+    "odp_1": "Zasad współpracy międzynarodowej w sprawach karnych.",
+    "odp_2": "Definicji pojęć użytych w konwencji.",
+    "odp_3": "Wymogu stosowania skutecznych sankcji.",
+    "odp_4": "Odpowiedzialności zarządu w firmach za czyny pracowników.",
+    "correct_odp": "odp_3"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 14 Konwencji Budapesztańskiej?",
+    "odp_1": "Zakresu stosowania uprawnień procesowych.",
+    "odp_2": "Ogólnych zasad świadczenia wzajemnej pomocy prawnej między państwami.",
+    "odp_3": "Zasad określania jurysdykcji w sprawach o cyberprzestępstwa.",
+    "odp_4": "Definicji przestępstw opisanych w rozdziale II.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 15 Konwencji Budapesztańskiej?",
+    "odp_1": "Szczegółowych zasad przeszukania i zajęcia danych komputerowych.",
+    "odp_2": "Reguł dotyczących ekstradycji sprawców.",
+    "odp_3": "Warunków i gwarancji ochrony praw człowieka.",
+    "odp_4": "Tworzenia i utrzymywania punktów kontaktowych 24/7.",
+    "correct_odp": "odp_3"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 16 Konwencji Budapesztańskiej?",
+    "odp_1": "Przeszukania systemu i trwałego zajęcia danych.",
+    "odp_2": "Gromadzenia danych o ruchu w czasie rzeczywistym ('na żywo').",
+    "odp_3": "Nakazu szybkiego zabezpieczenia danych.",
+    "odp_4": "Przechwytywania treści rozmów i wiadomości (podsłuchu).",
+    "correct_odp": "odp_3"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 17 Konwencji Budapesztańskiej?",
+    "odp_1": "Pierwotnego zabezpieczenia danych na wniosek organów ścigania.",
+    "odp_2": "Nakazu szybkiego ujawnienia danych.",
+    "odp_3": "Ustalenia, które państwo ma prowadzić dochodzenie.",
+    "odp_4": "Przechwytywania danych o treści w czasie rzeczywistym.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 18 Konwencji Budapesztańskiej?",
+    "odp_1": "Przechwytywania treści komunikacji (np. e-maili).",
+    "odp_2": "Fizycznego przeszukania serwerowni i zajęcia dysków twardych.",
+    "odp_3": "Nakazu gromadzenia i ujawnienia danych o ruchu.",
+    "odp_4": "Transgranicznego dostępu do danych publicznie dostępnych.",
+    "correct_odp": "odp_3"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 19 Konwencji Budapesztańskiej?",
+    "odp_1": "Zabezpieczenia danych, które mogłyby zostać usunięte.",
+    "odp_2": "Współpracy międzynarodowej w zakresie ścigania przestępstw.",
+    "odp_3": "Przeszukania i zajęcia danych.",
+    "odp_4": "Podsłuchu komunikacji internetowej w czasie rzeczywistym.",
+    "correct_odp": "odp_3"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 20 Konwencji Budapesztańskiej?",
+    "odp_1": "Gromadzenia danych o ruchu w czasie rzeczywistym.",
+    "odp_2": "Przechwytywania samej treści komunikacji.",
+    "odp_3": "Zabezpieczenia historycznych logów systemowych.",
+    "odp_4": "Zdalnego dostępu do danych na serwerze w innym kraju.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 21 Konwencji Budapesztańskiej?",
+    "odp_1": "Gromadzenia metadanych o połączeniach (kto, z kim, kiedy).",
+    "odp_2": "Przechwytywania danych o treści.",
+    "odp_3": "Przeszukania fizycznego systemu komputerowego.",
+    "odp_4": "Zabezpieczenia danych przechowywanych u dostawcy usług.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 22 Konwencji Budapesztańskiej?",
+    "odp_1": "Maksymalnej wysokości sankcji karnych za cyberprzestępstwa.",
+    "odp_2": "Zasad jurysdykcji.",
+    "odp_3": "Ogólnych zasad, na których opiera się współpraca międzynarodowa.",
+    "odp_4": "Gwarancji procesowych i ochrony praw człowieka.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 23 Konwencji Budapesztańskiej?",
+    "odp_1": "Konkretnych zasad ekstradycji sprawców.",
+    "odp_2": "Ogólnych zasad współpracy międzynarodowej.",
+    "odp_3": "Sieci punktów kontaktowych 24/7.",
+    "odp_4": "Ustalania jurysdykcji w sprawach transgranicznych.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 24 Konwencji Budapesztańskiej?",
+    "odp_1": "Wzajemnej pomocy prawnej.",
+    "odp_2": "Zasad dotyczących ekstradycji.",
+    "odp_3": "Dobrowolnego i spontanicznego przekazywania informacji między państwami.",
+    "odp_4": "Poufności informacji uzyskanych w ramach współpracy.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 25 Konwencji Budapesztańskiej?",
+    "odp_1": "Ogólnych zasad wzajemnej pomocy prawnej.",
+    "odp_2": "Konkretnych zasad ekstradycji i wydawania sprawców.",
+    "odp_3": "Zdalnego i transgranicznego dostępu do danych.",
+    "odp_4": "Funkcjonowania sieci punktów kontaktowych 24/7.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 26 Konwencji Budapesztańskiej?",
+    "odp_1": "Obowiązku udzielenia pomocy prawnej na wniosek.",
+    "odp_2": "Spontanicznego przekazywania informacji.",
+    "odp_3": "Zachowania poufności przekazywanych danych.",
+    "odp_4": "Specjalnych procedur w przypadku braku innych umów.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 27 Konwencji Budapesztańskiej?",
+    "odp_1": "Zasad i warunków ekstradycji.",
+    "odp_2": "Procedur wzajemnej pomocy w przypadku braku umów.",
+    "odp_3": "Zachowania poufności informacji i ograniczeń w ich wykorzystaniu.",
+    "odp_4": "Organizacji i finansowania sieci kontaktowej 24/7.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 28 Konwencji Budapesztańskiej?",
+    "odp_1": "Spontanicznego i dobrowolnego przekazywania informacji.",
+    "odp_2": "Poufności i ograniczeń w wykorzystaniu informacji.",
+    "odp_3": "Określenia zasad ekstradycji między państwami-stronami.",
+    "odp_4": "Transgranicznego dostępu do publicznie dostępnych danych.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 29 Konwencji Budapesztańskiej?",
+    "odp_1": "Wzajemnej pomocy przy szybkim zabezpieczeniu danych w innym państwie.",
+    "odp_2": "Wzajemnej pomocy przy ujawnianiu danych, które są już zabezpieczone.",
+    "odp_3": "Pomocy przy przechwytywaniu treści komunikacji.",
+    "odp_4": "Współpracy przy gromadzeniu danych o ruchu.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 30 Konwencji Budapesztańskiej?",
+    "odp_1": "Zabezpieczenia danych na serwerze w innym kraju.",
+    "odp_2": "Wzajemnej pomocy w szybkim ujawnieniu danych.",
+    "odp_3": "Bezpośredniego dostępu do danych przez organy innego państwa.",
+    "odp_4": "Współpracy przy przechwytywaniu treści rozmów i wiadomości.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 31 Konwencji Budapesztańskiej?",
+    "odp_1": "Transgranicznego dostępu do danych.",
+    "odp_2": "Wzajemnej pomocy w dostępie do danych.",
+    "odp_3": "Wzajemnej pomocy przy gromadzeniu danych o ruchu 'na żywo'.",
+    "odp_4": "Pomocy prawnej przy przechwytywaniu treści komunikacji.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 32 Konwencji Budapesztańskiej?",
+    "odp_1": "Transgranicznego dostępu do danych.",
+    "odp_2": "Udzielania pomocy w dostępie do danych za pośrednictwem lokalnych organów.",
+    "odp_3": "Zabezpieczenia danych znajdujących się w innym kraju.",
+    "odp_4": "Ekstradycji osób podejrzanych o popełnienie cyberprzestępstw.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 33 Konwencji Budapesztańskiej?",
+    "odp_1": "Wzajemnej pomocy w przechwytywaniu treści.",
+    "odp_2": "Wzajemnej pomocy w gromadzeniu danych o ruchu.",
+    "odp_3": "Pomocy w zabezpieczaniu przechowywanych danych.",
+    "odp_4": "Współpracy przy ujawnianiu wcześniej zabezpieczonych danych.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 34 Konwencji Budapesztańskiej?",
+    "odp_1": "Pomocy w gromadzeniu samych metadanych o ruchu.",
+    "odp_2": "Wzajemnej pomocy w przechwytywaniu danych o treści.",
+    "odp_3": "Zdalnego dostępu do danych na serwerach publicznych.",
+    "odp_4": "Zasad wydawania sprawców między państwami.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 35 Konwencji Budapesztańskiej?",
+    "odp_1": "Ogólnych zasad współpracy międzynarodowej.",
+    "odp_2": "Ustanowienia sieci punktów kontaktowych 24/7.",
+    "odp_3": "Warunków zachowania poufności uzyskanych informacji.",
+    "odp_4": "Określenia, które państwo jest właściwe do prowadzenia śledztwa.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 36 Konwencji Budapesztańskiej?",
+    "odp_1": "Procedury wypowiedzenia konwencji przez państwo.",
+    "odp_2": "Procedury podpisania i wejścia w życie.",
+    "odp_3": "Możliwości i zasad składania zastrzeżeń do artykułów.",
+    "odp_4": "Procedury wprowadzania przyszłych zmian do treści konwencji.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 37 Konwencji Budapesztańskiej?",
+    "odp_1": "Warunków przystąpienia do Konwencji.",
+    "odp_2": "Terytorialnego zakresu stosowania Konwencji.",
+    "odp_3": "Relacji Konwencji z innymi umowami międzynarodowymi.",
+    "odp_4": "Metod rozwiązywania sporów między państwami-stronami.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 38 Konwencji Budapesztańskiej?",
+    "odp_1": "Klauzuli federalnej dla państw o złożonej strukturze.",
+    "odp_2": "Terytorialnego stosowania Konwencji.",
+    "odp_3": "Możliwości składania zastrzeżeń do wybranych artykułów.",
+    "odp_4": "Procedury wejścia w życie po ratyfikacji.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 39 Konwencji Budapesztańskiej?",
+    "odp_1": "Wypowiedzenia Konwencji.",
+    "odp_2": "Skutków i relacji z innymi umowami.",
+    "odp_3": "Zasad składania oświadczeń przez państwa.",
+    "odp_4": "Sposobu wprowadzania zmian do treści Konwencji.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 40 Konwencji Budapesztańskiej?",
+    "odp_1": "Możliwości składania zastrzeżeń.",
+    "odp_2": "Możliwości składania oświadczeń interpretacyjnych.",
+    "odp_3": "Zasad stosowania Konwencji w państwach federalnych.",
+    "odp_4": "Metod rozstrzygania sporów dotyczących interpretacji.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 41 Konwencji Budapesztańskiej?",
+    "odp_1": "Zastrzeżeń o charakterze stałym.",
+    "odp_2": "Zastrzeżeń czasowych.",
+    "odp_3": "Oświadczeń woli państw.",
+    "odp_4": "Obowiązków notyfikacyjnych Sekretarza Generalnego.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 42 Konwencji Budapesztańskiej?",
+    "odp_1": "Zasad składania zastrzeżeń do artykułów.",
+    "odp_2": "Możliwości składania oświadczeń.",
+    "odp_3": "Procedury rozstrzygania sporów.",
+    "odp_4": "Zasad wypowiadania Konwencji przez państwo.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 43 Konwencji Budapesztańskiej?",
+    "odp_1": "Klauzuli federalnej.",
+    "odp_2": "Rozszerzenia stosowania Konwencji na terytoria zależne.",
+    "odp_3": "Relacji z innymi umowami dotyczącymi cyberbezpieczeństwa.",
+    "odp_4": "Regularnych konsultacji państw-stron.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 44 Konwencji Budapesztańskiej?",
+    "odp_1": "Sposobów rozstrzygania sporów.",
+    "odp_2": "Zasad wypowiedzenia Konwencji.",
+    "odp_3": "Procedury wprowadzania zmian.",
+    "odp_4": "Warunków przystąpienia nowych państw do Konwencji.",
+    "correct_odp": "odp_3"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 45 Konwencji Budapesztańskiej?",
+    "odp_1": "Rozstrzygania sporów.",
+    "odp_2": "Nowelizacji treści Konwencji.",
+    "odp_3": "Zasad składania stałych i czasowych zastrzeżeń.",
+    "odp_4": "Organizacji i zadań Komitetu Konwencji.",
+    "correct_odp": "odp_1"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 46 Konwencji Budapesztańskiej?",
+    "odp_1": "Procedury rozwiązywania sporów między państwami.",
+    "odp_2": "Konsultacji Stron i Komitetu Konwencji.",
+    "odp_3": "Obowiązków notyfikacyjnych Sekretarza Generalnego Rady Europy.",
+    "odp_4": "Warunków i skutków wypowiedzenia Konwencji.",
+    "correct_odp": "odp_2"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 47 Konwencji Budapesztańskiej?",
+    "odp_1": "Warunków przystąpienia do Konwencji przez państwa spoza Rady Europy.",
+    "odp_2": "Sposobu wprowadzania zmian do tekstu Konwencji.",
+    "odp_3": "Procedury wypowiedzenia Konwencji.",
+    "odp_4": "Daty i warunków wejścia w życie Konwencji.",
+    "correct_odp": "odp_3"
+  },
+  {
+    "pytanie": "Czego dotyczy Artykuł 48 Konwencji Budapesztańskiej?",
+    "odp_1": "Zasad rozwiązywania ewentualnych sporów.",
+    "odp_2": "Obowiązków notyfikacyjnych Sekretarza Generalnego.",
+    "odp_3": "Funkcjonowania i zadań Komitetu Konwencji.",
+    "odp_4": "Zasad składania zastrzeżeń i oświadczeń.",
+    "correct_odp": "odp_2"
+  }
+  ]
+}

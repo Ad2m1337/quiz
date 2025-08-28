@@ -105,7 +105,7 @@
                     <span class="w-6 text-center text-lg">🔑</span> Kryptografia i Hashing
                 </a>
                 <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="ataki">
-                    <span class="w-6 text-center text-lg">🛡️</span> Ataki i Luki
+                    <span class="w-6 text-center text-lg">🛡️</span> Ataki i Złośliwe Oprogramowanie
                 </a>
                 <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="blockchain">
                     <span class="w-6 text-center text-lg">🔗</span> Technologie Blockchain
@@ -122,32 +122,68 @@
             <!-- Section 1: Skróty i Terminy -->
             <section id="terminy" class="content-section active">
                 <h2 class="text-3xl font-bold mb-2 text-white">Skróty i Podstawowe Terminy</h2>
-                <p class="mb-6 text-gray-400">Definicje kluczowych akronimów i pojęć ze świata IT.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">BEC (Business Email Compromise)</h3><p class="mt-2 text-sm flex-grow">To zaawansowany rodzaj ataku phishingowego, w którym cyberprzestępca podszywa się pod osobę na wysokim stanowisku w firmie (np. CEO) lub zaufanego partnera. Celem jest nakłonienie pracownika do wykonania nieautoryzowanej transakcji finansowej lub ujawnienia poufnych danych.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">PGP (Pretty Good Privacy)</h3><p class="mt-2 text-sm flex-grow">Standard szyfrowania i podpisywania cyfrowego danych, najczęściej używany do zabezpieczania poczty e-mail. Wykorzystuje kryptografię asymetryczną (klucz publiczny i prywatny) do zapewnienia poufności, integralności i autentyczności wiadomości.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">IANA (Internet Assigned Numbers Authority)</h3><p class="mt-2 text-sm flex-grow">Organizacja odpowiedzialna za globalną koordynację kluczowych elementów funkcjonowania internetu, takich jak przydzielanie adresów IP, zarządzanie strefą główną DNS oraz przydzielanie numerów portów i protokołów.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">ARP (Address Resolution Protocol)</h3><p class="mt-2 text-sm flex-grow">Protokół sieciowy działający w sieciach lokalnych (LAN). Jego zadaniem jest tłumaczenie adresów logicznych (IP) na adresy fizyczne (MAC) urządzeń, aby mogły się ze sobą komunikować.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">TLS (Transport Layer Security)</h3><p class="mt-2 text-sm flex-grow">Protokół kryptograficzny będący następcą SSL. Zapewnia bezpieczną komunikację w sieci (np. `https` w adresie URL), szyfrując dane przesyłane między klientem a serwerem. Chroni przed podsłuchiwaniem i manipulacją.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">SID (Security Identifier)</h3><p class="mt-2 text-sm flex-grow">Unikalny identyfikator o zmiennej długości używany w systemach Windows do identyfikowania podmiotów zabezpieczeń (użytkowników, grup). Każde konto ma unikalny SID używany do kontroli dostępu do zasobów.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">SSL (Secure Sockets Layer)</h3><p class="mt-2 text-sm flex-grow">Kryptograficzny protokół będący poprzednikiem TLS. Z powodu wykrytych luk bezpieczeństwa został wyparty przez nowszy i bezpieczniejszy protokół TLS, choć termin jest nadal w potocznym użyciu.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">TOR (The Onion Router)</h3><p class="mt-2 text-sm flex-grow">Technologia i sieć umożliwiająca anonimową komunikację. Działa na zasadzie "trasowania cebulowego" – ruch sieciowy jest wielokrotnie szyfrowany i przesyłany przez serię losowych serwerów (węzłów), co ukrywa lokalizację i tożsamość użytkownika.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">SUDO (Superuser Do)</h3><p class="mt-2 text-sm flex-grow">Polecenie w systemach typu Unix (Linux, macOS), które pozwala uprawnionym użytkownikom na wykonanie polecenia z uprawnieniami innego użytkownika (domyślnie roota), co zwiększa bezpieczeństwo administracji systemem.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">WEP (Wired Equivalent Privacy)</h3><p class="mt-2 text-sm flex-grow">Przestarzały i bardzo słaby protokół zabezpieczeń dla sieci Wi-Fi. Został złamany wiele lat temu i nie powinien być używany. Zastąpiony przez WPA2 i WPA3.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">ESI (Edge Side Includes)</h3><p class="mt-2 text-sm flex-grow">Technologia optymalizacji stron internetowych. Nieprawidłowa implementacja ESI może prowadzić do luk bezpieczeństwa, takich jak *ESI Injection*, pozwalających na kradzież ciasteczek sesyjnych czy ataki XSS.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">RIPE (Réseaux IP Européens)</h3><p class="mt-2 text-sm flex-grow">Jeden z pięciu Regionalnych Rejestrów Internetowych (RIR). RIPE NCC jest organizacją odpowiedzialną za alokację i rejestrację bloków adresów IP w regionie Europy, Bliskiego Wschodu i części Azji Środkowej.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">IRC (Internet Relay Chat)</h3><p class="mt-2 text-sm flex-grow">Protokół komunikacyjny czasu rzeczywistego, jeden z najstarszych systemów czatu w internecie. Działa na zasadzie serwerów połączonych w sieć i kanałów tematycznych.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">TCP vs UDP</h3><p class="mt-2 text-sm flex-grow"><strong>TCP (Transmission Control Protocol):</strong> Połączeniowy, niezawodny, gwarantuje dostarczenie pakietów w kolejności (WWW, e-mail). <br><strong>UDP (User Datagram Protocol):</strong> Bezpołączeniowy, szybki, bez gwarancji dostarczenia (streaming, gry, VoIP).</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">CSAM (Child Sexual Abuse Material)</h3><p class="mt-2 text-sm flex-grow">Termin prawny i techniczny określający nielegalne treści (zdjęcia, filmy) związane z wykorzystywaniem dzieci. Zwalczanie dystrybucji CSAM jest priorytetem organów ścigania.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">RaaS (Ransomware as a Service)</h3><p class="mt-2 text-sm flex-grow">Model biznesowy w cyberprzestępczości, w którym twórcy oprogramowania ransomware udostępniają je innym osobom w zamian za udział w zyskach z okupów. Obniża to próg wejścia dla przestępców.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">I2P (Invisible Internet Project)</h3><p class="mt-2 text-sm flex-grow">Zdecentralizowana i anonimowa sieć nakładkowa, podobna w założeniach do sieci Tor. Umożliwia anonimowe przeglądanie stron (tzw. *eepsites*) i komunikację w zamkniętym ekosystemie.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">ICMP (Internet Control Message Protocol)</h3><p class="mt-2 text-sm flex-grow">Protokół pomocniczy używany do wysyłania komunikatów o błędach i informacji operacyjnych. Najbardziej znanym zastosowaniem jest polecenie `ping` oraz `traceroute`.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">EUID (Effective User ID)</h3><p class="mt-2 text-sm flex-grow">Koncepcja z systemów typu Unix. EUID określa uprawnienia, z jakimi proces aktualnie działa, co pozwala na tymczasowe uzyskanie wyższych uprawnień.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">IMSI (International Mobile Subscriber Identity)</h3><p class="mt-2 text-sm flex-grow">Unikalny numer przypisany do każdej karty SIM, służący do identyfikacji abonenta. Składa się z:<br>• <strong>MCC (Mobile Country Code):</strong> Kod kraju.<br>• <strong>MNC (Mobile Network Code):</strong> Kod sieci komórkowej.<br>• <strong>MSIN (Mobile Subscriber ID Number):</strong> Numer abonenta.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">DNM (Darknet Market)</h3><p class="mt-2 text-sm flex-grow">Strona internetowa w sieciach anonimizujących (głównie Tor), która funkcjonuje jako czarny rynek, gdzie płatności realizowane są najczęściej w kryptowalutach.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">ICCID (Integrated Circuit Card Identifier)</h3><p class="mt-2 text-sm flex-grow">Unikalny numer seryjny przypisany do fizycznej karty SIM. W przeciwieństwie do IMSI (identyfikującego abonament), ICCID identyfikuje samą kartę. Jest często drukowany na karcie SIM.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">TDL (Top-Level Domain)</h3><p class="mt-2 text-sm flex-grow">Domena Najwyższego Poziomu. Ostatni segment nazwy domeny internetowej, np. `.com`, `.org`, `.pl`. Domeny TDL są zarządzane przez IANA.</p></div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">LUKS (Linux Unified Key Setup)</h3><p class="mt-2 text-sm flex-grow">Standard szyfrowania całych dysków lub partycji w systemie Linux. LUKS to specyfikacja formatu na dysku, która pozwala na używanie różnych algorytmów szyfrujących (np. AES).</p></div>
+                <p class="mb-6 text-gray-400">Definicje kluczowych akronimów i pojęć ze świata IT i cyberbezpieczeństwa.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">SATA (Serial Advanced Technology Attachment)</h3>
+                        <p class="mt-2 text-sm flex-grow">Nowoczesny interfejs (standard komunikacji) używany do podłączania urządzeń pamięci masowej, takich jak dyski twarde (HDD) i dyski półprzewodnikowe (SSD), do płyty głównej komputera.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">DHCP (Dynamic Host Configuration Protocol)</h3>
+                        <p class="mt-2 text-sm flex-grow">Protokół sieciowy, który automatycznie przydziela adresy IP i inne parametry sieciowe (maska podsieci, brama domyślna, serwery DNS) urządzeniom w sieci.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">IMSI (International Mobile Subscriber Identity)</h3>
+                        <p class="mt-2 text-sm flex-grow">Unikalny numer przypisany do karty SIM, służący do identyfikacji abonenta w sieciach komórkowych. Składa się z: MCC (kod kraju), MNC (kod sieci), MSIN (numer abonenta).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">BEC (Business Email Compromise)</h3>
+                        <p class="mt-2 text-sm flex-grow">Atak phishingowy, w którym przestępca podszywa się pod osobę na wysokim stanowisku, aby nakłonić pracownika do wykonania nieautoryzowanej transakcji finansowej.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Software vs Hardware</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Software (Oprogramowanie):</strong> Zbiór instrukcji i programów (np. system operacyjny).<br><strong>Hardware (Sprzęt):</strong> Fizyczne komponenty komputera (np. procesor, dysk twardy).</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">AFU (After First Unlock)</h3>
+                        <p class="mt-2 text-sm flex-grow">Stan urządzenia mobilnego po pierwszym odblokowaniu od uruchomienia. W tym stanie większość danych jest już odszyfrowana i dostępna dla aplikacji.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">DNS (Domain Name System)</h3>
+                        <p class="mt-2 text-sm flex-grow">System, który tłumaczy czytelne dla człowieka nazwy domen (np. google.com) na adresy IP zrozumiałe dla komputerów i odwrotnie.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">NAT (Network Address Translation)</h3>
+                        <p class="mt-2 text-sm flex-grow">Technika umożliwiająca wielu urządzeniom w sieci prywatnej korzystanie z jednego publicznego adresu IP. Zmienia adresy/porty w pakietach danych.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">SQL (Structured Query Language)</h3>
+                        <p class="mt-2 text-sm flex-grow">Standardowy język używany do komunikacji z relacyjnymi bazami danych, pozwalający na definiowanie, modyfikowanie i pobieranie danych.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">RAM vs ROM</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>RAM:</strong> Pamięć operacyjna, ulotna, do szybkiego zapisu i odczytu.<br><strong>ROM:</strong> Pamięć nieulotna, przechowująca np. firmware (BIOS/UEFI).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">SSD (Solid State Drive)</h3>
+                        <p class="mt-2 text-sm flex-grow">Nowoczesne urządzenie do przechowywania danych oparte na pamięci flash, bez ruchomych części mechanicznych.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">VLAN (Virtual Local Area Network)</h3>
+                        <p class="mt-2 text-sm flex-grow">Logiczny podział fizycznej sieci na mniejsze, odizolowane segmenty, co zwiększa bezpieczeństwo i wydajność.</p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">FTP (File Transfer Protocol)</h3>
+                        <p class="mt-2 text-sm flex-grow">Standardowy protokół sieciowy służący do przesyłania plików pomiędzy klientem a serwerem w sieci komputerowej.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">HTML / CSS</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>HTML:</strong> Język znaczników do tworzenia struktury stron WWW.<br><strong>CSS:</strong> Język arkuszy stylów opisujący wygląd dokumentów HTML.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">SID (Security Identifier)</h3>
+                        <p class="mt-2 text-sm flex-grow">Unikalny identyfikator używany w systemach Windows do identyfikacji kont użytkowników, grup lub komputerów.</p>
+                    </div>
                 </div>
             </section>
             
@@ -155,48 +191,79 @@
             <section id="system" class="content-section">
                 <h2 class="text-3xl font-bold mb-2 text-white">System i Sprzęt</h2>
                 <p class="mb-6 text-gray-400">Pojęcia związane z systemami operacyjnymi, sprzętem i programowaniem.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Montowanie Dysku</h3>
-                        <p class="mt-2 text-sm flex-grow">Proces "podłączania" systemu plików znajdującego się na partycji dysku do głównego drzewa katalogów systemu operacyjnego. Dzięki temu dane na dysku stają się dostępne pod określoną ścieżką (punktem montowania), np. `/mnt/data`.<br>• `mount -r`: Montuje system plików w trybie tylko do odczytu (read-only).</p>
+                        <p class="mt-2 text-sm flex-grow">Proces "podłączania" systemu plików z partycji dysku do drzewa katalogów systemu, udostępniając dane pod określoną ścieżką (punktem montowania).<br>• `mount -r`: Montuje system plików w trybie tylko do odczytu.</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">Polecenia Linux: `ps`, `cat`, `ip`</h3>
-                         <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
-<pre><code># Wyświetla listę aktualnie działających procesów
-ps aux
-
-# Nadpisuje zawartość plik2 zawartością plik1
-cat plik1 > plik2
-
-# Wyświetla adresy MAC interfejsów sieciowych
-ip link show
-ifconfig -a # starsze polecenie</code></pre>
-                        </div>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">EFI Lock (Blokada Hasłem Firmware)</h3>
-                        <p class="mt-2 text-sm flex-grow">Zabezpieczenie na poziomie firmware'u (UEFI) w komputerach (głównie Apple), które uniemożliwia uruchomienie systemu z innego nośnika niż wskazany dysk startowy oraz blokuje dostęp do zaawansowanych opcji startowych (np. trybu odzyskiwania) bez podania hasła. Chroni przed nieautoryzowanym dostępem fizycznym.</p>
+                        <h3 class="font-semibold text-lg text-white">EFI Lock (Blokada Firmware)</h3>
+                        <p class="mt-2 text-sm flex-grow">Zabezpieczenie na poziomie firmware'u (UEFI), które uniemożliwia uruchomienie systemu z innego nośnika niż wskazany dysk startowy bez podania hasła. Chroni przed nieautoryzowanym dostępem fizycznym.</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Kompilator i Semantyka</h3>
-                        <p class="mt-2 text-sm flex-grow"><strong>Kompilator:</strong> Program, który tłumaczy kod źródłowy napisany w języku programowania wysokiego poziomu (np. C++) na kod maszynowy zrozumiały dla procesora.<br><strong>Semantyka:</strong> W programowaniu, to znaczenie i logika przypisana do poszczególnych konstrukcji językowych. Określa, co dany fragment kodu faktycznie robi.</p>
+                        <p class="mt-2 text-sm flex-grow"><strong>Kompilator:</strong> Program, który tłumaczy kod źródłowy na kod maszynowy zrozumiały dla procesora.<br><strong>Semantyka:</strong> Znaczenie i logika przypisana do konstrukcji językowych; określa, co dany kod robi.</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Identyfikator Pliku (Inode)</h3>
-                        <p class="mt-2 text-sm flex-grow">W systemach plików typu Unix (Linux, macOS), każdy plik i katalog jest identyfikowany nie przez nazwę, a przez unikalny numer zwany <strong>i-węzłem (inode)</strong>. Inode przechowuje wszystkie metadane o pliku (uprawnienia, właściciel, rozmiar, wskaźniki na bloki danych), z wyjątkiem jego nazwy.</p>
+                        <p class="mt-2 text-sm flex-grow">W systemach typu Unix (Linux, macOS), każdy plik jest identyfikowany przez unikalny numer <strong>i-węzła (inode)</strong>, który przechowuje wszystkie metadane o pliku (uprawnienia, rozmiar itp.), z wyjątkiem jego nazwy.</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Środowisko graficzne vs Terminal</h3>
-                        <p class="mt-2 text-sm flex-grow"><strong>Środowisko graficzne (GUI):</strong> np. GNOME, KDE, XFCE. To wizualna powłoka systemu z oknami, ikonami i kursorem.<br><strong>Terminal (CLI):</strong> To interfejs wiersza poleceń. Nie jest środowiskiem graficznym; jest to program pozwalający na interakcję z systemem za pomocą poleceń tekstowych.</p>
+                        <p class="mt-2 text-sm flex-grow"><strong>Środowisko graficzne (GUI):</strong> Wizualna powłoka systemu z oknami i ikonami (np. GNOME, KDE).<br><strong>Terminal (CLI):</strong> Interfejs wiersza poleceń do interakcji z systemem za pomocą poleceń tekstowych.</p>
                     </div>
-                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">Pamięć ROM (Read-Only Memory)</h3>
-                        <p class="mt-2 text-sm flex-grow">Rodzaj pamięci komputerowej, której zawartość nie jest (lub jest bardzo trudno) modyfikowalna i nie ulega skasowaniu po wyłączeniu zasilania. Przechowuje kluczowe oprogramowanie, takie jak firmware UEFI/BIOS, niezbędne do uruchomienia komputera.</p>
-                    </div>
-                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Komunikacja Międzyprocesowa (IPC)</h3>
-                        <p class="mt-2 text-sm flex-grow">Mechanizmy, które pozwalają różnym, niezależnym procesom działającym w systemie operacyjnym na wymianę danych i synchronizację swoich działań. Przykłady to potoki (pipes), gniazda (sockets) czy pamięć współdzielona.</p>
+                        <p class="mt-2 text-sm flex-grow">Mechanizmy pozwalające różnym, niezależnym procesom na wymianę danych i synchronizację działań. Przykłady to potoki (pipes), gniazda (sockets) czy pamięć współdzielona.</p>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mt-10 mb-4 text-white">Wybrane Polecenia Linux</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h4 class="font-semibold text-lg text-white">Zarządzanie plikami i katalogami</h4>
+                         <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
+<pre><code># Listuje zawartość z ukrytymi plikami
+ls -la
+
+# Wyświetla zawartość pliku
+cat plik.txt
+
+# Nadpisuje plik2 zawartością plik1
+cat plik1 > plik2
+
+# Zmiana uprawnień (pełny dostęp)
+chmod 777 plik.txt</code></pre>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h4 class="font-semibold text-lg text-white">Informacje o systemie</h4>
+                         <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
+<pre><code># Wyświetla listę procesów
+ps aux
+
+# Wyświetla info o dystrybucji
+lsb_release -a
+
+# Wyświetla wersję jądra
+uname -r
+
+# Pokazuje wolne miejsce na dysku
+df -h</code></pre>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h4 class="font-semibold text-lg text-white">Sieć</h4>
+                         <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2 flex-grow">
+<pre><code># Wyświetla adresy MAC
+ip link show
+ifconfig -a
+
+# Wyświetla adres IP
+hostname -I
+
+# Sprawdza strefę czasową
+timedatectl</code></pre>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -208,39 +275,39 @@ ifconfig -a # starsze polecenie</code></pre>
                 <div class="space-y-6">
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="font-semibold text-xl text-white">RAID 0 (Stripping)</h3>
-                        <p class="mt-2 text-sm">Dane są dzielone na bloki i zapisywane naprzemiennie na co najmniej dwóch dyskach.</p>
+                        <p class="mt-2 text-sm">Dane są dzielone i zapisywane naprzemiennie na co najmniej dwóch dyskach.</p>
                         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                            <div><strong class="text-green-400">Zalety:</strong><p>Bardzo wysoka wydajność (prędkość odczytu/zapisu jest niemal sumą prędkości poszczególnych dysków).</p></div>
-                            <div><strong class="text-red-400">Wady:</strong><p>Brak jakiejkolwiek odporności na awarie. Awaria jednego dysku powoduje utratę WSZYSTKICH danych z całej macierzy.</p></div>
+                            <div><strong class="text-green-400">Zalety:</strong><p>Bardzo wysoka wydajność (prędkość odczytu/zapisu jest niemal sumą prędkości dysków).</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Brak odporności na awarie. Awaria jednego dysku powoduje utratę WSZYSTKICH danych.</p></div>
                         </div>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="font-semibold text-xl text-white">RAID 1 (Mirroring)</h3>
                         <p class="mt-2 text-sm">Dane są w całości kopiowane na co najmniej dwa dyski, tworząc lustrzane odbicie.</p>
                         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                            <div><strong class="text-green-400">Zalety:</strong><p>Wysoka odporność na awarie. Macierz działa, dopóki sprawny jest co najmniej jeden dysk. Szybki odczyt.</p></div>
-                            <div><strong class="text-red-400">Wady:</strong><p>Pojemność macierzy jest równa pojemności najmniejszego dysku. 50% przestrzeni dyskowej jest "tracone" na kopię zapasową.</p></div>
+                            <div><strong class="text-green-400">Zalety:</strong><p>Wysoka odporność na awarie. Szybki odczyt.</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Pojemność macierzy jest równa pojemności najmniejszego dysku (50% "straty" na kopię).</p></div>
                         </div>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="font-semibold text-xl text-white">RAID 5 (Stripping with Distributed Parity)</h3>
-                        <p class="mt-2 text-sm">Wymaga min. 3 dysków. Dane i bity parzystości (informacje kontrolne) są rozkładane na wszystkich dyskach, co pozwala odtworzyć dane w przypadku awarii jednego z nich.</p>
+                        <p class="mt-2 text-sm">Min. 3 dyski. Dane i bity parzystości są rozkładane na wszystkich dyskach, co pozwala odtworzyć dane w przypadku awarii jednego z nich.</p>
                         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                            <div><strong class="text-green-400">Zalety:</strong><p>Dobry kompromis między wydajnością, pojemnością a bezpieczeństwem. Dobra prędkość odczytu.</p></div>
-                            <div><strong class="text-red-400">Wady:</strong><p>Awaria drugiego dysku przed odbudową macierzy prowadzi do utraty danych. Spadek wydajności zapisu z powodu konieczności obliczania parzystości.</p></div>
+                            <div><strong class="text-green-400">Zalety:</strong><p>Dobry kompromis między wydajnością, pojemnością a bezpieczeństwem.</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Awaria drugiego dysku przed odbudową prowadzi do utraty danych. Wolniejszy zapis.</p></div>
                         </div>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="font-semibold text-xl text-white">RAID 6 (Stripping with Double Distributed Parity)</h3>
-                        <p class="mt-2 text-sm">Wymaga min. 4 dysków. Podobny do RAID 5, ale używa podwójnych bitów parzystości.</p>
+                        <p class="mt-2 text-sm">Min. 4 dyski. Podobny do RAID 5, ale używa podwójnych bitów parzystości.</p>
                         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                             <div><strong class="text-green-400">Zalety:</strong><p>Bardzo wysoka odporność – macierz może przetrwać awarię dwóch dysków jednocześnie.</p></div>
-                            <div><strong class="text-red-400">Wady:</strong><p>Większy spadek wydajności zapisu niż w RAID 5 z powodu obliczania dwóch sum kontrolnych. Wyższy koszt.</p></div>
+                            <div><strong class="text-red-400">Wady:</strong><p>Większy spadek wydajności zapisu niż w RAID 5. Wyższy koszt.</p></div>
                         </div>
                     </div>
                      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="font-semibold text-xl text-white">RAID 10 (1+0)</h3>
-                        <p class="mt-2 text-sm">Wymaga min. 4 dysków. Kombinacja RAID 1 (mirroring) i RAID 0 (stripping). Tworzy się dwie lub więcej macierzy RAID 1, a następnie łączy je w RAID 0.</p>
+                        <p class="mt-2 text-sm">Min. 4 dyski. Kombinacja RAID 1 (mirroring) i RAID 0 (stripping). Tworzy się dwie lub więcej macierzy RAID 1, a następnie łączy je w RAID 0.</p>
                         <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                             <div><strong class="text-green-400">Zalety:</strong><p>Bardzo wysoka wydajność zapisu i odczytu oraz wysoka odporność na awarie.</p></div>
                             <div><strong class="text-red-400">Wady:</strong><p>Wysoki koszt, ponieważ połowa całkowitej przestrzeni dyskowej jest zużywana na lustrzane kopie.</p></div>
@@ -259,22 +326,22 @@ ifconfig -a # starsze polecenie</code></pre>
                         <p class="text-sm text-gray-400 mt-1">Teoretyczny model referencyjny.</p>
                         <ol class="list-decimal list-inside mt-4 space-y-2 text-sm">
                             <li><strong>Fizyczna:</strong> Transmisja bitów (kable, sygnały).</li>
-                            <li><strong>Łącza danych:</strong> Adresacja MAC, ramki.</li>
-                            <li><strong>Sieciowa:</strong> Adresacja IP, routing pakietów.</li>
-                            <li><strong>Transportowa:</strong> Komunikacja end-to-end (TCP/UDP).</li>
+                            <li><strong>Łącza danych:</strong> Adresacja MAC, ramki (np. Ethernet).</li>
+                            <li><strong>Sieciowa:</strong> Adresacja IP, routing pakietów (np. IP, ICMP).</li>
+                            <li><strong>Transportowa:</strong> Komunikacja end-to-end (np. TCP, UDP).</li>
                             <li><strong>Sesji:</strong> Zarządzanie sesjami.</li>
                             <li><strong>Prezentacji:</strong> Formatowanie, szyfrowanie danych.</li>
-                            <li><strong>Aplikacji:</strong> Interfejs dla użytkownika (HTTP, FTP).</li>
+                            <li><strong>Aplikacji:</strong> Interfejs dla użytkownika (np. HTTP, FTP, SMTP, DNS).</li>
                         </ol>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-xl text-white">Model TCP/IP (4 warstwy)</h3>
                         <p class="text-sm text-gray-400 mt-1">Praktyczny model, na którym działa internet.</p>
                         <ol class="list-decimal list-inside mt-4 space-y-2 text-sm">
-                            <li><strong>Dostępu do sieci:</strong> Łączy funkcje warstwy fizycznej i łącza danych z modelu OSI (Ethernet, Wi-Fi).</li>
-                            <li><strong>Internetowa:</strong> Odpowiednik warstwy sieciowej OSI. Odpowiada za adresowanie i routing (IP, ICMP, ARP).</li>
-                            <li><strong>Transportowa:</strong> Taka sama jak w modelu OSI. Zapewnia komunikację między hostami (TCP, UDP).</li>
-                            <li><strong>Aplikacji:</strong> Łączy funkcje warstw sesji, prezentacji i aplikacji z OSI (HTTP, DNS, FTP, SMTP).</li>
+                            <li><strong>Dostępu do sieci:</strong> Łączy warstwy fizyczną i łącza danych z OSI (Ethernet, Wi-Fi).</li>
+                            <li><strong>Internetowa:</strong> Odpowiednik warstwy sieciowej OSI. Adresowanie i routing (IP, ICMP, ARP).</li>
+                            <li><strong>Transportowa:</strong> Taka sama jak w OSI. Komunikacja między hostami (TCP, UDP).</li>
+                            <li><strong>Aplikacji:</strong> Łączy warstwy sesji, prezentacji i aplikacji z OSI (HTTP, DNS, FTP, SMTP).</li>
                         </ol>
                     </div>
                  </div>
@@ -284,30 +351,42 @@ ifconfig -a # starsze polecenie</code></pre>
             <section id="koncepcje" class="content-section">
                 <h2 class="text-3xl font-bold mb-2 text-white">Koncepcje Sieciowe</h2>
                 <p class="mb-6 text-gray-400">Zasady i protokoły rządzące komunikacją w sieciach komputerowych.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Tryby komunikacji: Half/Full Duplex</h3>
-                        <p class="mt-2 text-sm flex-grow"><strong>Half-duplex:</strong> Komunikacja odbywa się w obu kierunkach, ale nie jednocześnie (jak w krótkofalówce - jedna osoba mówi, druga słucha).<br><strong>Full-duplex:</strong> Komunikacja odbywa się w obu kierunkach jednocześnie (jak w rozmowie telefonicznej).</p>
+                        <p class="mt-2 text-sm flex-grow"><strong>Half-duplex:</strong> Komunikacja w obu kierunkach, ale nie jednocześnie (jak krótkofalówka).<br><strong>Full-duplex:</strong> Komunikacja w obu kierunkach jednocześnie (jak rozmowa telefoniczna).</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">Broadcast</h3>
-                        <p class="mt-2 text-sm flex-grow">Metoda wysyłania pakietów danych, w której jeden pakiet jest adresowany i dostarczany do wszystkich urządzeń (hostów) w danej sieci lokalnej (domenie rozgłoszeniowej). Używany m.in. przez protokół ARP.</p>
+                        <h3 class="font-semibold text-lg text-white">Broadcast, Unicast, Multicast</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Unicast:</strong> 1-do-1. <strong>Broadcast:</strong> 1-do-wszystkich w sieci lokalnej. <strong>Multicast:</strong> 1-do-wielu (do grupy zainteresowanych odbiorców).</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">VPN (Virtual Private Network)</h3>
-                        <p class="mt-2 text-sm flex-grow">Wirtualna sieć prywatna. Technologia, która tworzy bezpieczny, szyfrowany "tunel" przez sieć publiczną (np. internet), pozwalając na rozszerzenie sieci prywatnej. Umożliwia bezpieczny zdalny dostęp do zasobów firmowych.</p>
+                        <p class="mt-2 text-sm flex-grow">Technologia tworząca bezpieczny, szyfrowany "tunel" przez sieć publiczną (np. internet), pozwalając na rozszerzenie sieci prywatnej i bezpieczny zdalny dostęp.</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Ping (ICMP)</h3>
-                        <p class="mt-2 text-sm flex-grow">Narzędzie diagnostyczne używające protokołu <strong>ICMP</strong> (Internet Control Message Protocol) do sprawdzania, czy dany host w sieci jest osiągalny. Wysyła pakiet "echo request" i mierzy czas oczekiwania na odpowiedź "echo reply", co pozwala ocenić opóźnienia w sieci.</p>
+                        <p class="mt-2 text-sm flex-grow">Narzędzie diagnostyczne używające protokołu <strong>ICMP</strong> do sprawdzania, czy dany host jest osiągalny. Mierzy czas odpowiedzi, pozwalając ocenić opóźnienia.</p>
                     </div>
                      <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">Przełącznik (Switch) a Urządzenie brzegowe</h3>
-                        <p class="mt-2 text-sm flex-grow"><strong>Przełącznik (switch)</strong> działa wewnątrz sieci lokalnej (w warstwie 2 OSI), łącząc urządzenia. **Nie jest** urządzeniem brzegowym.<br><strong>Urządzenie brzegowe</strong> (np. router, firewall) znajduje się na granicy sieci i łączy ją z inną siecią (np. z internetem).</p>
+                        <h3 class="font-semibold text-lg text-white">Przełącznik (Switch) a Router</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Switch</strong> działa wewnątrz sieci lokalnej (LAN), łącząc urządzenia. <strong>Router</strong> (urządzenie brzegowe) łączy różne sieci ze sobą (np. LAN z internetem).</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Bluetooth i Sieć PAN</h3>
-                        <p class="mt-2 text-sm flex-grow">Bluetooth to technologia komunikacji bezprzewodowej na krótkie dystanse, która tworzy sieć typu <strong>PAN (Personal Area Network)</strong> - Osobistą Sieć Komputerową. Służy do łączenia urządzeń osobistych, takich jak słuchawki, myszy, klawiatury.</p>
+                        <p class="mt-2 text-sm flex-grow">Bluetooth to technologia tworząca sieć typu <strong>PAN (Personal Area Network)</strong>. Służy do łączenia urządzeń osobistych na krótkie dystanse (słuchawki, myszy).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Protokół ARP</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Address Resolution Protocol</strong>. Mapuje adresy warstwy sieciowej (IP) na adresy warstwy łącza danych (MAC) w sieci lokalnej. Kluczowy dla komunikacji w LAN.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Brama domyślna (Gateway)</h3>
+                        <p class="mt-2 text-sm flex-grow">Urządzenie (zazwyczaj router) w sieci, które służy jako punkt wyjścia do innych sieci. Ruch skierowany poza sieć lokalną jest przesyłany do bramy domyślnej.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Firewall (Zapora sieciowa)</h3>
+                        <p class="mt-2 text-sm flex-grow">System bezpieczeństwa sieciowego, który monitoruje i kontroluje przychodzący i wychodzący ruch sieciowy na podstawie określonych reguł bezpieczeństwa.</p>
                     </div>
                 </div>
             </section>
@@ -316,42 +395,86 @@ ifconfig -a # starsze polecenie</code></pre>
             <section id="kryptografia" class="content-section">
                 <h2 class="text-3xl font-bold mb-2 text-white">Kryptografia i Hashing</h2>
                 <p class="mb-6 text-gray-400">Podstawy szyfrowania, weryfikacji integralności i bezpieczeństwa danych.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                      <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Przechowywanie Haseł</h3>
-                        <p class="mt-2 text-sm flex-grow">Hasła nie są przechowywane w adresie MAC. W nowoczesnych systemach operacyjnych (np. macOS, Windows) hasła użytkownika i certyfikaty są przechowywane w bezpiecznym, zaszyfrowanym kontenerze zwanym <strong>pękiem kluczy (keychain)</strong> lub menedżerem poświadczeń.</p>
+                        <p class="mt-2 text-sm flex-grow">Hasła nie są przechowywane w adresie MAC. W nowoczesnych systemach są one składowane w bezpiecznym, zaszyfrowanym kontenerze zwanym <strong>pękiem kluczy (keychain)</strong> lub menedżerem poświadczeń.</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Surowa Kopia Binarna (`dd`)</h3>
-                        <p class="mt-2 text-sm flex-grow">Polecenie `dd` w systemach uniksowych tworzy dokładną, bit-po-bicie kopię nośnika danych (dysku, partycji) do pliku obrazu. Jest to fundamentalne narzędzie w informatyce śledczej, ponieważ pozwala zachować oryginalny nośnik w nienaruszonym stanie i pracować na jego wiernej kopii.</p>
+                        <p class="mt-2 text-sm flex-grow">Polecenie `dd` tworzy dokładną, bit-po-bicie kopię nośnika danych. Jest to fundamentalne narzędzie w informatyce śledczej, pozwalające pracować na wiernej kopii, zachowując oryginał w nienaruszonym stanie.</p>
                     </div>
                      <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">Bloker Sprzętowy (Hardware Blocker)</h3>
-                        <p class="mt-2 text-sm flex-grow">Urządzenie fizyczne (sprzętowe), które uniemożliwia zapis danych na podłączonym nośniku (np. dysku twardym). Jest kluczowym narzędziem w informatyce śledczej, gwarantując, że podczas akwizycji danych (tworzenia kopii binarnej) oryginalny nośnik dowodowy nie zostanie w żaden sposób zmodyfikowany.</p>
+                        <h3 class="font-semibold text-lg text-white">Bloker Sprzętowy</h3>
+                        <p class="mt-2 text-sm flex-grow">Urządzenie fizyczne, które uniemożliwia zapis danych na podłączonym nośniku. Kluczowe w informatyce śledczej, gwarantuje, że nośnik dowodowy nie zostanie zmodyfikowany podczas akwizycji danych.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Funkcje Skrótu (Hash)</h3>
+                        <p class="mt-2 text-sm flex-grow">Algorytmy (np. <strong>MD5, SHA-256</strong>) tworzące unikalny, stałej długości "odcisk palca" (hash) dla danych. Służą do weryfikacji integralności plików. Nawet najmniejsza zmiana w pliku powoduje lawinową zmianę hasha.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Szyfrowanie Symetryczne vs Asymetryczne</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Symetryczne (np. AES):</strong> Używa tego samego klucza do szyfrowania i deszyfrowania. Szybkie, ale problemem jest bezpieczna wymiana klucza.<br><strong>Asymetryczne (np. RSA):</strong> Używa pary kluczy: publicznego (do szyfrowania) i prywatnego (do deszyfrowania).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">SSL/TLS</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Transport Layer Security</strong> (następca SSL) to protokół kryptograficzny zapewniający bezpieczeństwo komunikacji w sieci, np. podczas przeglądania stron WWW (HTTPS). Uwierzytelnia i szyfruje dane.</p>
                     </div>
                 </div>
             </section>
             
             <!-- Section 5: Ataki i Luki -->
             <section id="ataki" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-white">Ataki i Luki Bezpieczeństwa</h2>
+                <h2 class="text-3xl font-bold mb-2 text-white">Ataki i Złośliwe Oprogramowanie</h2>
                 <p class="mb-6 text-gray-400">Zrozumienie podstawowych wektorów ataków i słabości systemów.</p>
-                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Malware</h3>
+                        <p class="mt-2 text-sm flex-grow">Ogólne określenie na złośliwe oprogramowanie. Obejmuje wirusy, robaki, trojany, ransomware, spyware, adware i inne programy mające na celu uszkodzenie systemu lub kradzież danych.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Wirus vs Robak vs Trojan</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Wirus:</strong> "Zaraża" inne pliki i potrzebuje nosiciela do rozprzestrzeniania się. <strong>Robak:</strong> Samoreplikujący się program, który rozprzestrzenia się przez sieć. <strong>Trojan:</strong> Udaje pożyteczny program, ale w tle wykonuje szkodliwe działania (np. instaluje backdoor).</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Ransomware</h3>
+                        <p class="mt-2 text-sm flex-grow">Oprogramowanie, które szyfruje pliki ofiary, a następnie żąda okupu (zwykle w kryptowalucie) w zamian za klucz deszyfrujący. </p>
+                    </div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Phishing / Vishing / Smishing</h3>
+                        <p class="mt-2 text-sm flex-grow">Metody wyłudzania danych (loginów, haseł) poprzez podszywanie się pod zaufane osoby lub instytucje. <strong>Phishing</strong> - przez e-mail, <strong>Vishing</strong> - przez telefon (voice), <strong>Smishing</strong> - przez SMS.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Atak DoS / DDoS</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Denial of Service.</strong> Atak mający na celu zablokowanie działania usługi sieciowej poprzez zalanie jej ogromną ilością zapytań. <strong>DoS</strong> - z jednego źródła, <strong>DDoS</strong> (Distributed) - z wielu komputerów (botnetu) jednocześnie.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Atak Man-in-the-Middle (MITM)</h3>
+                        <p class="mt-2 text-sm flex-grow">Atak, w którym napastnik potajemnie pośredniczy w komunikacji między dwiema stronami, mogąc ją podsłuchiwać, modyfikować lub przechwytywać przesyłane dane.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">SQL Injection</h3>
+                        <p class="mt-2 text-sm flex-grow">Technika ataku polegająca na wstrzyknięciu złośliwego kodu SQL do zapytania bazy danych przez luki w aplikacji webowej. Może prowadzić do kradzieży lub zniszczenia danych.</p>
+                    </div>
                      <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Exploit Zdalny vs Lokalny</h3>
-                        <p class="mt-2 text-sm flex-grow"><strong>Exploit zdalny:</strong> Wykorzystuje lukę w systemie przez sieć, bez potrzeby fizycznego dostępu do urządzenia. Atakujący może być w dowolnym miejscu na świecie.<br><strong>Exploit lokalny:</strong> Wymaga, aby atakujący miał już jakiś (zazwyczaj ograniczony) dostęp do systemu w celu eskalacji uprawnień.</p>
+                        <p class="mt-2 text-sm flex-grow"><strong>Zdalny:</strong> Wykorzystuje lukę przez sieć, bez fizycznego dostępu. <strong>Lokalny:</strong> Wymaga, aby atakujący miał już jakiś (ograniczony) dostęp do systemu w celu eskalacji uprawnień.</p>
                     </div>
                      <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">Zdalny Dostęp: Telnet vs SSH</h3>
-                        <p class="mt-2 text-sm flex-grow"><strong>Telnet</strong> jest protokołem niezabezpieczonym, ponieważ cała komunikacja, włącznie z hasłami, jest przesyłana otwartym tekstem. Jest podatny na podsłuchiwanie.<br><strong>SSH (Secure Shell)</strong> to bezpieczny, szyfrowany protokół, który powinien być używany do zdalnego zarządzania systemami.</p>
+                        <p class="mt-2 text-sm flex-grow"><strong>Telnet</strong> jest protokołem niezabezpieczonym, przesyła dane (w tym hasła) otwartym tekstem. <strong>SSH (Secure Shell)</strong> to bezpieczny, szyfrowany protokół do zdalnego zarządzania systemami.</p>
                     </div>
                      <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">Maskowanie Adresu IP</h3>
-                        <p class="mt-2 text-sm flex-grow">Techniki ukrywania prawdziwego adresu IP użytkownika w celu zwiększenia anonimowości lub ominięcia cenzury. Najpopularniejsze metody to:<br>• <strong>VPN:</strong> Szyfruje cały ruch i kieruje go przez serwer pośredniczący.<br>• <strong>Proxy:</strong> Działa jako pośrednik dla konkretnego ruchu (np. WWW).<br>• <strong>TOR:</strong> Zapewnia najwyższy poziom anonimowości poprzez wielowarstwowe szyfrowanie i trasowanie cebulowe.</p>
+                        <h3 class="font-semibold text-lg text-white">Spoofing</h3>
+                        <p class="mt-2 text-sm flex-grow">Technika polegająca na "podszywaniu się" pod inny adres (np. IP, e-mail, MAC) w celu ukrycia tożsamości lub ominięcia zabezpieczeń opartych na adresach.</p>
                     </div>
                      <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">PuTTY</h3>
-                        <p class="mt-2 text-sm flex-grow">PuTTY to popularny, darmowy klient dla systemu Windows, który implementuje wiele protokołów sieciowych. Najczęściej jest używany jako klient <strong>SSH</strong>, ale obsługuje również <strong>Telnet</strong>, rlogin i połączenia szeregowe. Nie obsługuje natywnie protokołu FTP.</p>
+                        <h3 class="font-semibold text-lg text-white">Keylogger i Spyware</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Spyware:</strong> Oprogramowanie szpiegujące, które zbiera informacje o użytkowniku bez jego wiedzy. <strong>Keylogger:</strong> Rodzaj spyware, który rejestruje wszystkie naciśnięcia klawiszy, przechwytując hasła i inne poufne dane.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Backdoor (Furtka)</h3>
+                        <p class="mt-2 text-sm flex-grow">Ukryta metoda ominięcia normalnych procedur uwierzytelniania, pozwalająca na zdalny dostęp do systemu. Może być celowo zostawiona przez programistę lub zainstalowana przez malware.</p>
                     </div>
                 </div>
             </section>
@@ -359,15 +482,31 @@ ifconfig -a # starsze polecenie</code></pre>
             <!-- Section 6: Blockchain -->
             <section id="blockchain" class="content-section">
                 <h2 class="text-3xl font-bold mb-2 text-white">Technologie Blockchain</h2>
-                 <p class="mb-6 text-gray-400">Kluczowe koncepcje stojące za technologią rozproszonego rejestru.</p>
-                 <div class="space-y-6">
+                 <p class="mb-6 text-gray-400">Kluczowe koncepcje stojące za technologią rozproszonego rejestru i kryptowalutami.</p>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-xl text-white">Blockchain (Łańcuch bloków)</h3>
+                        <p class="mt-2 text-sm flex-grow">Zdecentralizowana i rozproszona baza danych (rejestr), w której transakcje są grupowane w bloki. Każdy kolejny blok jest kryptograficznie połączony z poprzednim, tworząc niezmienny łańcuch. Zapewnia to transparentność i bezpieczeństwo.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-xl text-white">Decentralizacja</h3>
+                        <p class="mt-2 text-sm flex-grow">Kluczowa cecha blockchaina. Oznacza brak centralnego organu zarządzającego (jak bank). Rejestr transakcji jest utrzymywany i weryfikowany przez sieć rozproszonych komputerów (węzłów), co czyni system odpornym na cenzurę i awarie.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-xl text-white">Kryptowaluty i Tokeny</h3>
+                        <p class="mt-2 text-sm flex-grow"><strong>Kryptowaluta (np. Bitcoin):</strong> Cyfrowy pieniądz, który ma swój własny, niezależny blockchain. <br><strong>Token (np. standard ERC-20):</strong> Cyfrowy zasób, który działa na istniejącym blockchainie innej kryptowaluty (najczęściej Ethereum).</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-xl text-white">Kopanie (Mining)</h3>
+                        <p class="mt-2 text-sm flex-grow">Proces, w którym "górnicy" używają mocy obliczeniowej swoich komputerów do rozwiązywania skomplikowanych problemów matematycznych. W ten sposób weryfikują transakcje, dodają nowe bloki do łańcucha i tworzą nowe monety jako nagrodę.</p>
+                    </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-xl text-white">Merkle Tree (Drzewo Merkle'a)</h3>
-                        <p class="mt-2 text-sm">Struktura danych w postaci drzewa, używana do wydajnej i bezpiecznej weryfikacji integralności danych w bloku. Liśćmi drzewa są hashe transakcji, a jego wierzchołek (Merkle Root) jest zapisywany w nagłówku bloku jako skondensowany dowód zawartości.</p>
+                        <p class="mt-2 text-sm flex-grow">Struktura danych używana do wydajnej i bezpiecznej weryfikacji integralności danych w bloku. Liśćmi drzewa są hashe transakcji, a jego wierzchołek (Merkle Root) jest zapisywany w nagłówku bloku jako skondensowany dowód zawartości.</p>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-xl text-white">Hard Fork</h3>
-                        <p class="mt-2 text-sm">Radykalna, niekompatybilna wstecz zmiana w protokole blockchaina. Prowadzi do trwałego rozdzielenia łańcucha na dwa osobne, ponieważ węzły ze starym oprogramowaniem nie mogą weryfikować nowych bloków.</p>
+                        <p class="mt-2 text-sm flex-grow">Radykalna, niekompatybilna wstecz zmiana w protokole blockchaina. Prowadzi do trwałego rozdzielenia łańcucha na dwa osobne, ponieważ węzły ze starym oprogramowaniem nie mogą weryfikować nowych bloków.</p>
                     </div>
                 </div>
             </section>
@@ -378,12 +517,20 @@ ifconfig -a # starsze polecenie</code></pre>
                  <p class="mb-6 text-gray-400">Metody pozyskiwania informacji i znaczenie unikalnych identyfikatorów.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                      <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
-                        <h3 class="font-semibold text-lg text-white">Struktura Dysku Fizycznego</h3>
-                        <p class="mt-2 text-sm flex-grow">Adresowanie <strong>Głowica 1, Talerz 0, Sektor 0</strong> (lub podobne, w zależności od schematu) odnosi się do fizycznej lokalizacji danych na dysku twardym. Pierwsze sektory dysku są kluczowe, ponieważ często zawierają <strong>sektor rozruchowy (MBR/GPT)</strong>, który zawiera informacje niezbędne do uruchomienia systemu operacyjnego.</p>
+                        <h3 class="font-semibold text-lg text-white">OSINT (Open-Source Intelligence)</h3>
+                        <p class="mt-2 text-sm flex-grow">Biały wywiad. Metoda pozyskiwania informacji z publicznie dostępnych, jawnych źródeł, takich jak media, publiczne rejestry, internet, media społecznościowe. Jest to legalna forma gromadzenia danych.</p>
                     </div>
                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
                         <h3 class="font-semibold text-lg text-white">SOCMINT i Geotagging</h3>
-                         <p class="mt-2 text-sm flex-grow"><strong>SOCMINT (Social Media Intelligence):</strong> Dziedzina białego wywiadu (OSINT) polegająca na zbieraniu i analizie publicznie dostępnych informacji z mediów społecznościowych.<br><strong>Geotagging:</strong> Proces dodawania metadanych geograficznych (lokalizacji) do mediów. Cenne źródło informacji w analizie SOCMINT.</p>
+                         <p class="mt-2 text-sm flex-grow"><strong>SOCMINT (Social Media Intelligence):</strong> Dziedzina OSINT polegająca na zbieraniu i analizie informacji z mediów społecznościowych.<br><strong>Geotagging:</strong> Proces dodawania metadanych geograficznych do mediów (np. zdjęć), cenne źródło informacji w analizie SOCMINT.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Struktura Dysku Fizycznego</h3>
+                        <p class="mt-2 text-sm flex-grow">Adresowanie <strong>Głowica, Talerz, Sektor</strong> odnosi się do fizycznej lokalizacji danych na dysku HDD. Pierwsze sektory dysku są kluczowe, ponieważ zawierają <strong>sektor rozruchowy (MBR/GPT)</strong>, niezbędny do uruchomienia systemu operacyjnego.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <h3 class="font-semibold text-lg text-white">Doxing</h3>
+                        <p class="mt-2 text-sm flex-grow">Proces zbierania, a następnie publicznego ujawniania prywatnych informacji o danej osobie (imię, nazwisko, adres, miejsce pracy) bez jej zgody, często w celu nękania lub zastraszenia.</p>
                     </div>
                 </div>
             </section>
@@ -415,7 +562,7 @@ ifconfig -a # starsze polecenie</code></pre>
             // Funkcjonalność przycisków "Kopiuj"
             copyButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    const codeBlock = button.nextElementSibling; // <pre>
+                    const codeBlock = button.parentElement.querySelector('pre');
                     const textToCopy = codeBlock.innerText;
 
                     const textArea = document.createElement('textarea');

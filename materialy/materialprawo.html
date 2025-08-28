@@ -1,93 +1,67 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Przewodnik - Praktyka</title>
+    <title>Cyberprzestępczość - Przewodnik Prawny</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- 
-      Struktura Aplikacji:
-      Wersja poprawiona, przywracająca oryginalną strukturę i treść, rozbudowana o nowe zagadnienia z plików egzaminacyjnych.
-      Zachowano wszystkie pierwotne sekcje, dodając nowe informacje i nową zakładkę poświęconą analizie serwera Darknet.
-      Celem jest aktualizacja, a nie przebudowa, z poszanowaniem istniejącej bazy wiedzy.
-    -->
     <style>
-        body { 
+        body {
             font-family: 'Inter', sans-serif;
-            background-color: #111827;
-            color: #d1d5db;
+            background-color: #111827; /* bg-gray-900 */
+            color: #d1d5db; /* text-gray-300 */
         }
-        .content-section { display: none; animation: fadeIn 0.5s; }
-        .content-section.active { display: block; }
-        .nav-link.active { background-color: #374151; color: white; border-left: 3px solid #10b981; }
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .nav-link.active {
+            background-color: #374151; /* bg-gray-700 */
+            color: white;
+            border-left: 3px solid #10b981; /* border-emerald-500 */
+        }
         .nav-link {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.75rem; /* gap-3 */
             padding-left: 1rem;
             border-left: 3px solid transparent;
-        }
-        .code-block { position: relative; }
-        .copy-btn {
-            position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
-            background-color: #4b5563;
-            color: white;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            font-size: 0.75rem;
-            cursor: pointer;
-            opacity: 0.2;
-            transition: all 0.2s;
-        }
-        .code-block:hover .copy-btn { opacity: 1; }
-        .copy-btn:hover { background-color: #374151; }
-        kbd {
-            background-color: #4b5563;
-            border: 1px solid #6b7280;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.9em;
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .grid > .card {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
     </style>
 </head>
+
 <body class="bg-gray-900 text-gray-300">
 
     <div class="flex h-screen">
         <!-- Sidebar -->
         <aside class="w-72 bg-gray-800 text-white flex-shrink-0 flex flex-col">
             <div class="p-4 border-b border-gray-700 h-[65px] flex items-center">
-                <h1 class="text-2xl font-bold">Cyber Praktyka</h1>
+                <h1 class="text-2xl font-bold">Przewodnik Prawny</h1>
             </div>
             <nav class="mt-4 flex-1 space-y-1">
-                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50 active" data-target="plikow">
-                    <span class="w-6 text-center">📁</span> System Plików
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50 active" data-target="kk">
+                    <span class="w-6 text-center text-lg">⚖️</span> Kodeks Karny
                 </a>
-                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="metadanych">
-                    <span class="w-6 text-center">🏷️</span> Metadane i Sygnatury
-                </a>
-                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="steganografia">
-                    <span class="w-6 text-center">👁️‍🗨️</span> Steganografia
-                </a>
-                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="kryptografia">
-                    <span class="w-6 text-center">🔑</span> Kryptografia i Archiwa
-                </a>
-                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="email">
-                    <span class="w-6 text-center">✉️</span> Analiza E-mail
-                </a>
-                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="darknet">
-                    <span class="w-6 text-center">🕵️</span> Analiza Serwera Darknet
-                </a>
-                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="praktyki">
-                    <span class="w-6 text-center">⚙️</span> Dobre Praktyki
+                <a href="#" class="nav-link py-2.5 rounded-r-md transition duration-200 hover:bg-gray-700/50" data-target="konwencja">
+                    <span class="w-6 text-center text-lg">🌐</span> Konwencja Budapesztańska
                 </a>
             </nav>
         </aside>
@@ -95,278 +69,59 @@
         <!-- Main Content -->
         <main class="flex-1 p-6 md:p-10 overflow-y-auto">
 
-            <!-- Section 1: Analiza Systemu Plików -->
-            <section id="plikow" class="content-section active">
-                <h2 class="text-3xl font-bold mb-2 text-white">Analiza Systemu Plików</h2>
-                <p class="mb-6 text-gray-400">Podstawowe operacje związane z badaniem struktury plików, ich integralności i uprawnień.</p>
+            <!-- Section 1: Kodeks Karny -->
+            <section id="kk" class="content-section active">
+                <h2 class="text-3xl font-bold mb-2 text-white">Kodeks Karny</h2>
+                <p class="mb-6 text-gray-400">Wybrane artykuły dotyczące cyberprzestępczości.</p>
                 
-                <div class="space-y-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Odkrywanie ukrytych plików/katalogów</h3>
-                        <div class="mt-4 grid md:grid-cols-2 gap-4">
-                            <div class="bg-gray-900 p-4 rounded-md">
-                                <h4 class="font-medium text-white">🐧 Linux</h4>
-                                <p class="text-sm my-2">W menedżerze plików: <kbd>Ctrl</kbd> + <kbd>H</kbd></p>
-                                <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-1">
-                                    <button class="copy-btn">Kopiuj</button>
-                                    <pre><code>ls -a  # Pokazuje wszystkie pliki
-ls -la # Długi format listy z uprawnieniami</code></pre>
-                                </div>
-                            </div>
-                            <div class="bg-gray-900 p-4 rounded-md">
-                                <h4 class="font-medium text-white">❖ Windows</h4>
-                                <p class="text-sm my-2">W Eksploratorze Plików: `Widok -> Ukryte elementy`</p>
-                                <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-1">
-                                    <button class="copy-btn">Kopiuj</button>
-                                    <pre><code># PowerShell
-Get-ChildItem -Hidden
+                <h3 class="text-2xl font-semibold mb-4 text-white">Rozdział XXXIII: Przestępstwa przeciwko ochronie informacji</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 267 KK – Hacking</h3><p class="mt-2 text-sm card-content">§ 1: Przełamanie zabezpieczeń.<br>§ 2: Dostęp do systemu informatycznego.<br>§ 3: Użycie oprogramowania szpiegującego.<br>§ 4: Ujawnienie uzyskanych informacji.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 268 KK – Niszczenie danych</h3><p class="mt-2 text-sm card-content">§ 1: Niszczenie, uszkadzanie, zmiana zapisu informacji.<br>§ 2: Zaostrzenie kary przy nośniku informatycznym.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 268a KK – Zakłócanie pracy systemu</h3><p class="mt-2 text-sm card-content">§ 1: Zakłócanie przetwarzania, utrudnianie dostępu (np. DDoS).<br>§ 2: Zaostrzenie kary przy znacznej szkodzie majątkowej.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 269 KK – Sabotaż komputerowy</h3><p class="mt-2 text-sm card-content">Niszczenie danych o szczególnym znaczeniu dla państwa (obronność, bezpieczeństwo, administracja).</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 269a KK – Narzędzia hakerskie</h3><p class="mt-2 text-sm card-content">Wytwarzanie, pozyskiwanie, udostępnianie programów lub urządzeń przeznaczonych do popełniania cyberprzestępstw.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 269b KK – Nielegalne hasła/kody</h3><p class="mt-2 text-sm card-content">Pozyskiwanie lub udostępnianie haseł, kodów i innych danych dostępowych.</p></div>
+                </div>
 
-# CMD
-dir /a:h</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Zmiana uprawnień do plików (Linux)</h3>
-                        <p class="text-sm text-gray-400 mt-1">Gdy system zgłasza "Brak dostępu", użyj polecenia `chmod`.</p>
-                         <div class="mt-4">
-                            <div class="bg-gray-900 p-4 rounded-md">
-                                <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
-                                    <button class="copy-btn">Kopiuj</button>
-                                    <pre><code># Nadaj pełne uprawnienia (odczyt, zapis, wykonanie)
-# dla wszystkich (właściciel, grupa, inni)
-chmod 777 nazwa_pliku
-
-# Nadaj prawa do odczytu i zapisu właścicielowi
-chmod u+rw nazwa_pliku
-
-# Nadaj prawa rekursywnie dla katalogu
-chmod -R 755 /sciezka/do/katalogu</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Obliczanie i Porównywanie Sum Kontrolnych (Hashy)</h3>
-                         <div class="mt-4 grid md:grid-cols-2 gap-4">
-                             <div class="bg-gray-900 p-4 rounded-md">
-                                <h4 class="font-medium text-white">🐧 Linux (Terminal)</h4>
-                                <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-1">
-                                    <button class="copy-btn">Kopiuj</button>
-                                    <pre><code>sha256sum &lt;plik&gt;
-sha1sum &lt;plik&gt;
-md5sum &lt;plik&gt;</code></pre>
-                                </div>
-                            </div>
-                            <div class="bg-gray-900 p-4 rounded-md">
-                                <h4 class="font-medium text-white">❖ Windows (PowerShell/CMD)</h4>
-                                <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-1">
-                                    <button class="copy-btn">Kopiuj</button>
-                                    <pre><code># PowerShell
-Get-FileHash -Algorithm SHA256 &lt;plik&gt;
-
-# CMD / PowerShell
-certutil -hashfile &lt;plik&gt; SHA256</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h3 class="text-2xl font-semibold mb-4 text-white">Inne istotne artykuły</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 287 KK – Oszustwo komputerowe</h3><p class="mt-2 text-sm card-content">Wpływanie na przetwarzanie danych w celu osiągnięcia korzyści majątkowej lub wyrządzenia szkody (np. phishing).</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 190a KK – Stalking / Podszywanie się</h3><p class="mt-2 text-sm card-content">§ 1: Uporczywe nękanie (cyberstalking).<br>§ 2: Podszywanie się pod inną osobę (catfishing) w celu wyrządzenia szkody.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 202 KK – Pornografia dziecięca</h3><p class="mt-2 text-sm card-content">Penalizuje produkcję, rozpowszechnianie, a także posiadanie (np. § 4a) materiałów z udziałem małoletniego.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 256 KK – Mowa nienawiści</h3><p class="mt-2 text-sm card-content">Publiczne nawoływanie do nienawiści na tle różnic narodowościowych, etnicznych, rasowych lub wyznaniowych.</p></div>
                 </div>
             </section>
 
-            <!-- Section 2: Analiza Metadanych -->
-            <section id="metadanych" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-white">Metadane i Sygnatury Plików</h2>
-                <p class="mb-6 text-gray-400">Pliki często zawierają dodatkowe, ukryte informacje (dane o danych).</p>
-                <div class="space-y-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Ekstrakcja metadanych (EXIF)</h3>
-                        <p class="text-sm text-gray-400 mt-1">Użyj <span class="font-bold text-teal-300">ExifTool</span> do odczytu metadanych z plików, zwłaszcza obrazów. Można w nich znaleźć model aparatu, datę, a nawet koordynaty GPS.</p>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
-                            <button class="copy-btn">Kopiuj</button>
-                            <pre><code>exiftool &lt;nazwa_pliku_jpg&gt;</code></pre>
-                        </div>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Przykład wyniku `exiftool` i objaśnienie</h3>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
-                            <pre><code>ExifTool Version Number         : 12.40
-File Name                       : obraz.jpg
-<span class="text-yellow-400">Make                            : Apple</span>         # Producent urządzenia
-<span class="text-yellow-400">Camera Model Name               : iPhone 13</span>       # Model urządzenia
-<span class="text-cyan-400">Date/Time Original              : 2023:05:10 14:30:15</span> # Data i czas wykonania
-<span class="text-fuchsia-400">GPS Latitude                    : 53 deg 8' 54.14" N</span>  # Szerokość geograficzna
-<span class="text-fuchsia-400">GPS Longitude                   : 21 deg 3' 11.43" E</span>  # Długość geograficzna
-<span class="text-green-400">Software                        : Adobe Photoshop 22.0</span>  # Oprogramowanie do edycji
-<span class="text-orange-400">Comment                         : Tu może być ukryta flaga!</span> # Komentarz
-</code></pre>
-                        </div>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Analiza Heksadecymalna i Sygnatury Plików</h3>
-                        <p class="text-sm text-gray-400 mt-1">Sprawdzaj sygnatury plików ("magic numbers") w edytorze heksadecymalnym (<span class="font-bold text-teal-300">HxD</span>, <span class="font-bold text-teal-300">GHex</span>), aby zweryfikować prawdziwy typ pliku, niezależnie od jego rozszerzenia.</p>
-                        <div class="overflow-x-auto mt-2">
-                            <table class="w-full text-sm text-left">
-                                <thead class="text-xs text-gray-400 uppercase bg-gray-700"><tr><th class="px-6 py-3">Format</th><th class="px-6 py-3">Sygnatura (HEX)</th></tr></thead>
-                                <tbody>
-                                    <tr class="border-b border-gray-700"><td class="px-6 py-4">JPEG</td><td class="px-6 py-4 font-mono">FF D8 FF E0</td></tr>
-                                    <tr class="border-b border-gray-700"><td class="px-6 py-4">PNG</td><td class="px-6 py-4 font-mono">89 50 4E 47 0D 0A 1A 0A</td></tr>
-                                    <tr class="border-b border-gray-700"><td class="px-6 py-4">PDF</td><td class="px-6 py-4 font-mono">25 50 44 46</td></tr>
-                                    <tr class="border-b border-gray-700"><td class="px-6 py-4">ZIP/DOCX</td><td class="px-6 py-4 font-mono">50 4B 03 04</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+            <!-- Section 3: Konwencja Budapesztańska -->
+            <section id="konwencja" class="content-section">
+                <h2 class="text-3xl font-bold mb-2 text-white">Konwencja Budapesztańska (ETS nr 185)</h2>
+                <p class="mb-6 text-gray-400">Międzynarodowy traktat o cyberprzestępczości harmonizujący prawo i współpracę.</p>
+                
+                <h3 class="text-2xl font-semibold mb-4 text-white">Prawo karne materialne (Art. 2-13)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 2: Nielegalny dostęp</h3><p class="mt-2 text-sm card-content">Hacking.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 3: Nielegalne przechwytywanie</h3><p class="mt-2 text-sm card-content">Podsłuch niepublicznych transmisji.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 4: Naruszenie integralności danych</h3><p class="mt-2 text-sm card-content">Uszkadzanie, usuwanie danych.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 5: Naruszenie integralności systemu</h3><p class="mt-2 text-sm card-content">Poważne zakłócanie pracy (np. DDoS).</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 6: Nadużycie urządzeń</h3><p class="mt-2 text-sm card-content">Produkcja/sprzedaż narzędzi hakerskich.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 7-10: Inne</h3><p class="mt-2 text-sm card-content">Fałszerstwo komputerowe, oszustwo, pornografia dziecięca, naruszenia praw autorskich.</p></div>
                 </div>
-            </section>
-            
-            <!-- Section 3: Steganografia -->
-            <section id="steganografia" class="content-section">
-                 <h2 class="text-3xl font-bold mb-2 text-white">Steganografia i Odzyskiwanie Danych</h2>
-                 <p class="mb-6 text-gray-400">Techniki pracy z kopiami binarnymi nośników i metody odkrywania danych ukrytych w plikach.</p>
-                 <div class="space-y-6 mt-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Montowanie i analiza obrazu dysku (.001, E01)</h3>
-                        <p class="text-sm text-gray-400 mt-1">Obrazy dysku to kopie binarne. Narzędzie <span class="font-bold text-teal-300">FTK Imager</span> pozwala je zamontować jako wirtualny dysk i analizować zawartość, w tym odzyskiwać usunięte pliki.</p>
-                        <ol class="list-decimal list-inside text-gray-300 mt-2 space-y-1 text-sm">
-                            <li>Otwórz FTK Imager.</li>
-                            <li>Wybierz `File -> Add Evidence Item...` i wskaż plik obrazu (np. .001).</li>
-                            <li>Przeglądaj strukturę plików. Usunięte pliki są oznaczone czerwoną ikoną 'X'.</li>
-                            <li>Aby odzyskać plik, kliknij na niego PPM i wybierz `Export Files...`.</li>
-                        </ol>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Techniki Steganograficzne w Zadaniach</h3>
-                        <p class="text-sm text-gray-400 mt-1">Hasła i flagi są często ukrywane w nieoczywistych miejscach. Zawsze sprawdzaj pliki na kilka sposobów.</p>
-                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2 text-sm">
-                           <li><b>Hasło w pliku:</b> Otwórz plik (np. PDF, JPG) w <span class="font-bold text-teal-300">HxD</span> lub Notatniku. Użyj funkcji szukania (<kbd>Ctrl</kbd>+<kbd>F</kbd>) dla słów kluczowych: `hasło`, `password`, `klucz`, `rekrutacja`, `ExamPass:`.</li>
-                           <li><b>Obraz w pliku tekstowym:</b> Jeśli plik .txt wygląda na uszkodzony, spróbuj go otworzyć w programie graficznym, np. <span class="font-bold text-teal-300">MS Paint</span>. Może zawierać dane obrazu.</li>
-                           <li><b>Narzędzia CLI:</b> <span class="font-bold text-teal-300">Steghide</span> (do ukrywania/wyciągania danych z obrazów), <span class="font-bold text-teal-300">Zsteg</span> (do wykrywania ukrytych danych w PNG i BMP).</li>
-                        </ul>
-                    </div>
-                 </div>
-            </section>
 
-            <!-- Section 4: Kryptografia i Archiwa -->
-            <section id="kryptografia" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-white">Kryptografia i Archiwa</h2>
-                <p class="mb-6 text-gray-400">Obsługa zaszyfrowanych wiadomości i archiwów chronionych hasłem.</p>
-                <div class="space-y-6 mt-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Deszyfrowanie PGP/GPG</h3>
-                        <p class="text-sm text-gray-400 mt-1">Do obsługi szyfrowanych wiadomości i plików PGP. Narzędzia: <span class="font-bold text-teal-300">Kleopatra</span> (Windows), <span class="font-bold text-teal-300">GnuPG</span> (Linux).</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Archiwa chronione hasłem</h3>
-                        <p class="text-sm text-gray-400 mt-1">Użyj <span class="font-bold text-teal-300">7-Zip</span> do otwarcia. Do łamania haseł (gdy jest to częścią zadania): <span class="font-bold text-teal-300">John the Ripper</span> lub <span class="font-bold text-teal-300">Hashcat</span>.</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Dekompresja archiwów (Linux Terminal)</h3>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
-                            <button class="copy-btn">Kopiuj</button>
-                            <pre><code># Dla .tar.gz
-tar -xvzf plik.tar.gz
-
-# Dla .zip
-unzip plik.zip
-
-# Dla .rar (wymaga unrar)
-unrar x plik.rar</code></pre>
-                        </div>
-                    </div>
+                <h3 class="text-2xl font-semibold mb-4 text-white">Prawo procesowe i Jurysdykcja (Art. 14-22)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 14-15: Zakres i Warunki</h3><p class="mt-2 text-sm card-content">Określają, że procedury stosuje się do cyberprzestępstw i gromadzenia dowodów elektronicznych, z poszanowaniem praw człowieka i zasady proporcjonalności.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 16-17: Szybkie zabezpieczenie</h3><p class="mt-2 text-sm card-content">Umożliwia "zamrożenie" (zachowanie) przechowywanych danych komputerowych i danych o ruchu, które są podatne na utratę.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 18: Nakaz przedstawienia</h3><p class="mt-2 text-sm card-content">Zobowiązuje osobę fizyczną, prawną lub dostawcę usług do wydania określonych danych komputerowych lub informacji o abonencie.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 19: Przeszukanie i zajęcie</h3><p class="mt-2 text-sm card-content">Umożliwia przeszukanie systemu komputerowego i zajęcie danych, z możliwością rozszerzenia na inny system dostępny z przeszukiwanego.</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 20-21: Monitoring "na żywo"</h3><p class="mt-2 text-sm card-content">Pozwala na gromadzenie danych o ruchu (metadanych) w czasie rzeczywistym (Art. 20) oraz, w poważnych sprawach, treści komunikacji (Art. 21).</p></div>
+                     <div class="bg-gray-800 p-4 rounded-lg shadow-lg card"><h3 class="font-semibold text-lg text-white">Art. 22: Jurysdykcja</h3><p class="mt-2 text-sm card-content">Państwo ma jurysdykcję, gdy przestępstwo popełniono na jego terytorium, na jego statku/samolocie lub przez jego obywatela.</p></div>
                 </div>
-            </section>
 
-            <!-- Section 5: Analiza E-mail -->
-            <section id="email" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-white">Analiza Poczty E-mail</h2>
-                <p class="mb-6 text-gray-400">Analiza nagłówków i treści wiadomości w celu identyfikacji źródła i ukrytej zawartości.</p>
-                <div class="space-y-6 mt-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Analiza nagłówków wiadomości</h3>
-                        <p class="text-sm text-gray-400 mt-1">Zawsze analizuj pełne źródło wiadomości (często w formacie .eml lub .xml). Użyj analizatorów online, jak <span class="font-bold text-teal-300">MXToolbox Email Header Analyzer</span>, lub przeglądaj plik w edytorze tekstu.</p>
-                        <p class="text-sm text-gray-300 mt-2">Szukaj pól <strong>`Received:`</strong>. Każdy serwer pocztowy dodaje swój wpis. Analizując je od dołu do góry, możesz prześledzić drogę maila. Porównaj domenę w polu `From:` z domenami w nagłówkach `Received:`, aby wykryć potencjalny spoofing.</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Przykład sfałszowanego nagłówka (Spoofing)</h3>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
-                        <pre><code>From: "Ważny Bank" &lt;ważny_bank@example.com&gt;  <span class="text-yellow-400">&lt;-- Sfałszowane pole</span>
-To: "Ofiara" &lt;ofiara@example.net&gt;
-Subject: Pilna weryfikacja konta
-...
-<span class="text-red-400">Received: from evil.server.com (unknown [192.168.1.100])
-    by mail.ważny_bank.com (Postfix) with ESMTP id ...</span>
-    <span class="text-red-400">&lt;-- Rzeczywiste źródło ataku, widoczne po analizie</span></code></pre>
-                        </div>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Ekstrakcja załączników z kodu źródłowego</h3>
-                        <p class="text-sm text-gray-400 mt-1">W zadaniach załączniki mogą być osadzone w pliku .xml lub .eml jako tekst zakodowany w <strong>Base64</strong>. </p>
-                        <ol class="list-decimal list-inside text-gray-300 mt-2 space-y-1 text-sm">
-                            <li>Otwórz plik wiadomości w edytorze tekstu.</li>
-                            <li>Znajdź sekcję załącznika. Szukaj nagłówków typu `Content-Type: image/png` oraz `Content-Transfer-Encoding: base64`.</li>
-                            <li>Skopiuj długi ciąg znaków, który znajduje się pod tymi nagłówkami.</li>
-                            <li>Użyj dekodera online (np. Base64 to File) lub narzędzia wbudowanego w system, aby przekonwertować tekst z powrotem na plik.</li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section: Analiza Serwera Darknet -->
-            <section id="darknet" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-white">Analiza Serwera Darknet</h2>
-                <p class="mb-6 text-gray-400">Podejście do analizy plików z serwera forum w celu znalezienia odpowiedzi na konkretne pytania śledcze.</p>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="font-semibold text-xl text-white">Scenariusz Zadania</h3>
-                    <p class="mt-2 text-sm">Otrzymujesz folder z plikami stanowiącymi zrzut serwera WWW, na którym działa forum. Twoim celem jest znalezienie odpowiedzi na serię pytań, analizując pliki konfiguracyjne, kod źródłowy i zrzuty bazy danych.</p>
-                </div>
-                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h4 class="font-semibold text-lg text-white">Pytanie: Jakie są dane administratora (nazwa, e-mail, telefon)?</h4>
-                        <p class="mt-2 text-sm"><strong>Metoda:</strong> Przeszukaj pliki konfiguracyjne i bazę danych.<br>• Sprawdź pliki takie jak `config.php`, `settings.ini`, `.env`.<br>• Przeszukaj zrzut bazy danych (plik .sql) pod kątem tabeli `users` lub `admins`. Szukaj użytkownika z ID=1 lub z najwyższymi uprawnieniami.</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h4 class="font-semibold text-lg text-white">Pytanie: Kiedy założono forum?</h4>
-                        <p class="mt-2 text-sm"><strong>Metoda:</strong> Sprawdź daty utworzenia plików lub wpisy w bazie.<br>• Użyj komendy `stat` (Linux) na kluczowych plikach (np. `index.php`), aby zobaczyć datę ich utworzenia.<br>• W bazie danych poszukaj daty rejestracji pierwszego użytkownika lub daty utworzenia pierwszego posta.</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h4 class="font-semibold text-lg text-white">Pytanie: Ilu jest użytkowników / ogłoszeń o sprzedaży broni?</h4>
-                        <p class="mt-2 text-sm"><strong>Metoda:</strong> Przeszukaj zrzut bazy danych.<br>• Otwórz plik `.sql` w edytorze tekstu.<br>• Aby policzyć użytkowników, użyj <kbd>Ctrl</kbd>+<kbd>F</kbd> i policz wystąpienia frazy `INSERT INTO \`users\``. <br>• Aby policzyć ogłoszenia o broni, wyszukaj słów kluczowych jak `broń`, `pistolet`, `karabin` w tabeli z postami (np. `posts`).</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h4 class="font-semibold text-lg text-white">Pytanie: Jakie ogłoszenie czeka na zatwierdzenie?</h4>
-                        <p class="mt-2 text-sm"><strong>Metoda:</strong> Przeszukaj bazę danych pod kątem statusu postów.<br>• W pliku `.sql` w tabeli `posts` poszukaj kolumny o nazwie `status`, `approved`, `pending` itp. i znajdź wpis o wartości oznaczającej oczekiwanie na akceptację (np. 0 lub 'pending').</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h4 class="font-semibold text-lg text-white">Pytanie: W jakiej technologii napisano forum?</h4>
-                        <p class="mt-2 text-sm"><strong>Metoda:</strong> Analizuj rozszerzenia plików i ich zawartość.<br>• Sprawdź dominujące rozszerzenia plików (`.php`, `.py`, `.js`).<br>• Poszukaj w plikach charakterystycznych fraz, np. "Powered by phpBB", "WordPress", co wskaże na użyty system CMS lub framework.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 6: Dobre Praktyki -->
-            <section id="praktyki" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-white">Dobre Praktyki i Sztuczki</h2>
-                <div class="space-y-6 mt-6">
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Złote Zasady Informatyki Śledczej</h3>
-                         <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
-                           <li><span class="font-bold">Pracuj na kopii:</span> NIGDY nie modyfikuj oryginalnych plików dowodowych. Zawsze pracuj na kopii.</li>
-                           <li><span class="font-bold">Dokumentuj wszystko:</span> Prowadź notatki z każdego kroku, zapisuj znalezione hasła, hashe i ważne ścieżki.</li>
-                           <li><span class="font-bold">Myśl nieszablonowo:</span> Jeśli plik się nie otwiera, spróbuj innego programu. Jeśli tekst jest niewidoczny, zmień jego kolor. Sprawdzaj pliki na kilka sposobów.</li>
-                           <li><b>Uszkodzone pliki biurowe:</b> Jeśli <span class="font-bold text-teal-300">LibreOffice</span> nie otwiera pliku, uruchom go w <strong>trybie awaryjnym</strong>.</li>
-                        </ul>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h3 class="font-semibold text-lg text-white">Przydatne Polecenie: `strings` (Linux)</h3>
-                        <p class="text-sm text-gray-400 mt-1">Wyświetla czytelne ciągi znaków z dowolnego pliku binarnego. Niezwykle przydatne do szybkiego znajdowania tekstu (np. haseł) bez otwierania edytora heksadecymalnego.</p>
-                        <div class="code-block bg-black/50 text-white p-4 rounded-md text-sm mt-2">
-                            <button class="copy-btn">Kopiuj</button>
-                            <pre><code>strings obraz_dysku.001 | less</code></pre>
-                        </div>
+                <h3 class="text-2xl font-semibold mb-4 text-white">Współpraca międzynarodowa (Art. 23-35)</h3>
+                 <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg shadow-lg card">
+                        <p class="text-sm card-content">Ten rozdział ustanawia ramy dla szerokiej i efektywnej współpracy międzynarodowej. Obejmuje zasady ogólne (pomoc prawna, ekstradycja) oraz postanowienia szczegółowe dotyczące m.in. wzajemnej pomocy w zabezpieczaniu i dostępie do danych, transgranicznego dostępu do danych czy przechwytywania komunikacji. Kluczowym elementem jest ustanowienie sieci punktów kontaktowych działających 24/7 w celu zapewnienia natychmiastowej pomocy w dochodzeniach.</p>
                     </div>
                 </div>
             </section>
@@ -374,10 +129,9 @@ Subject: Pilna weryfikacja konta
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const navLinks = document.querySelectorAll('.nav-link');
             const contentSections = document.querySelectorAll('.content-section');
-            const copyButtons = document.querySelectorAll('.copy-btn');
 
             navLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
@@ -391,30 +145,9 @@ Subject: Pilna weryfikacja konta
                     contentSections.forEach(section => {
                         section.classList.toggle('active', section.id === targetId);
                     });
-                });
-            });
 
-            copyButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const codeBlock = button.parentElement.querySelector('pre');
-                    const textToCopy = codeBlock.innerText;
-                    
-                    const textArea = document.createElement('textarea');
-                    textArea.value = textToCopy;
-                    document.body.appendChild(textArea);
-                    textArea.select();
-                    try {
-                        document.execCommand('copy');
-                        button.innerText = 'Skopiowano!';
-                        button.style.backgroundColor = '#10b981';
-                        setTimeout(() => {
-                            button.innerText = 'Kopiuj';
-                             button.style.backgroundColor = '';
-                        }, 2000);
-                    } catch (err) {
-                        console.error('Błąd kopiowania', err);
-                    }
-                    document.body.removeChild(textArea);
+                    // Scroll to top of main content on section change
+                    document.querySelector('main').scrollTop = 0;
                 });
             });
         });
